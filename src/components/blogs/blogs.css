@@ -1,0 +1,61 @@
+/*BLOG Page**/
+.blog-section{
+    background-image: url('../../assets/images/About US - BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 20px 0 0;
+    margin-top: 80px;
+}
+.blog-col-sec{
+    z-index: 1;
+    position: relative;
+}
+.blog-section:after {
+    content: '';
+    background-color: #ffffffd2;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.blog-section .title{
+    padding-bottom: 20px;
+}
+.blog-section .card-col {
+    padding-bottom: 80px;
+}
+.blog-section .card-col .category{
+    position: relative;
+}
+.blog-section .card-col .category p {
+    background-color: var(--btn-color);
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+}
+.blog-section .card-col .card img{
+    height: 260px;
+    object-fit: cover;
+}
+.blog-section .card-col .card-body{
+    padding: 30px 25px;
+}
+.blog-section .card-col .card-body .card-title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: none;
+    color: var(--btn-color);
+}
+.blog-section .card-col .card-body a.btn.btn-light {
+    background: transparent;
+    border: 1px solid var(--btn-color);
+    color: var(--btn-color);
+    padding: 5px 10px;
+    line-height: 1;
+    margin-top: 20px;
+}

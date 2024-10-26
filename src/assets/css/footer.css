@@ -1,0 +1,171 @@
+footer{
+    position: relative;
+    padding: 80px 0 20px;
+}
+footer .footer-sec{
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-section:after,
+footer:after {
+    content: '';
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+footer .footer-sec .logo{
+    padding-bottom: 20px;
+}
+footer .footer-sec .logo img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+footer .footer-sec .location-icon i{
+    font-size: 50px;
+    color: #38ceff;
+}
+footer .footer-sec h5{
+    color:#fff;
+    font-weight: 600;
+}
+footer .footer-sec a {
+    color: #fff;
+    text-decoration: none;
+}
+footer .footer-sec .menu-item a{
+    padding-bottom: 20px;
+    display: block;
+    font-weight: 200;
+}
+footer .footer-sec .address {
+    width: 50%;
+}
+footer .footer-sec .address p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+/*** Footer ***/
+
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+}
+.btn-square i{
+   color: #000;
+   font-size: 20px; 
+}
+
+.footer-sec .copyright {
+    padding: 25px 0;
+    font-size: 22px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+}
+
+.footer-sec .copyright a {
+    color: #fff;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    h2{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    .top-video-banner .content.content {
+        height: 500px;
+        object-fit: cover;
+    }
+    .top-video-banner .content.content video{
+        height: 500px;
+        object-fit: cover;
+    }
+    .our-product .product-col {
+        padding: 80px 0;
+    }
+    .why-us-slider .text{
+        width: 90%;
+    }
+    footer .footer-sec .address{
+        width: 100%;
+    }
+    footer .footer-sec .menu-item{
+        padding-bottom: 20px;
+    }
+
+}   
+
+@media (max-width: 767px) {
+    h2{
+        font-size: 38px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .about-us{
+        padding-top: 50px;
+    }
+    .about-us-slider .about-carousel .owl-prev{
+        left: 0 !important;
+    }
+    .about-us-slider .about-carousel .owl-next{
+        right: 0 !important;
+    }
+    .why-us-slider .text{
+        width: 95%;
+    }
+    .why-us-slider .mySlides p{
+        font-size: 18px;
+    }
+    .why-us-slider .mySlides h3{
+        font-size: 28px;
+    }
+    .why-us-slider .mySlides img{
+        height: 500px;
+    }
+    .why-us p{
+        font-size: 20px;
+    }
+    .our-product .product-col {
+        padding: 50px 20px;
+    }
+    
+    .our-product .product-card .card{
+        margin-bottom: 20px;
+    }
+    .client-logo h3{
+        margin-bottom: 20px !important;
+    }
+    .testimonial-section{
+        padding: 50px 0;
+    }
+    footer{
+        position: relative;
+        padding: 50px 0 20px;
+    }
+    footer .footer-sec .menu-item,
+    footer .footer-sec .social-icon{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer .footer-sec  .copyright{
+        padding: 10px;
+    }
+
+}

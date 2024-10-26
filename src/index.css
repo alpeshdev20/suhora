@@ -1,0 +1,18 @@
+/********** Template CSS **********/
+:root {
+  --primary: #ffffff;
+  --secondary: #FFF0E6;
+  --light: #F8F8F9;
+  --dark: #001D23;
+  --btn-color:#1767A0;
+}
+body {
+  font-family: "Barlow", sans-serif;
+}
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+}
