@@ -55,7 +55,7 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto p-4 p-lg-0">
           <a href="#" className="nav-item nav-link active">Defence &amp; Intelligence</a>
-          <a href="#" className="nav-item nav-link">Disaster &amp; Insurance</a>
+          <Link to="/disaster-insurance" className="nav-item nav-link">Disaster &amp; Insurance</Link>
           <a href="#" className="nav-item nav-link">Imaging Capabilities</a>
           <a className="nav-item nav-link d-none d-lg-block" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <span><img src={Muneicon} /></span>

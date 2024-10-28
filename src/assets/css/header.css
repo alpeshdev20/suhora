@@ -2,6 +2,7 @@
 /*** Navbar ***/
 .fixed-top {
     transition: .5s;
+    background: #00000078 !important;
 }
 .navbar .logo img{
     width: 200px;
