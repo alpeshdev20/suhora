@@ -74,13 +74,13 @@ function Header() {
           <a className="nav-link active" aria-current="page" href="#">About Us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Career</a>
+          <Link className="nav-link" to="/career">Career</Link>
         </li>                
         <li className="nav-item">
-          <a className="nav-link" href="#">Events &amp; News</a>
+          <Link className="nav-link" to="/event-news">Events &amp; News</Link>
         </li>                
         <li className="nav-item">
-          <a className="nav-link" href="#">Blogs</a>
+          <Link className="nav-link" to="/blogs">Blogs</Link>
         </li>                
         <li className="nav-item">
           <a className="nav-link" href="#">Our Team</a>
