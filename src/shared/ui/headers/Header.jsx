@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import '../../../assets/css/header.css'
 import { useEffect } from 'react';
-import logo from '../../../assets/images/suhora_logo.png';
+import SuhoraLogowhite from '../../../assets/images/SuhoraLogowhite.svg'
+import Muneicon from '../../../assets/images/Muneicon.svg'
 
 function Header() {
   const $ = jQuery.noConflict();
@@ -45,11 +46,11 @@ function Header() {
     <div className="container">
       <Link to="/" className="navbar-brand ms-lg-0">
         <div className="logo">
-          <img src={logo} alt />
+          <img src={SuhoraLogowhite} alt />
         </div>
       </Link>
       <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span className="navbar-toggler-icon" />
+        <span><img src={Muneicon} /></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto p-4 p-lg-0">
@@ -57,7 +58,7 @@ function Header() {
           <a href="#" className="nav-item nav-link">Disaster &amp; Insurance</a>
           <a href="#" className="nav-item nav-link">Imaging Capabilities</a>
           <a className="nav-item nav-link d-none d-lg-block" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-            <span className="navbar-toggler-icon" />
+            <span><img src={Muneicon} /></span>
           </a>
         </div>
       </div>
@@ -70,31 +71,28 @@ function Header() {
     <div className="offcanvas-body">
       <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <a className="nav-link active" aria-current="page" href="#">About Us</a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/blogs">Blogs</Link>
-        </li>
+          <a className="nav-link" href="#">Career</a>
+        </li>                
         <li className="nav-item">
-          <Link className="nav-link" to="/career">Career</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu dropdown-menu-dark">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr className="dropdown-divider" />
-            </li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+          <a className="nav-link" href="#">Events &amp; News</a>
+        </li>                
+        <li className="nav-item">
+          <a className="nav-link" href="#">Blogs</a>
+        </li>                
+        <li className="nav-item">
+          <a className="nav-link" href="#">Our Team</a>
+        </li>                
+        <li className="nav-item">
+          <a className="nav-link" href="#">Contact Us</a>
+        </li>                
       </ul>
     </div>
   </div>
 </header>
+
   )
 }
 

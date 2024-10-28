@@ -15,7 +15,7 @@ function HomePage() {
   useEffect(() => {
     const initializeCarousel = () => {
      
-    if ($(".about-carousel").hasClass("owl-loaded")) return;
+    if ($(".about-carousel").hasClass("owl-loaded")) return; // Check if already loaded
 
       $(".about-carousel").owlCarousel({
         autoplay: false,
