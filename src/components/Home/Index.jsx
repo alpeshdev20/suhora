@@ -1,350 +1,752 @@
-import './home.css'
-import { videoSrc, scrollIcon, aboutUS01, aboutUS02, aboutUS03, mikra, About_us, drdo, nhpc, haryana, isro, userImg, icye, planet, retsch, setlloc, satvu, veng
-} from './img-src'; 
-
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import 'owl.carousel';
-// import $ from 'jquery';
-import "jquery-ui-dist/jquery-ui";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 function HomePage() {
   const $ = jQuery.noConflict();
-  
+
+  // Animation
+  function doAnimations(elements) {
+    var animationEndEvents =
+      "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+    elements.each(function () {
+      var $this = $(this);
+      var $animationDelay = $this.data("delay");
+      var $animationType = "animated " + $this.data("animation");
+      $this.css({
+        "animation-delay": $animationDelay,
+        "-webkit-animation-delay": $animationDelay,
+      });
+      $this.addClass($animationType).one(animationEndEvents, function () {
+        $this.removeClass($animationType);
+      });
+    });
+  }
+
+  function onSliderWheel(e) {
+    var deltaY = e.originalEvent.deltaY,
+      $currentSlider = $(e.currentTarget),
+      currentSlickIndex = $currentSlider.data("current-slide") || 0;
+
+    if (
+      // check when you scroll up
+      (deltaY < 0 && currentSlickIndex == 0) ||
+      // check when you scroll down
+      (deltaY > 0 &&
+        currentSlickIndex == $currentSlider.data("slider-length") - 1)
+    ) {
+      return;
+    }
+
+    e.preventDefault();
+
+    if (e.originalEvent.deltaY < 0) {
+      $currentSlider.slick("slickPrev");
+    } else {
+      $currentSlider.slick("slickNext");
+    }
+  }
+
+  function onSliderAfterChange(event, slick, currentSlide) {
+    $(event.target).data("current-slide", currentSlide);
+  }
+
   useEffect(() => {
     const initializeCarousel = () => {
-     
-    if ($(".about-carousel").hasClass("owl-loaded")) return; // Check if already loaded
+      const slider = $(".slider");
 
-      $(".about-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1000,
-        center: true,
-        dots: false,
-        loop: true,
-        nav: true,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 3 }
-        }
+      // Animation
+      slider.on("init", function (e, slick) {
+        var $firstAnimatingElements = $("div.slick-slide:first-child").find(
+          "[data-animation]"
+        );
+        doAnimations($firstAnimatingElements);
       });
 
-      $(".client-logo-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        dots: false,
-        loop: true,
-        nav: false,
-        margin: 10,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 6 }
-        }
+      slider.on("beforeChange", function (e, slick, currentSlide, nextSlide) {
+        var $animatingElements = $(
+          'div.slick-slide[data-slick-index="' + nextSlide + '"]'
+        ).find("[data-animation]");
+        doAnimations($animatingElements);
       });
 
-      $(".partner-logo-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        dots: false,
-        loop: true,
-        nav: false,
-        margin: 50,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 4 }
-        }
-      });
+      slider
+        .each(function (index, element) {
+          var $element = $(element);
+          // set the length of children in each loop
+          // but the better way for performance is to set this data attribute on the div.slider in the markup
+          $element.data("slider-length", $element.children().length);
+        })
+        .not(".slick-initialized")
+        .slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          vertical: true,
+          arrows: false,
+          autoplay: true,
+        })
+        .on("afterChange", onSliderAfterChange)
+        .on("wheel", onSliderWheel);
 
-      $(".testimonial-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1000,
-        center: true,
-        dots: true,
-        loop: true,
-        nav: false,
-        margin: 20,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 2 }
-        }
-      });
+      $(".about-carousel")
+        .not(".slick-initialized")
+        .slick({
+          centerMode: true,
+          centerPadding: "0px",
+          slidesToShow: 3,
+          arrows: true,
+          nextArrow: '<i class="fas fa-chevron-right slick-next"></i>',
+          prevArrow: '<i class="fas fa-chevron-left slick-prev"></i>',
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
 
-      $('.why-us-slider').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        responsive: {
-          0: { items: 1 },
-          600: { items: 1 },
-          1000: { items: 1 }
-        }
-      });
+      //Client Logo
+
+      $(".client-logo-carousel")
+        .not(".slick-initialized")
+        .slick({
+          arrows: false,
+          speed: 5000,
+          autoplay: true,
+          autoplaySpeed: 0,
+          cssEase: "linear",
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
+          swipeToSlide: true,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+
+      $(".partner-logo-carousel")
+        .not(".slick-initialized")
+        .slick({
+          arrows: false,
+          speed: 5000,
+          autoplay: true,
+          autoplaySpeed: 0,
+          cssEase: "linear",
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          swipeToSlide: true,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+
+      $(".testimonial-carousel")
+        .not(".slick-initialized")
+        .slick({
+          centerMode: true,
+          centerPadding: "0px",
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
     };
 
-    initializeCarousel()
+    initializeCarousel();
   }, [$]);
 
   return (
-    <div>
-    <section className="top-video-banner">
-      <div className="container-fluid p-0 mb-0">  
-        <div className="content">
-          <video className="w-100" autoPlay loop muted>
-            <source src={videoSrc} type="video/mp4" />
-          </video>
-       </div>
-     </div>
-    <div className="scroll-icon">
-      <a href="#about-us"><img src={scrollIcon} alt /></a>
-    </div>
-  </section>
-  {/* Carousel End */}
-  {/* About Start */}
-  <section id="about-us" className="about-us">
-    <div className="container">
-      <div className="text-center mx-auto mb-5">
-        <h2 className="mb-3">About suhora</h2>
-        <p>At SUHORA, we are driven by the passion to make data accessible and actionable for those who need it the most. Founded on the principle that space analytics should empower, not overwhelm, we are dedicated ourselves in demystifying satellite data for practical solutions and everyday applications. </p>
-        <p>Our team, a blend of seasoned experts and innovative thinkers, is dedicated to break down complex information into clear, actionable insights that drive decision-making across various sectors. Suhora Technologies stands at the intersection of innovation and utility, reshaping how industries leverage the untapped potential of satellite imagery and the information it stores within.</p>
-      </div>
-      <div className="about-us-slider">
-        <div className="container-xxl">
-          <div className="container">
-            <div className="owl-carousel about-carousel">
-              <div className="testimonial-item text-center">
-                <img className="img-fluid p-2 mx-auto" src={aboutUS01} />
-              </div>
-              <div className="testimonial-item text-center">
-                <img className="img-fluid p-2 mx-auto" src={aboutUS02}/>
-              </div>
-              <div className="testimonial-item text-center">
-                <img className="img-fluid p-2 mx-auto" src={aboutUS03} />
-              </div>
-              <div className="testimonial-item text-center">
-                <img className="img-fluid p-2 mx-auto" src={mikra} />
-              </div>
-            </div>
+    <>
+      {/* Carousel Start */}
+      <section className="top-video-banner">
+        <div className="container-fluid p-0 mb-0">
+          <div className="content-col">
+            <video className="w-100" autoPlay="" loop="" muted="">
+              <source src="./assets/images/banner.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
-        {/* Testimonial End */}
-      </div>
-    </div>
-    <div className="container-fluid pb-4">
-      <div className="why-us text-center mx-auto">
-        <h2>why suhora?</h2>
-        <p className>Elevating Satellite data with cutting edge, scalable solutions. </p>
-      </div>
-    </div>
-  </section>
-  <section className="why-suhora-section">
-    <div className="container-fluid p-0">
-      <div className="owl-carousel why-us-slider">
-        <div className="mySlides ">
-          <img src={About_us} style={{width: '100%'}} />
-          <div className="container">
-            <div className="text">
-              <h3>Multi Sensor Approach</h3>
-              <p>Our unique cross sensor approach combines the potential of thermal, optical and SAR data together enabling frequent revisit and all weather surveillance at best available resolution for unmatched monitoring capabilities.</p>
+      </section>
+      {/* Carousel End */}
+      {/* About Start */}
+      <section id="about-us" className="about-us">
+        <section className="bg-animation">
+          <span />
+          <span />
+        </section>
+        <div className="container">
+          <div className="about-content-col">
+            <div className="text-center mx-auto mb-5">
+              <h2 className="mb-3">About suhora</h2>
+              <p>
+                At SUHORA, we're driven by the passion to make data accessible
+                and actionable for those who need it the most. Founded on the
+                principle that space analytics should empower, not overwhelm,
+                we've dedicated ourselves in demystifying satellite data for
+                practical solutions and everyday applications.{" "}
+              </p>
+              <p>
+                Our team, a blend of seasoned experts and innovative thinkers,
+                is dedicated to break down complex information into clear,
+                actionable insights that drive decision-making across various
+                sectors. Suhora Technologies stands at the intersection of
+                innovation and utility, reshaping how industries leverage the
+                untapped potential of satellite imagery and the information it
+                stores within.
+              </p>
             </div>
-          </div>
-        </div>
-        <div className="mySlides">
-          <img src={About_us} style={{width: '100%'}} />
-          <div className="container">
-            <div className="text">
-              <h3>Multi Sensor Approach</h3>
-              <p>Our unique cross sensor approach combines the potential of thermal, optical and SAR data together enabling frequent revisit and all weather surveillance at best available resolution for unmatched monitoring capabilities.</p>
-            </div>
-          </div>
-        </div>
-        <div className="mySlides">
-          <img src={About_us} style={{width: '100%'}} />
-          <div className="container">
-            <div className="text">
-              <h3>Multi Sensor Approach</h3>
-              <p>Our unique cross sensor approach combines the potential of thermal, optical and SAR data together enabling frequent revisit and all weather surveillance at best available resolution for unmatched monitoring capabilities.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* About End */}
-  {/*Our Product-*/}
-  <section className="our-product">    
-    <div className="container">
-      <div className="row">
-        <div className="product-col">
-          <div className="title-sec col-lg-10 m-auto text-center mx-auto mb-8">
-            <h2 className="mb-3">Our Products</h2>
-            <h4>Tailored Solutions for Enterprise Users in Defense and Disaster Management</h4>
-            <p>With a common thread of multi-sensor near real time approach our products are specifically designed to meet the needs of enterprise users operating in defence and disaster management sectors.</p>
-          </div>
-          <div className="product-card">
-            <div className="row">
-              <div className="col-sm-4">
-                <div className="card spade">
-                  <div className="card-body">
-                    <h5 className="card-title">SPADE</h5>
-                    <p className="card-text">A unified SaaS platform offering seamless access to 250 + sensors encompassing optical thermal and SAR data enabling users to to explore, task and analyze satellite data for a spectrum of applications.</p>
-                    <a href="#" className="btn btn-primary">Explore</a>
+            <div className="about-us-slider-slick">
+              {/* Testimonial Start */}
+              <div className="container-xxl">
+                <div className="container">
+                  <div className="about-carousel">
+                    <div className="testimonial-item text-center">
+                      <img
+                        className="img-fluid p-2 mx-auto"
+                        src="./assets/images/about-us-1.png"
+                      />
+                    </div>
+                    <div className="testimonial-item text-center">
+                      <img
+                        className="img-fluid p-2 mx-auto"
+                        src="./assets/images/about-us-2.png"
+                      />
+                    </div>
+                    <div className="testimonial-item text-center">
+                      <img
+                        className="img-fluid p-2 mx-auto"
+                        src="./assets/images/about-us-3.png"
+                      />
+                    </div>
+                    <div className="testimonial-item text-center">
+                      <img
+                        className="img-fluid p-2 mx-auto"
+                        src="./assets/images/Mirka.png"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4">
-                <div className="card mirka">
-                  <div className="card-body">
-                    <h5 className="card-title">MIRKA</h5>
-                    <p className="card-text">Empowering defence with synergy of human intellect and AI for unparalleled situational awareness and strategic readiness in a rapidly evolving global security landscape setting a new benchmark in defence intelligence.</p>
-                    <a href="#" className="btn btn-primary">Explore</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="card sid">
-                  <div className="card-body">
-                    <h5 className="card-title">SID</h5>
-                    <p className="card-text">Developed with the aim of shaping a safer and prepared world by harnessing satellite data and advanced analytics offering invaluable insights in disaster management and insurance.</p>
-                    <a href="#" className="btn btn-primary">Explore</a>
+              {/* Testimonial End */}
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid pb-4">
+          <div className="why-us text-center mx-auto">
+            <h2>why suhora?</h2>
+            <p className="">
+              Elevating Satellite data with cutting edge, scalable solutions.{" "}
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* About Start End*/}
+      {/* why Suhora Start */}
+      <section className="why-suhora-section">
+        <div className="container-fluid p-0">
+          <div className="slider">
+            <div
+              className="slick-slide text-right"
+              style={{
+                backgroundImage: 'url("./assets/images/multi-sensor.png")',
+              }}
+            >
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-7">
+                    <div className="text mySlides">
+                      <h3>Multi Sensor Approach</h3>
+                      <p>
+                        Our unique cross sensor approach combines the potential
+                        of thermal, optical and SAR data together enabling
+                        frequent revisit and all weather surveillance at best
+                        available resolution for unmatched monitoring
+                        capabilities.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            {/* slick-slide */}
+            <div
+              className="slick-slide text-right"
+              style={{
+                backgroundImage: 'url("./assets/images/Near-real-time.png")',
+              }}
+            >
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-7">
+                    <div className="text mySlides">
+                      <h3>Near Real Time</h3>
+                      <p>
+                        Our constellation of 250+ sensors along with rapid
+                        processing ensures guaranteed data collection in near
+                        real time, empowering clients to stay ahead and access
+                        critical information.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* slick-slide */}
+            <div
+              className="slick-slide text-right"
+              style={{
+                backgroundImage: 'url("./assets/images/Higheraccuracy.png")',
+              }}
+            >
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-7">
+                    <div className="text mySlides">
+                      <h3>Higher Accuracy</h3>
+                      <p>
+                        We leverage a diverse range of satellite sensors to
+                        deliver precise and tailored insights, ensuring accurate
+                        solutions are designed to meet your specific needs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* slick-slide */}
+            <div
+              className="slick-slide text-right"
+              style={{
+                backgroundImage:
+                  'url("./assets/images/Insightful-analysis.png")',
+              }}
+            >
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-7">
+                    <div className="text mySlides">
+                      <h3>Insightful Analysis </h3>
+                      <p>
+                        We intend to deliver customized, cost effective
+                        solutions and data driven analytics specifically crafted
+                        to meet your requirements ensuring operational
+                        efficiency.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* slick-slide */}
           </div>
         </div>
-      </div>
-    </div>
-    <div className="client-logo-slider-section"> 
-      <div className="client-logo">
-        <div className="container text-center mx-auto">
-          <h3 className="mb-5">OUR ESTEEMED PARTNERS</h3>
+      </section>
+      {/* About End */}
+      {/*Our Product-*/}
+      <section
+        className="our-product "
+        style={{
+          backgroundImage: "url(./assets/images/Product-BG.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="product-col">
+              <div className="title-sec col-lg-10 m-auto text-center mx-auto mb-8">
+                <h2 className="mb-3">Our Products</h2>
+                <h4>
+                  Tailored Solutions for Enterprise Users in Defense and
+                  Disaster Management
+                </h4>
+                <p>
+                  With a common thread of multi-sensor near real time approach
+                  our products are specifically designed to meet the needs of
+                  enterprise users operating in defence and disaster management
+                  sectors.
+                </p>
+              </div>
+              <div className="product-card">
+                <div className="row">
+                  <div className="col-sm-4">
+                    <div
+                      className="card"
+                      style={{
+                        backgroundImage: 'url("./assets/images/spade.png")',
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                      }}
+                    >
+                      <div className="card-body">
+                        <h5 className="card-title">SPADE</h5>
+                        <p className="card-text">
+                          A unified SaaS platform offering seamless access to
+                          250 + sensors encompassing optical thermal and SAR
+                          data enabling users to to explore, task and analyze
+                          satellite data for a spectrum of applications.
+                        </p>
+                        <a href="#" className="btn btn-primary">
+                          Explore
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-sm-4">
+                    <div
+                      className="card"
+                      style={{
+                        backgroundImage: 'url("./assets/images/Mirka.png")',
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                      }}
+                    >
+                      <div className="card-body">
+                        <h5 className="card-title">MIRKA</h5>
+                        <p className="card-text">
+                          Empowering defence with synergy of human intellect and
+                          AI for unparalleled situational awareness and
+                          strategic readiness in a rapidly evolving global
+                          security landscape setting a new benchmark in defence
+                          intelligence.
+                        </p>
+                        <a href="#" className="btn btn-primary">
+                          Explore
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-sm-4">
+                    <div
+                      className="card"
+                      style={{
+                        backgroundImage: 'url("./assets/images/SID@2x.png")',
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                      }}
+                    >
+                      <div className="card-body">
+                        <h5 className="card-title">SID</h5>
+                        <p className="card-text">
+                          Developed with the aim of shaping a safer and prepared
+                          world by harnessing satellite data and advanced
+                          analytics offering invaluable insights in disaster
+                          management and insurance.
+                        </p>
+                        <a href="#" className="btn btn-primary">
+                          Explore
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* Testimonial Start */}
+        <div className="client-logo-slider-section our-partner-slider">
+          <div className="client-logo">
+            <div className="container text-center mx-auto">
+              <h3 className="mb-5">OUR ESTEEMED PARTNERS</h3>
+            </div>
+            {/* Testimonial Start */}
+            <div className="container-xxl">
+              <div className="client-logo-carousel">
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/ICEYE.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Planet.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/RESTEC.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/SATELLOGIC.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/satvu.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/veng.png"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Testimonial End */}
+          </div>
+        </div>
+      </section>
+      {/*End our product*/}
+      {/*Our Partner*/}
+      <section className="our-partner our-customer">
+        <div className="client-logo-slider-section">
+          <div className="client-logo">
+            <div className="container text-center mx-auto">
+              <h3 className="mb-5 fw-light">OUR VALUABLE CUSTOMERS</h3>
+            </div>
+            {/* Testimonial Start */}
+            <div className="container-xxl">
+              <div className="partner-logo-carousel">
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer1.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer2.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer3.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer4.png"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Testimonial End */}
+          </div>
+        </div>
+      </section>
+      {/*End -Our Partner*/}
+      {/*Our Testmonial*/}
+      <section
+        className="testimonial-section"
+        style={{
+          backgroundImage: "url(./assets/images/Testimonial-BG-blck.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
         <div className="container-xxl">
-          <div className="owl-carousel client-logo-carousel">
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={icye} />
-            </div>
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={planet} />
-            </div>
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={retsch} />
-            </div>
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={setlloc} />
-            </div>
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={satvu} />
-            </div>
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={veng} />
+          <div className="container">
+            <div className="testimonial-carousel">
+              <div className="testimonial-item text-center">
+                <div className="testimonial-content">
+                  <div className="testimonial-text text-center p-4">
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore Sed ut
+                      perspiciatis unde omnis iste natus error sit voluptatem
+                      accusantium doloremque laudantium, totam rem aperiam,
+                      eaque ipsa quae ab illo inventore
+                    </p>
+                  </div>
+                  <img
+                    className="img-fluid rounded-circle p-2 mx-auto"
+                    src="./assets/images/avtar.png"
+                    style={{ width: 100, height: 100 }}
+                  />
+                </div>
+                <div className="user-details">
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <h5 className="mb-1">Doner Name</h5>
+                  <span className="fst-italic">Profession</span>
+                </div>
+              </div>
+              <div className="testimonial-item text-center">
+                <div className="testimonial-content">
+                  <div className="testimonial-text text-center p-4">
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore Sed ut
+                      perspiciatis unde omnis iste natus error sit voluptatem
+                      accusantium doloremque laudantium, totam rem aperiam,
+                      eaque ipsa quae ab illo inventore
+                    </p>
+                  </div>
+                  <img
+                    className="img-fluid rounded-circle p-2 mx-auto"
+                    src="./assets/images/avtar.png"
+                    style={{ width: 100, height: 100 }}
+                  />
+                </div>
+                <div className="user-details">
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <h5 className="mb-1">Doner Name</h5>
+                  <span className="fst-italic">Profession</span>
+                </div>
+              </div>
+              <div className="testimonial-item text-center">
+                <div className="testimonial-content">
+                  <div className="testimonial-text text-center p-4">
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore Sed ut
+                      perspiciatis unde omnis iste natus error sit voluptatem
+                      accusantium doloremque laudantium, totam rem aperiam,
+                      eaque ipsa quae ab illo inventore
+                    </p>
+                  </div>
+                  <img
+                    className="img-fluid rounded-circle p-2 mx-auto"
+                    src="./assets/images/avtar.png"
+                    style={{ width: 100, height: 100 }}
+                  />
+                </div>
+                <div className="user-details">
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <h5 className="mb-1">Doner Name</h5>
+                  <span className="fst-italic">Profession</span>
+                </div>
+              </div>
+              <div className="testimonial-item text-center">
+                <div className="testimonial-content">
+                  <div className="testimonial-text text-center p-4">
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore Sed ut
+                      perspiciatis unde omnis iste natus error sit voluptatem
+                      accusantium doloremque laudantium, totam rem aperiam,
+                      eaque ipsa quae ab illo inventore
+                    </p>
+                  </div>
+                  <img
+                    className="img-fluid rounded-circle p-2 mx-auto"
+                    src="./assets/images/avtar.png"
+                    style={{ width: 100, height: 100 }}
+                  />
+                </div>
+                <div className="user-details">
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <span className="fa fa-star checked" />
+                  <h5 className="mb-1">Doner Name</h5>
+                  <span className="fst-italic">Profession</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        {/* Testimonial End */}
-      </div>
-    </div>
-  </section>
-  {/*End our product*/}
-  {/*Our Partner*/}
-  <section className="our-partner">    
-    <div className="client-logo-slider-section"> 
-      <div className="client-logo">
-        <div className="container text-center mx-auto">
-          <h3 className="mb-5 fw-light">OUR VALUABLE CUSTOMERS</h3>
-        </div>
-        {/* Testimonial Start */}
-        <div className="container-xxl">
-          <div className="owl-carousel partner-logo-carousel">
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={drdo} />
-            </div>
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={nhpc} />
-            </div>
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={haryana} />
-            </div>
-            <div className="testimonial-item text-center">
-              <img className="img-fluid p-2 mx-auto" src={isro} />
-            </div>
-          </div>
-        </div>
-        {/* Testimonial End */}
-      </div>
-    </div>
-  </section>
-  <section className="testimonial-section">
-    <div className="container-xxl">
-      <div className="container">
-        <div className="owl-carousel testimonial-carousel">
-          <div className="testimonial-item text-center">
-            <div className="testimonial-content">
-              <div className="testimonial-text text-center p-4">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-              </div>
-              <img className="img-fluid rounded-circle p-2 mx-auto" src={userImg} style={{width: 100, height: 100}} />
-            </div>
-            <div className="user-details">
-              <div>
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-              </div>
-              <h5 className="mb-1">Doner Name</h5>
-              <span className="fst-italic">Profession</span>
-            </div>
-          </div>
-          <div className="testimonial-item text-center">
-            <div className="testimonial-content">
-              <div className="testimonial-text text-center p-4">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-              </div>
-              <img className="img-fluid rounded-circle p-2 mx-auto" src={userImg} style={{width: 100, height: 100}} />
-            </div>
-            <div className="user-details">
-              <div>
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-              </div>
-              <h5 className="mb-1">Doner Name</h5>
-              <span className="fst-italic">Profession</span>
-            </div>
-          </div>
-          <div className="testimonial-item text-center">
-            <div className="testimonial-content">
-              <div className="testimonial-text text-center p-4">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-              </div>
-              <img className="img-fluid rounded-circle p-2 mx-auto" src={userImg} style={{width: 100, height: 100}} />
-            </div>
-            <div className="user-details">
-              <div>
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-                <span className="fa fa-star checked" />
-              </div>
-              <h5 className="mb-1">Doner Name</h5>
-              <span className="fst-italic">Profession</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-  )
+      </section>
+      {/* Footer Start */}
+    </>
+  );
 }
 
-export default HomePage
+export default HomePage;

@@ -1,4 +1,3 @@
-import './App.css';
 import HomePage from './components/Home/Index';
 import Header from './shared/ui/headers/Header';
 import Footer from './shared/ui/footers/Footer';
@@ -19,6 +18,7 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/disaster-insurance" element={<DisasterInsurance />} />
+          <Route path='/imaging-capabilities/' element={<DisasterInsurance />} />
           <Route path="/event-news" element={<Event />} />
           <Route path="*" element={<Error />} />
         </Routes>
