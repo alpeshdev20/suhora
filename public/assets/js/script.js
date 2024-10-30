@@ -307,11 +307,6 @@
       ]
     })
     
-    const container = document.querySelector('.image-col .container');
-    document.querySelector('.image-col .slider').addEventListener('input', (e) => {
-    container.style.setProperty('--position', `${e.target.value}%`);
-    })
-
     $('.card-vertical-carousel').slick({
       centerMode: false,
       margin:'10px',
@@ -348,6 +343,44 @@
       ]
     });
 
+    $('.one-time').slick({
+      dots: true,
+      arrows:false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+
+    $('.gallery-carousel').slick({
+      slidesToShow: 3,
+      arrows: true,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+
+
+    const container = document.querySelector('.image-col .container');
+    document.querySelector('.image-col .slider').addEventListener('input', (e) => {
+    container.style.setProperty('--position', `${e.target.value}%`);
+    });
+
+    
 
 })(jQuery);
 

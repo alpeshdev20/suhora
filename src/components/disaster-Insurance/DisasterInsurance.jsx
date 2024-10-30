@@ -105,6 +105,13 @@ function DisasterInsurance() {
         ],
       });
 
+    const container = document.querySelector(".image-col .container");
+    document
+      .querySelector(".image-col .slider")
+      .addEventListener("input", (e) => {
+        container.style.setProperty("--position", `${e.target.value}%`);
+      });
+
     initializeCarousel();
   }, [$]);
 
@@ -128,13 +135,13 @@ function DisasterInsurance() {
               <div className="col-lg-6">
                 <h1 className="display-5">Disaster &amp; Insurance</h1>
                 <p className="lead mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  rutrum dui et odio congue tempor. Donec tristique dolor in
-                  metus sagittis, non rutrum tellus efficitur. Duis pretium,
-                  sapien sed lobortis hendrerit, magna tellus mollis turpis, id
-                  congue sapien metus nec elit. Nulla interdum erat ut nisi
-                  dapibus, non sodales nisl hendrerit. Nunc dictum arcu id
-                  feugiat finibus.{" "}
+                  Our team, a blend of seasoned experts and innovative thinkers,
+                  is dedicated to break down complex information into clear,
+                  actionable insights that drive decision-making across various
+                  sectors. Suhora Technologies stands at the intersection of
+                  innovation and utility, reshaping how industries leverage the
+                  untapped potential of satellite imagery and the information it
+                  stores within.{" "}
                 </p>
               </div>
             </div>
@@ -152,12 +159,13 @@ function DisasterInsurance() {
                 <span>Predict</span> | <span>Observe</span> | <span>Act</span>{" "}
               </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                suscipit nulla in tempus euismod. Nunc pulvinar mattis urna
-                pretium consequat. Maecenas varius pulvinar sagittis. Nunc sit
-                amet tortor malesuada, auctor purus sed, rutrum orci. Proin sed
-                mauris ligula. Ut dui enim, convallis et elementum eu, molestie
-                vel turpis. Proin varius luctus scelerisque.{" "}
+                Our team, a blend of seasoned experts and innovative thinkers,
+                is dedicated to break down complex information into clear,
+                actionable insights that drive decision-making across various
+                sectors. Suhora Technologies stands at the intersection of
+                innovation and utility, reshaping how industries leverage the
+                untapped potential of satellite imagery and the information it
+                stores within.{" "}
               </p>
             </div>
             <div className="col-lg-6">

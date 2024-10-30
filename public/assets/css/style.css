@@ -8,6 +8,12 @@
 body {
     font-family: "Barlow", sans-serif;
 }
+@font-face {
+    font-family: Mokoto;
+    src: url('../font/Mokoto-Demo.ttf');
+    font-weight: 400
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -1295,7 +1301,346 @@ button.custom-btn:hover
     font-weight: 300;
 }
 
+/*defence-intelligence.html*/
+
+.mirka-section .card-image-col .card {
+    margin-bottom: 20px;
+}
+.mirka-section .card-image-col .card-img-overlay {
+    display: flex; 
+    flex-direction: column;
+     justify-content: center;
+     padding: 10px 50px;
+}
+.mirka-section .card-image-col h4 {
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.mirka-section .sid-text-col h3 ,
+.mirka-section .card-image-col h4 span,
+.general-container .title-card .marg-bott span{
+   font-family: 'Mokoto', sans-serif;
+}
+.image-slider-with-animation .title h2{
+    font-weight: 500;
+}
+.image-slider-with-animation .general-container {
+    display: flex;
+    height: 30rem;
+    margin: 0 auto 100px;
+    padding: 0;
+}
+  
+.image-slider-with-animation  .radio {
+    display: none;
+  }
+  
+.image-slider-with-animation  .content {
+    background: transparent;
+    background-image: url("../images/Maritime-Domain-Awareness\(MIRKA\ MDA\).jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.05, 0.60, 0.39, 0.94);
+  }
+  
+.image-slider-with-animation  .content::before {
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+.image-slider-with-animation  .content > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  
+ .image-slider-with-animation .content:nth-of-type(2) {
+    background: transparent;
+    background-image: url("../images/Terrain-Situational-Awareness(MIRKA TSA).png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+ .image-slider-with-animation .content:nth-of-type(3) {
+    background: transparent;
+    background-image: url("../images/MapVyuh.png");
+  background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+ .image-slider-with-animation .card-title {
+    bottom: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    left: 0;
+    line-height: 1.4;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(2rem);
+    transition: 290ms cubic-bezier(0.05, 0.62, 0.40, 0.95) 300ms;
+    transition-property: opacity, transform;
+    user-select: none;
+    padding: 0 30px 0 25px;
+  }
+  
+ .image-slider-with-animation .title-card{
+    bottom: 100px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    left: 1.5rem;
+    line-height: 1.1;
+    opacity: 1;
+    position: absolute;
+    transform: translateX(2rem);
+    transition: 290ms cubic-bezier(0.05, 0.60, 0.42, 0.94) 300ms;
+    transition-property: opacity, transform;
+    user-select: none;
+  }
+  
+ .image-slider-with-animation .subsubtitle{
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 300;
+  }
+  
+ .image-slider-with-animation .paddT{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+ .image-slider-with-animation .radio:checked + .content {
+    flex: 2;
+  }
+  
+ .image-slider-with-animation .radio:checked + .content > .card-title {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+ .image-slider-with-animation .radio:checked + .content > .title-card{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+ .image-slider-with-animation .marg-bott{
+    margin-bottom: 1.5rem;
+  }
+
+  .image-slider-with-animation .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+/*About us*/
+.sub-top-image-banner{
+    background-image: url("../images/About_Us_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    height: 75vh;
+}
+.sub-top-image-banner p{
+    font-size: 35px;
+}
+.mission-vission h4,
+.mission-vission p{
+    color: #000;
+}
+.mission-vission .card,
+.mission-vission .card img {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+.mission-vission .mission-col .card .card-img-overlay{
+    top: unset;
+    width: 55%;
+    margin-left: auto;
+    padding: 50px;
+}
+.mission-vission .vission-col .card .card-img-overlay{
+    padding: 50px;
+    width: 55%;
+    margin-right: auto;
+}
+.about-suhora-section {
+    background-image: url('../images/About-US-BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+.about-suhora-section .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: 0;
+}
+.about-suhora-section > .container{
+    z-index: 1;
+    position: relative;
+}
+.about-suhora-section .team-card .card{
+    width: 20rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    margin-bottom: 40px;
+}
+.about-suhora-section .team-card .card img{
+    border-radius: 0;
+}
+.about-suhora-section .team-card .card .card-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.about-suhora-section .our-team h3,
+.gallery-section .title{
+    font-weight: 500;
+}
+.about-suhora-section .our-team p{
+    font-size: 24px;
+    font-weight: 200;
+}
+.about-suhora-section .our-team .title{
+    color: #00669d;
+}
+.about-suhora-section .our-team .leadership-title{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.about-suhora-section  .team-card{
+    padding-bottom: 80px;
+}
+.about-suhora-section .team-card .about-founder h5.card-title,
+.about-suhora-section .founder-testimonial .card-title{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.about-suhora-section .team-card .about-founder p.card-text,
+.about-suhora-section .founder-testimonial .card-text {
+    font-size: 18px;
+}
+.about-suhora-section .founder-testimonial .card{
+    padding: 30px;
+    border: 0;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #fff;
+}
+.about-suhora-section  .founder-testimonial .card .card-content{
+    padding-top: 20px;
+}
+.about-suhora-section  .founder-testimonial .card img{
+    border-radius: 20px !important;
+}
+.about-suhora-section  .founder-testimonial .card .card-body{
+    padding-left: 30px;
+}
+.about-suhora-section .founder-testimonial{
+    padding-bottom: 80px;
+}
+.about-suhora-section .founder-testimonial .title{
+    font-weight: 300;
+}
+.about-suhora-section .founder-testimonial .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+}
+.about-suhora-section .founder-testimonial li {
+    margin: 0 0.25rem;
+}
+.about-suhora-section .founder-testimonial button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #adadad;
+    text-indent: -9999px;
+}
+.about-suhora-section .founder-testimonial li.slick-active button{
+    background-color: #00E5FF;
+    border: 1px solid #00E5FF;
+}
+.gallery-section{
+    position: relative;
+}
+.gallery-section .testimonial-item img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery-section .slick-arrow, .gallery-section .slick-arrow{
+    position: absolute;
+    bottom: -50px;
+    margin: -20px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.gallery-section .slick-arrow.slick-prev {
+    right: 130px;
+    background: url(https://img.icons8.com/ios/50/000000/long-arrow-left.png) 0 0 / 100% no-repeat;
+}
+.gallery-section .slick-arrow.slick-next {
+    background: url(https://img.icons8.com/ios/50/000000/long-arrow-right.png) 0 0 / 100% no-repeat;
+    right: 60px;
+} 
+
 /* imaging capabilities Page*/
+.sid-section .card-image-col .card{
+    border: 0;
+    background: transparent;
+}
+.sid-section .card-image-col .card .card-body {
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+	overflow: hidden;
+	padding: 13px 30px;
+	color: #fff;
+	background-color: rgba(27, 27, 27, .5);
+	transition: .4s ease-in-out;
+    border: 0;
+    border-radius: 0 0 20px 20px;
+}
+
 .card-image-col .card .card-body {
 	position: absolute;
 	height: 50px;
@@ -1314,6 +1659,70 @@ button.custom-btn:hover
 	background-color: #000;
 }
 
+
+.sid-section .card-image-col .card:hover .p {
+	opacity: 1;
+	visibility: visible;
+}
+.sid-section .card-image-col img{
+    border-radius: 10px;
+}
+.left-content-with-right-video .video-column {
+    padding: 0;
+    display: flex;
+}
+.left-content-with-right-video .video-column video{
+    width: 100%;
+}
+.left-content-with-right-video .bg-with-text{
+    background-image: none;
+    background-color: #00669d;
+}
+.left-content-with-right-video .bg-with-text .title-col {
+    padding: 50px 40px 50px 65px;
+}
+
+.solution-hub-section.imaging-hub-sec {
+    background-image: url(../images/Your-comprehensive_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 0;
+    margin-bottom: -70px;
+}
+.solution-hub-section .title-col{
+    color: #fff;
+    padding-bottom: 40px;
+}
+.solution-hub-section .title-col h3 {
+    font-weight: 400;
+    text-transform: none;
+}
+.solution-hub-section .title-col p{
+    font-size: 28px;
+}
+.solution-hub-section .card{
+    border: 0;
+    background: transparent;
+}
+.solution-hub-section .card .card-body{
+    position: absolute;
+    bottom: 15px;
+    width: -webkit-fill-available;
+    margin: 0 20px;
+    color: #fff;
+    background-color: #0000006e;
+    padding: 8px 20px 10px;
+    border-radius: 15px;
+}
+.solution-hub-section .card .card-body .card-title{
+    margin-bottom: 0;
+    font-weight: 200;
+    font-size: 20px;
+}
+.solution-hub-section .solution-hub-card{
+    z-index: 2;
+    position: relative;
+}
 .card-image-col .card:hover .p {
 	opacity: 1;
 	visibility: visible;
@@ -1351,8 +1760,66 @@ button.custom-btn:hover
     color: #fff;
     background-color: #000;
 }
+/*Form*/
+.contact-us-section{
+    background-image: url(../images/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 150px 0px 80px;
+}
 
+.contact-us-section .main-content-col{
+    z-index: 2;
+    position: relative;
+}
+.contact-us-section .main-content-col .title-col p{
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+.contact-us-section .address{
+    width: 70%;
+}
+.contact-us-section .address,
+.contact-us-section .contact-number,
+.contact-us-section .email-id {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contact-us-section .address img,
+.contact-us-section .contact-number img{
+    width: 30px;
+}
+.contact-us-section .email-id img{
+    width: 45px;
+}
+.contact-us-section .address p,
+.contact-us-section .contact-number p,
+.contact-us-section .email-id p{
+    margin-bottom: 0;
+}
 
+.contact-us-section .form-main-wrapper{
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.contact-us-section .form-main-wrapper .form-title h3{
+    text-align: center;
+    font-weight: 500;
+    text-transform: none;
+}
+.contact-us-section .form-main-wrapper .form-title h3 span{
+    color: #00669d;
+}
+.contact-us-section .form-main-wrapper .form-btn,
+.contact-us-section .form-main-wrapper .form-btn:hover{
+    border: 1px solid #00669d;
+    color: #00669d;
+}
 
 @media (max-width: 1024px) {
     h2{

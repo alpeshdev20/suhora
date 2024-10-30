@@ -28,16 +28,19 @@ function Event() {
                     </p>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent sed dolor vitae purus dapibus ullamcorper
-                    vestibulum rutrum nisl. Mauris nisi ex, pharetra non leo eu,
-                    tempus mollis mi. Phasellus tempus erat in sapien porta
-                    interdum. Donec tristique nisl ut odio pretium, sit amet
-                    consectetur nisi sollicitudin. Nullam tristique mattis
-                    tristique. Ut sed ipsum ultricies, accumsan purus eu,
-                    posuere justo. Nullam tristique erat id nunc luctus, id
-                    ultrices ipsum placerat. Donec risus quam, faucibus ac neque
-                    non, aliquam rhoncus nisl
+                    Suhora has signed a Memorandum of Understanding (MoU) with
+                    Thiagarajar College of Engineering, Madurai, to strengthen
+                    industry-academia collaboration. This partnership aims to
+                    equip students with industry-relevant skills and expose them
+                    to real-world challenges in the geospatial and space
+                    technology domains. As part of the MoU, Suhora will deliver
+                    specialized industrial training, offer internships, and
+                    collaborate on research projects, providing students with
+                    hands-on experience and opportunities in the growing Indian
+                    space sector. This initiative marks a significant step
+                    toward developing STEM professionals who will contribute to
+                    India's Geospatial Economy and accomplish the Indian Space
+                    Dream.
                   </p>
                   <a href="#" className="btn btn-light">
                     Continue Reading

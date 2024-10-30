@@ -21,8 +21,8 @@ export default function Blogs() {
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
-                    SUHORA has signed MoU with Thiagarajar College of
-                    Engineering, Madurai
+                    SUHORA has signed MoU with Thiagarajar College of Engineering,
+                    Madurai
                   </h3>
                   <div className="post-meta">
                     <p>
@@ -47,8 +47,8 @@ export default function Blogs() {
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
-                    SUHORA has signed MoU with Thiagarajar College of
-                    Engineering, Madurai
+                    SUHORA has signed MoU with Thiagarajar College of Engineering,
+                    Madurai
                   </h3>
                   <div className="post-meta">
                     <p>
@@ -73,8 +73,8 @@ export default function Blogs() {
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
-                    SUHORA has signed MoU with Thiagarajar College of
-                    Engineering, Madurai
+                    SUHORA has signed MoU with Thiagarajar College of Engineering,
+                    Madurai
                   </h3>
                   <div className="post-meta">
                     <p>
@@ -91,5 +91,6 @@ export default function Blogs() {
         </div>
       </div>
     </section>
+
   );
 }

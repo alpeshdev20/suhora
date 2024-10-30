@@ -241,7 +241,7 @@ function HomePage() {
       <section className="top-video-banner">
         <div className="container-fluid p-0 mb-0">
           <div className="content-col">
-            <video className="w-100" autoPlay="" loop="" muted="">
+            <video className="w-100" autoPlay="true" loop="true" muted="true">
               <source src="./assets/images/banner.mp4" type="video/mp4" />
             </video>
           </div>
@@ -259,20 +259,19 @@ function HomePage() {
             <div className="text-center mx-auto mb-5">
               <h2 className="mb-3">About suhora</h2>
               <p>
-                At SUHORA, we're driven by the passion to make data accessible
-                and actionable for those who need it the most. Founded on the
-                principle that space analytics should empower, not overwhelm,
-                we've dedicated ourselves in demystifying satellite data for
-                practical solutions and everyday applications.{" "}
+                At SUHORA, we're driven by the passion to make data accessible and
+                actionable for those who need it the most. Founded on the principle
+                that space analytics should empower, not overwhelm, we've dedicated
+                ourselves in demystifying satellite data for practical solutions and
+                everyday applications.{" "}
               </p>
               <p>
-                Our team, a blend of seasoned experts and innovative thinkers,
-                is dedicated to break down complex information into clear,
-                actionable insights that drive decision-making across various
-                sectors. Suhora Technologies stands at the intersection of
-                innovation and utility, reshaping how industries leverage the
-                untapped potential of satellite imagery and the information it
-                stores within.
+                Our team, a blend of seasoned experts and innovative thinkers, is
+                dedicated to break down complex information into clear, actionable
+                insights that drive decision-making across various sectors. Suhora
+                Technologies stands at the intersection of innovation and utility,
+                reshaping how industries leverage the untapped potential of
+                satellite imagery and the information it stores within.
               </p>
             </div>
             <div className="about-us-slider-slick">
@@ -327,9 +326,7 @@ function HomePage() {
           <div className="slider">
             <div
               className="slick-slide text-right"
-              style={{
-                backgroundImage: 'url("./assets/images/multi-sensor.png")',
-              }}
+              style={{ backgroundImage: 'url("./assets/images/multi-sensor.png")' }}
             >
               <div className="container">
                 <div className="row">
@@ -337,11 +334,10 @@ function HomePage() {
                     <div className="text mySlides">
                       <h3>Multi Sensor Approach</h3>
                       <p>
-                        Our unique cross sensor approach combines the potential
-                        of thermal, optical and SAR data together enabling
-                        frequent revisit and all weather surveillance at best
-                        available resolution for unmatched monitoring
-                        capabilities.
+                        Our unique cross sensor approach combines the potential of
+                        thermal, optical and SAR data together enabling frequent
+                        revisit and all weather surveillance at best available
+                        resolution for unmatched monitoring capabilities.
                       </p>
                     </div>
                   </div>
@@ -352,7 +348,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage: 'url("./assets/images/Near-real-time.png")',
+                backgroundImage: 'url("./assets/images/Near-real-time.png")'
               }}
             >
               <div className="container">
@@ -362,9 +358,9 @@ function HomePage() {
                       <h3>Near Real Time</h3>
                       <p>
                         Our constellation of 250+ sensors along with rapid
-                        processing ensures guaranteed data collection in near
-                        real time, empowering clients to stay ahead and access
-                        critical information.
+                        processing ensures guaranteed data collection in near real
+                        time, empowering clients to stay ahead and access critical
+                        information.
                       </p>
                     </div>
                   </div>
@@ -375,7 +371,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage: 'url("./assets/images/Higheraccuracy.png")',
+                backgroundImage: 'url("./assets/images/Higheraccuracy.png")'
               }}
             >
               <div className="container">
@@ -384,9 +380,9 @@ function HomePage() {
                     <div className="text mySlides">
                       <h3>Higher Accuracy</h3>
                       <p>
-                        We leverage a diverse range of satellite sensors to
-                        deliver precise and tailored insights, ensuring accurate
-                        solutions are designed to meet your specific needs.
+                        We leverage a diverse range of satellite sensors to deliver
+                        precise and tailored insights, ensuring accurate solutions
+                        are designed to meet your specific needs.
                       </p>
                     </div>
                   </div>
@@ -397,8 +393,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage:
-                  'url("./assets/images/Insightful-analysis.png")',
+                backgroundImage: 'url("./assets/images/Insightful-analysis.png")'
               }}
             >
               <div className="container">
@@ -407,10 +402,9 @@ function HomePage() {
                     <div className="text mySlides">
                       <h3>Insightful Analysis </h3>
                       <p>
-                        We intend to deliver customized, cost effective
-                        solutions and data driven analytics specifically crafted
-                        to meet your requirements ensuring operational
-                        efficiency.
+                        We intend to deliver customized, cost effective solutions
+                        and data driven analytics specifically crafted to meet your
+                        requirements ensuring operational efficiency.
                       </p>
                     </div>
                   </div>
@@ -428,7 +422,7 @@ function HomePage() {
         style={{
           backgroundImage: "url(./assets/images/Product-BG.png)",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          backgroundSize: "cover"
         }}
       >
         <div className="container">
@@ -437,14 +431,13 @@ function HomePage() {
               <div className="title-sec col-lg-10 m-auto text-center mx-auto mb-8">
                 <h2 className="mb-3">Our Products</h2>
                 <h4>
-                  Tailored Solutions for Enterprise Users in Defense and
-                  Disaster Management
+                  Tailored Solutions for Enterprise Users in Defense and Disaster
+                  Management
                 </h4>
                 <p>
-                  With a common thread of multi-sensor near real time approach
-                  our products are specifically designed to meet the needs of
-                  enterprise users operating in defence and disaster management
-                  sectors.
+                  With a common thread of multi-sensor near real time approach our
+                  products are specifically designed to meet the needs of enterprise
+                  users operating in defence and disaster management sectors.
                 </p>
               </div>
               <div className="product-card">
@@ -455,16 +448,16 @@ function HomePage() {
                       style={{
                         backgroundImage: 'url("./assets/images/spade.png")',
                         backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
+                        backgroundSize: "cover"
                       }}
                     >
                       <div className="card-body">
                         <h5 className="card-title">SPADE</h5>
                         <p className="card-text">
-                          A unified SaaS platform offering seamless access to
-                          250 + sensors encompassing optical thermal and SAR
-                          data enabling users to to explore, task and analyze
-                          satellite data for a spectrum of applications.
+                          A unified SaaS platform offering seamless access to 250 +
+                          sensors encompassing optical thermal and SAR data enabling
+                          users to to explore, task and analyze satellite data for a
+                          spectrum of applications.
                         </p>
                         <a href="#" className="btn btn-primary">
                           Explore
@@ -478,17 +471,16 @@ function HomePage() {
                       style={{
                         backgroundImage: 'url("./assets/images/Mirka.png")',
                         backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
+                        backgroundSize: "cover"
                       }}
                     >
                       <div className="card-body">
                         <h5 className="card-title">MIRKA</h5>
                         <p className="card-text">
-                          Empowering defence with synergy of human intellect and
-                          AI for unparalleled situational awareness and
-                          strategic readiness in a rapidly evolving global
-                          security landscape setting a new benchmark in defence
-                          intelligence.
+                          Empowering defence with synergy of human intellect and AI
+                          for unparalleled situational awareness and strategic
+                          readiness in a rapidly evolving global security landscape
+                          setting a new benchmark in defence intelligence.
                         </p>
                         <a href="#" className="btn btn-primary">
                           Explore
@@ -502,16 +494,16 @@ function HomePage() {
                       style={{
                         backgroundImage: 'url("./assets/images/SID@2x.png")',
                         backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
+                        backgroundSize: "cover"
                       }}
                     >
                       <div className="card-body">
                         <h5 className="card-title">SID</h5>
                         <p className="card-text">
                           Developed with the aim of shaping a safer and prepared
-                          world by harnessing satellite data and advanced
-                          analytics offering invaluable insights in disaster
-                          management and insurance.
+                          world by harnessing satellite data and advanced analytics
+                          offering invaluable insights in disaster management and
+                          insurance.
                         </p>
                         <a href="#" className="btn btn-primary">
                           Explore
@@ -622,7 +614,7 @@ function HomePage() {
         style={{
           backgroundImage: "url(./assets/images/Testimonial-BG-blck.png)",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          backgroundSize: "cover"
         }}
       >
         <div className="container-xxl">
@@ -632,12 +624,11 @@ function HomePage() {
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
                     <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore Sed ut
-                      perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore
+                      Working with Suhora has been an exceptional experience. Their
+                      deep understanding of our data needs, along with the
+                      high-resolution SAR and optical data they provide, has proven
+                      invaluable across multiple projects. Suhora's support has
+                      consistently enhanced our work.
                     </p>
                   </div>
                   <img
@@ -652,20 +643,18 @@ function HomePage() {
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
-                  <h5 className="mb-1">Doner Name</h5>
-                  <span className="fst-italic">Profession</span>
+                  <h5 className="mb-1">SKAUST</h5>
+                  {/* <span class="fst-italic">Profession</span> */}
                 </div>
               </div>
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
                     <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore Sed ut
-                      perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore
+                      Thanks to Suhora's satellite data across multiple dates, we
+                      were able to effectively monitor crop growth and make timely
+                      adjustments to our strategy. Their service greatly simplified
+                      our decision-making process.
                     </p>
                   </div>
                   <img
@@ -680,20 +669,18 @@ function HomePage() {
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
-                  <h5 className="mb-1">Doner Name</h5>
-                  <span className="fst-italic">Profession</span>
+                  <h5 className="mb-1">NECTAR</h5>
+                  {/* <span class="fst-italic">Profession</span> */}
                 </div>
               </div>
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
                     <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore Sed ut
-                      perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore
+                      Working with Suhora has been smooth. The satellite data
+                      services provided by them helped us in crop monitoring and to
+                      identify stubble burning and make timely decisions, and their
+                      consultancy was always reliable when needed.
                     </p>
                   </div>
                   <img
@@ -708,20 +695,18 @@ function HomePage() {
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
-                  <h5 className="mb-1">Doner Name</h5>
-                  <span className="fst-italic">Profession</span>
+                  <h5 className="mb-1">HARSAC</h5>
+                  {/* <span class="fst-italic">Profession</span> */}
                 </div>
               </div>
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
                     <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore Sed ut
-                      perspiciatis unde omnis iste natus error sit voluptatem
-                      accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore
+                      Suhora delivered high-resolution, precise digital surface and
+                      terrain models, along with detailed feature extraction. Their
+                      data significantly enhanced our project outcomes and provided
+                      valuable insights.
                     </p>
                   </div>
                   <img
@@ -736,16 +721,16 @@ function HomePage() {
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
-                  <h5 className="mb-1">Doner Name</h5>
-                  <span className="fst-italic">Profession</span>
+                  <h5 className="mb-1">NHPC</h5>
+                  {/* <span class="fst-italic">Profession</span> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* Footer Start */}
     </>
+
   );
 }
 

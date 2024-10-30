@@ -58,8 +58,8 @@ export default function Career() {
               />
               <h4>Learn</h4>
               <p>
-                Expand your skills and knowledge with us. We offer ongoing
-                learning opportunities to help you grow professionally.
+                Expand your skills and knowledge with us. We offer ongoing learning
+                opportunities to help you grow professionally.
               </p>
             </div>
             <div className="col-12 col-sm-3 text-center">
@@ -71,9 +71,9 @@ export default function Career() {
               />
               <h4>Collaborate</h4>
               <p>
-                Work together in a supportive environment where your ideas
-                matter. Join forces with talented individuals to create
-                innovative solutions..
+                Work together in a supportive environment where your ideas matter.
+                Join forces with talented individuals to create innovative
+                solutions..
               </p>
             </div>
             <div className="col-12 col-sm-3 text-center">
@@ -85,8 +85,8 @@ export default function Career() {
               />
               <h4>Make an impact</h4>
               <p>
-                Be part of something meaningful. Make a difference by
-                contributing to projects that matter.
+                Be part of something meaningful. Make a difference by contributing
+                to projects that matter.
               </p>
             </div>
           </div>
@@ -97,9 +97,8 @@ export default function Career() {
                 <p className="text-center">
                   Thank you for your interest in Suhora Technologies
                   <br />
-                  Discover exciting career opportunities with us and become a
-                  part of the dynamic team committed to innovation and
-                  excellence.
+                  Discover exciting career opportunities with us and become a part
+                  of the dynamic team committed to innovation and excellence.
                 </p>
               </div>
               <select
@@ -152,8 +151,8 @@ export default function Career() {
                 <div className="card-detial">
                   <h5>Health Benefits</h5>
                   <p>
-                    We provide health insurance coverage of up to Rs 5 lakhs for
-                    you and your family.
+                    We provide health insurance coverage of up to Rs 5 lakhs for you
+                    and your family.
                   </p>
                 </div>
               </div>
@@ -202,8 +201,8 @@ export default function Career() {
                 <div className="card-detial">
                   <h5>Learning Culture</h5>
                   <p>
-                    Access workshops, training, and courses designed to empower
-                    and foster continuous learning.
+                    Access workshops, training, and courses designed to empower and
+                    foster continuous learning.
                   </p>
                 </div>
               </div>
@@ -218,8 +217,8 @@ export default function Career() {
                 <div className="card-detial">
                   <h5>Leave Policy</h5>
                   <p>
-                    Benefit from 35 personal leave days per year, along with
-                    public holidays and maternity leave.
+                    Benefit from 35 personal leave days per year, along with public
+                    holidays and maternity leave.
                   </p>
                 </div>
               </div>
@@ -228,5 +227,6 @@ export default function Career() {
         </div>
       </section>
     </>
+
   );
 }

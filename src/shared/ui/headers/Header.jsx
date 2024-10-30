@@ -61,11 +61,11 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
-              <Link href="#" className="nav-item nav-link active">
-                Defence &amp; Intelligence
+              <Link to="/defence-intelligence" className="nav-item nav-link active">
+                Defence & Intelligence
               </Link>
               <Link to="/disaster-insurance" className="nav-item nav-link">
-                Disaster &amp; Insurance
+                Disaster & Insurance
               </Link>
               <Link to="/imaging-capabilities" className="nav-item nav-link">
                 Imaging Capabilities
@@ -114,7 +114,7 @@ function Header() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/event-news">
-                Events &amp; News
+                Events & News
               </Link>
             </li>
             <li className="nav-item">
@@ -122,16 +122,16 @@ function Header() {
                 Blogs
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/our-team">
+            {/* <li className="nav-item">
+              <Link className="nav-link" to="#">
                 Our Team
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact-us">
+            </li> */}
+            {/* <li className="nav-item">
+              <Link className="nav-link" to="#">
                 Contact Us
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

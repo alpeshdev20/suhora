@@ -15,7 +15,7 @@ function Footer() {
           <div className="row">
             <div className="col-lg-6 col-md-7 menu-item">
               <div className="logo">
-                <img src="./assets/images/suhora_logo.png" alt="" />
+                <img src="./assets/images/SuhoraLogowhite.svg" alt="" />
               </div>
               <div className="location d-flex">
                 <div className="location-icon">
@@ -31,22 +31,21 @@ function Footer() {
             </div>
             <div className="col-lg-2 col-md-5 menu-item">
               <h5 className="mb-4">Industries</h5>
-              <Link to="#">Defence &amp; Intelligence</Link>
-              <Link to="#">Disaster &amp; Insaurance</Link>
+              <Link to="#">Defence & Intelligence</Link>
+              <Link to="#">Disaster & Insaurance</Link>
             </div>
             <div className="col-lg-2 col-md-7 menu-item">
               <h5 className="mb-4">Capabilities</h5>
               <Link to="/imaging-capabilities">Imaging Capabilities</Link>
-              <Link to="/">Disaster &amp; Insaurance</Link>
             </div>
             <div className="col-lg-2 col-md-5 menu-item">
               <h5 className="text-light mb-4">Company</h5>
               <Link to="/about-us">About Us</Link>
               <Link to="/career">Career</Link>
-              <Link to="/event-news">Events &amp; News</Link>
-              <Link to="/">Blogs</Link>
+              <Link to="/event-news">Events & News</Link>
+              {/* <Link to="/">Blogs</Link>
               <Link to="/">Our Team</Link>
-              <Link to="/">Contact Us</Link>
+              <Link to="/">Contact Us</Link> */}
             </div>
           </div>
           <div className="row">
@@ -67,7 +66,7 @@ function Footer() {
           </div>
           <div className="row copyright">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              ©2024 Suhora | <Link to="/">Space Analytics Simplified</Link>, All
+              &copy;2024 Suhora | <Link to="/">Space Analytics Simplified</Link>, All
               Right Reserved. | <Link to="/">Privacy Policy</Link>
             </div>
             <div className="col-md-6 text-center text-md-end">
