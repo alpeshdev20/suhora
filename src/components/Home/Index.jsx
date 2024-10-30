@@ -91,6 +91,8 @@ function HomePage() {
       $(".about-carousel")
         .not(".slick-initialized")
         .slick({
+          autoplay: true,
+          autoplaySpeed: 1000,
           centerMode: true,
           centerPadding: "0px",
           slidesToShow: 3,
@@ -283,25 +285,49 @@ function HomePage() {
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/about-us-1.png"
+                        src="./assets/images/Ref_image1.png"
                       />
                     </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/about-us-2.png"
+                        src="./assets/images/Ref_image2.png"
                       />
                     </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/about-us-3.png"
+                        src="./assets/images/Ref_image3.png"
                       />
                     </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Mirka.png"
+                        src="./assets/images/Ref_image4.png"
+                      />
+                    </div>
+                    <div className="testimonial-item text-center">
+                      <img
+                        className="img-fluid p-2 mx-auto"
+                        src="./assets/images/Ref_image5.png"
+                      />
+                    </div>
+                    <div className="testimonial-item text-center">
+                      <img
+                        className="img-fluid p-2 mx-auto"
+                        src="./assets/images/Ref_image6.png"
+                      />
+                    </div>
+                    <div className="testimonial-item text-center">
+                      <img
+                        className="img-fluid p-2 mx-auto"
+                        src="./assets/images/Ref_image7.png"
+                      />
+                    </div>
+                    <div className="testimonial-item text-center">
+                      <img
+                        className="img-fluid p-2 mx-auto"
+                        src="./assets/images/Ref_image8.png"
                       />
                     </div>
                   </div>
