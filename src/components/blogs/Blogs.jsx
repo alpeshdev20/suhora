@@ -12,7 +12,7 @@ export default function Blogs() {
             <div className="col-md-6 card-col">
               <div className="card">
                 <img
-                  src="./assets/images/about-us-1.png"
+                  src="./assets/images/SUHORA-Tce-MoU-signing.webp"
                   className="card-img-top"
                   alt="..."
                 />
@@ -38,7 +38,7 @@ export default function Blogs() {
             <div className="col-md-6 card-col">
               <div className="card">
                 <img
-                  src="./assets/images/about-us-2.png"
+                  src="./assets/images/SUHORA-SatVu-Contract-Signing-e1717489162101.webp"
                   className="card-img-top"
                   alt="..."
                 />
@@ -47,12 +47,11 @@ export default function Blogs() {
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
-                    SUHORA has signed MoU with Thiagarajar College of Engineering,
-                    Madurai
+                    SUHORA and SatVu form a multi-year strategic alliance to provide Spaceborne High Resolution Thermal Sensing and analytics
                   </h3>
                   <div className="post-meta">
                     <p>
-                      <span>By Suhora</span> | <span>August 22,2024</span>{" "}
+                      <span>By Suhora</span> | <span>June 4, 2024</span>{" "}
                     </p>
                   </div>
                   <a href="#" className="btn btn-light">
@@ -64,7 +63,7 @@ export default function Blogs() {
             <div className="col-md-6 card-col">
               <div className="card">
                 <img
-                  src="./assets/images/about-us-3.png"
+                  src="./assets/images/blog-3-1.webp"
                   className="card-img-top"
                   alt="..."
                 />
@@ -73,12 +72,11 @@ export default function Blogs() {
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
-                    SUHORA has signed MoU with Thiagarajar College of Engineering,
-                    Madurai
+                    How world’s first high resolution thermal Satellite can evolve mining industry?
                   </h3>
                   <div className="post-meta">
                     <p>
-                      <span>By Suhora</span> | <span>August 22,2024</span>{" "}
+                      <span>By Suhora</span> | <span>April 3, 2024</span>{" "}
                     </p>
                   </div>
                   <a href="#" className="btn btn-light">

@@ -239,7 +239,7 @@ function HomePage() {
   return (
     <>
       {/* Carousel Start */}
-      <section className="top-video-banner">
+      <section className="sub-top-video-banner">
         <div className="container-fluid p-0 mb-0">
           <div className="content-col">
             <video className="w-100" autoPlay="true" loop="true" muted="true">
