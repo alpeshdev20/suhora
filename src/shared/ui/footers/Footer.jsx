@@ -31,8 +31,8 @@ function Footer() {
             </div>
             <div className="col-lg-2 col-md-5 menu-item">
               <h5 className="mb-4">Industries</h5>
-              <Link to="#">Defence & Intelligence</Link>
-              <Link to="#">Disaster & Insaurance</Link>
+              <Link to="/defence-intelligence">Defence & Intelligence</Link>
+              <Link to="/disaster-insurance">Disaster & Insaurance</Link>
             </div>
             <div className="col-lg-2 col-md-7 menu-item">
               <h5 className="mb-4">Capabilities</h5>

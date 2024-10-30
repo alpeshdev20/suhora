@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 function Event() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <section className="event-news-section">
       <div className="container">

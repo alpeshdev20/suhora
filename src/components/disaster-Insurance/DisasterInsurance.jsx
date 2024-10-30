@@ -113,6 +113,7 @@ function DisasterInsurance() {
       });
 
     initializeCarousel();
+    window.scrollTo(0, 0);
   }, [$]);
 
   return (

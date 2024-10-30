@@ -37,7 +37,10 @@ export default function AboutUs() {
     };
 
     initializeCarousel();
+    window.scrollTo(0, 0);
   }, [$]);
+
+
   return (
     <>
       {/* Carousel Start */}

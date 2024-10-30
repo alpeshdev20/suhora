@@ -8,6 +8,7 @@ function ImagingCapabilities() {
     document.querySelector('.image-col .slider').addEventListener('input', (e) => {
       container.style.setProperty('--position', `${e.target.value}%`);
     });
+    window.scrollTo(0, 0);
   }, [$]);
 
   return (

@@ -233,6 +233,7 @@ function HomePage() {
     };
 
     initializeCarousel();
+    window.scrollTo(0, 0);
   }, [$]);
 
   return (
