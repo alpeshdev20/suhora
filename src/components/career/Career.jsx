@@ -112,7 +112,7 @@ export default function Career() {
                 className="form-select form-select-lg mb-5 custom-select-menu"
                 aria-label=".form-select-lg example"
               >
-                <option selected="">Select Posiotion</option>
+                <option selected="">Select Position</option>
                 <option value={1}>Full Stack Developer | Engineering</option>
                 <option value={2}>Graphical Designer | Marketing</option>
                 <option value={3}>Full Stack Developer | Engineering</option>
@@ -121,7 +121,7 @@ export default function Career() {
                 className="form-select form-select-lg mb-5 custom-select-menu"
                 aria-label=".form-select-lg example"
               >
-                <option selected="">Select Posiotion</option>
+                <option selected="">Select Position</option>
                 <option value={1}>Full Stack Developer | Engineering</option>
                 <option value={2}>Graphical Designer | Marketing</option>
                 <option value={3}>Full Stack Developer | Engineering</option>
@@ -130,7 +130,7 @@ export default function Career() {
                 className="form-select form-select-lg custom-select-menu"
                 aria-label=".form-select-lg example"
               >
-                <option selected="">Select Posiotion</option>
+                <option selected="">Select Position</option>
                 <option value={1}>Full Stack Developer | Engineering</option>
                 <option value={2}>Graphical Designer | Marketing</option>
                 <option value={3}>Full Stack Developer | Engineering</option>
