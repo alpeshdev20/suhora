@@ -32,7 +32,7 @@ function ImagingCapabilities() {
                 <img src="./assets/images/SPADE Powered by SUHORA.png" alt="" />
                 <h1 className="display-6">Imaging Capabilities</h1>
                 <h6>Unlock the power of data effortlessly</h6>
-                <p className="mb-0">
+                <p className="mb-0 w-415px">
                   In today's data-driven world, your most valuable asset is data,
                   and we make accessing it effortless and seamless. Suhora redefines
                   how you task an image or delve into a wide range of archive data.
@@ -54,12 +54,7 @@ function ImagingCapabilities() {
                 <span>Explore</span> | <span>Task</span> | <span>Analyse</span>{" "}
               </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                suscipit nulla in tempus euismod. Nunc pulvinar mattis urna pretium
-                consequat. Maecenas varius pulvinar sagittis. Nunc sit amet tortor
-                malesuada, auctor purus sed, rutrum orci. Proin sed mauris ligula.
-                Ut dui enim, convallis et elementum eu, molestie vel turpis. Proin
-                varius luctus scelerisque.{" "}
+                Experience the next level data insight and analytics with our SaaS platform, delivering unparalleled convenience and efficiency. SPADE, a subscription based platform revamps satelite tasking, data access, and analysis, harnessing the capabilities of 15+ satelite constellation equipped with 250+ sensors. With guaranteed collection, fastest tasking, and secure downlink capabilities, your data is handled precision and confidentiality.{" "}
               </p>
             </div>
             <div className="col-lg-6">

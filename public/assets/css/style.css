@@ -496,7 +496,7 @@ h3{
     object-fit: cover;
 }
 .our-partner.our-customer .partner-logo-carousel .testimonial-item img{
-    width: 300px;
+    width: 100%;
     height: unset;
     object-fit: cover;
 }
@@ -1044,7 +1044,6 @@ button.custom-btn:hover
   overflow: hidden;  
 }
 .sub-top-video-banner video {
-    
   position: absolute;
   z-index: 0;
   object-fit: cover;
@@ -1054,10 +1053,14 @@ button.custom-btn:hover
   left: 50%;
   transform: translate(-50%, -50%);
 }
-  
+
 .sub-top-video-banner .container {
     position: relative;
     z-index: 2;
+}
+
+.sub-top-video-banner .w-415px{
+    width: 415px;
 }
   
 .sub-top-video-banner .overlay {

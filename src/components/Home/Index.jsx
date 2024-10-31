@@ -607,25 +607,37 @@ function HomePage() {
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer1.png"
+                    src="./assets/images/Customer-5.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer2.png"
+                    src="./assets/images/Customer-6.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer3.png"
+                    src="./assets/images/Customer-7.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer4.png"
+                    src="./assets/images/Customer-8.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer-9.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer-10.png"
                   />
                 </div>
               </div>
