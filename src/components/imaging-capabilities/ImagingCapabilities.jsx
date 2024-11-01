@@ -4,10 +4,12 @@ function ImagingCapabilities() {
   const $ = jQuery.noConflict();
 
   useEffect(() => {
-    const container = document.querySelector('.image-col .container');
-    document.querySelector('.image-col .slider').addEventListener('input', (e) => {
-      container.style.setProperty('--position', `${e.target.value}%`);
-    });
+    const container = document.querySelector(".image-col .container");
+    document
+      .querySelector(".image-col .slider")
+      .addEventListener("input", (e) => {
+        container.style.setProperty("--position", `${e.target.value}%`);
+      });
     window.scrollTo(0, 0);
   }, [$]);
 
@@ -33,9 +35,10 @@ function ImagingCapabilities() {
                 <h1 className="display-6">Imaging Capabilities</h1>
                 <h6>Unlock the power of data effortlessly</h6>
                 <p className="mb-0 w-415px">
-                  In today's data-driven world, your most valuable asset is data,
-                  and we make accessing it effortless and seamless. Suhora redefines
-                  how you task an image or delve into a wide range of archive data.
+                  In today's data-driven world, your most valuable asset is
+                  data, and we make accessing it effortless and seamless. Suhora
+                  redefines how you task an image or delve into a wide range of
+                  archive data.
                 </p>
                 <button className="btn btn-blue">Get started with SPADE</button>
               </div>
@@ -54,7 +57,13 @@ function ImagingCapabilities() {
                 <span>Explore</span> | <span>Task</span> | <span>Analyse</span>{" "}
               </h4>
               <p>
-                Experience the next level data insight and analytics with our SaaS platform, delivering unparalleled convenience and efficiency. SPADE, a subscription based platform revamps satelite tasking, data access, and analysis, harnessing the capabilities of 15+ satelite constellation equipped with 250+ sensors. With guaranteed collection, fastest tasking, and secure downlink capabilities, your data is handled precision and confidentiality.{" "}
+                Experience the next level data insight and analytics with our
+                SaaS platform, delivering unparalleled convenience and
+                efficiency. SPADE, a subscription based platform revamps
+                satelite tasking, data access, and analysis, harnessing the
+                capabilities of 15+ satelite constellation equipped with 250+
+                sensors. With guaranteed collection, fastest tasking, and secure
+                downlink capabilities, your data is handled precis{" "}
               </p>
             </div>
             <div className="col-lg-6">
@@ -159,8 +168,8 @@ function ImagingCapabilities() {
                 <div className="card-body">
                   <h5 className="card-title">Explore</h5>
                   <p className="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a href="#" className="btn btn-transparent">
                     Explore
@@ -178,8 +187,8 @@ function ImagingCapabilities() {
                 <div className="card-body">
                   <h5 className="card-title">Task</h5>
                   <p className="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a href="#" className="btn btn-transparent">
                     Explore
@@ -197,8 +206,8 @@ function ImagingCapabilities() {
                 <div className="card-body">
                   <h5 className="card-title">Analyse</h5>
                   <p className="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a href="#" className="btn btn-transparent">
                     Explore
@@ -245,7 +254,8 @@ function ImagingCapabilities() {
           <div className="row">
             <div className="col-lg-7 text-center m-auto title-col">
               <h3>
-                Your comprehensive hub for Satelite Imagery and Analytics Solutions{" "}
+                Your comprehensive hub for Satelite Imagery and Analytics
+                Solutions{" "}
               </h3>
               <p>Just spade the data you need</p>
             </div>
@@ -319,8 +329,8 @@ function ImagingCapabilities() {
                 <p>"We've Got Your Back-Here for Every Step of the Way."</p>
               </div>
             </div>
-            <div className="row contact-info justify-content-between">
-              <div className="d-flex justify-content-between flex-wrap">
+            <div className="row">
+              <div className="col-lg-4">
                 <div className="p-2 bd-highlight">
                   <div className="address">
                     <img
@@ -336,6 +346,8 @@ function ImagingCapabilities() {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="col-lg-4 mobile-section">
                 <div className="p-2 bd-highlight">
                   <div className="contact-number">
                     <img
@@ -350,6 +362,8 @@ function ImagingCapabilities() {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="col-lg-4 email-section">
                 <div className="p-2 bd-highlight">
                   <div className="email-id">
                     <img
@@ -431,8 +445,6 @@ function ImagingCapabilities() {
         </div>
       </section>
     </>
-
-
   );
 }
 
