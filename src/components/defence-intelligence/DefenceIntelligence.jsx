@@ -4,27 +4,35 @@ function DefenceIntelligence() {
   const $ = jQuery.noConflict();
 
   useEffect(() => {
-    const container = document.querySelector('.image-col .container');
-    document.querySelector('.image-col .slider').addEventListener('input', (e) => {
-      container.style.setProperty('--position', `${e.target.value}%`);
-    });
+    const container = document.querySelector(".image-col .container");
+    document
+      .querySelector(".image-col .slider")
+      .addEventListener("input", (e) => {
+        container.style.setProperty("--position", `${e.target.value}%`);
+      });
     window.scrollTo(0, 0);
   }, [$]);
   return (
     <>
       {/* Carousel Start */}
-     <section className="sub-top-image-banner defence-intelligence-banner">
-  <div className="container h-100">
-    <div className="d-flex h-100 align-items-center">
-      <div className="w-100 text-white">
-        <div className="col-lg-6">
-          <h1 className="display-3">Excellence in Image &amp; Intelligence</h1>
-          <p className="lead mb-0">We provide state-of-the-art imaging capabilities and intelligent algorithms for unparalleled surveillance enabling swift insights across maritime and terrestrial domains.</p>
+      <section className="sub-top-image-banner defence-intelligence-banner">
+        <div className="container h-100">
+          <div className="d-flex h-100 align-items-center">
+            <div className="w-100 text-white">
+              <div className="col-lg-6">
+                <h1 className="display-3">
+                  Excellence in Image &amp; Intelligence
+                </h1>
+                <p className="lead mb-0">
+                  We provide state-of-the-art imaging capabilities and
+                  intelligent algorithms for unparalleled surveillance enabling
+                  swift insights across maritime and terrestrial domains.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
       {/* Carousel End */}
       {/*SID Section -*/}
       <section className="sid-section mirka-section">
@@ -33,7 +41,8 @@ function DefenceIntelligence() {
             <div className="col-lg-6 sid-text-col">
               <h3 className="mb-3">mirka</h3>
               <h4>
-                <span>Rapid</span> | <span>Vigilant</span> | <span>Strategic</span>{" "}
+                <span>Rapid</span> | <span>Vigilant</span> |{" "}
+                <span>Strategic</span>{" "}
               </h4>
               <p>
                 In the rapidly evolving defence sector, MIRKA emerges as a
@@ -44,11 +53,11 @@ function DefenceIntelligence() {
                 strategies, ensuring critical targets are never missed.{" "}
               </p>
               <p>
-                Powered by high-definition sensors and smart algorithms, MIRKA cuts
-                through complex data, providing actionable intelligence for both
-                maritime and land surveillance. It enhances operational
-                effectiveness, offering a holistic view of any scenario, making it
-                an essential tool for national security.{" "}
+                Powered by high-definition sensors and smart algorithms, MIRKA
+                cuts through complex data, providing actionable intelligence for
+                both maritime and land surveillance. It enhances operational
+                effectiveness, offering a holistic view of any scenario, making
+                it an essential tool for national security.{" "}
               </p>
             </div>
             <div className="col-lg-6">
@@ -160,7 +169,9 @@ function DefenceIntelligence() {
                 />
                 <div className="card-img-overlay">
                   <h5 className="card-title">Tip &amp; Cue</h5>
-                  <p className="card-text">Automated detections and task cueing</p>
+                  <p className="card-text">
+                    Automated detections and task cueing
+                  </p>
                 </div>
               </div>
             </div>
@@ -173,7 +184,9 @@ function DefenceIntelligence() {
                 />
                 <div className="card-img-overlay">
                   <h5 className="card-title">Multi-sensor tasking</h5>
-                  <p className="card-text">Leverage multi-spectral <br /> imaging</p>
+                  <p className="card-text">
+                    Leverage multi-spectral <br /> imaging
+                  </p>
                 </div>
               </div>
             </div>
@@ -216,7 +229,9 @@ function DefenceIntelligence() {
                 />
                 <div className="card-img-overlay">
                   <h5 className="card-title">Proactive Change mapping</h5>
-                  <p className="card-text">Always 'on' change <br /> mapping</p>
+                  <p className="card-text">
+                    Always 'on' change <br /> mapping
+                  </p>
                 </div>
               </div>
             </div>
@@ -263,11 +278,13 @@ function DefenceIntelligence() {
                 </h1>
                 <h3 className="card-title subsubtitle">
                   <span>
-                    Maritime Domain Awareness (<span>MIRKA</span> MDA) - Mikra Provides advanced maritime domain awareness through continuous large-scale monitoring using
-                    wide swath satellite data. Our vessel and ship detection
-                    services offer real-time insights, ensuring enhanced safety,
-                    security, and operational efficiency at sea along with
-                    monitoring maritime activities with precision and reliability.
+                    Maritime Domain Awareness (<span>MIRKA</span> MDA) - Mikra
+                    Provides advanced maritime domain awareness through
+                    continuous large-scale monitoring using wide swath satellite
+                    data. Our vessel and ship detection services offer real-time
+                    insights, ensuring enhanced safety, security, and
+                    operational efficiency at sea along with monitoring maritime
+                    activities with precision and reliability.
                   </span>
                 </h3>
               </label>
@@ -281,12 +298,13 @@ function DefenceIntelligence() {
                 </h1>
                 <h3 className="card-title subsubtitle">
                   <span>
-                    Mirka specializes in terrain situational awareness by monitoring
-                    granular-level changes using high-resolution satellite imagery.
-                    Our advanced capabilities allow for precise aircraft detection,
-                    providing critical insights for enhanced security and
-                    operational decision-making. With our technology, you gain a
-                    detailed view of ground activities and movement.
+                    Mirka specializes in terrain situational awareness by
+                    monitoring granular-level changes using high-resolution
+                    satellite imagery. Our advanced capabilities allow for
+                    precise aircraft detection, providing critical insights for
+                    enhanced security and operational decision-making. With our
+                    technology, you gain a detailed view of ground activities
+                    and movement.
                   </span>
                 </h3>
               </label>
@@ -298,12 +316,13 @@ function DefenceIntelligence() {
                 </h1>
                 <h3 className="card-title subsubtitle">
                   <span>
-                    Proactive Border Surveillance - We use high-resolution satellite
-                    imagery to deliver real-time monitoring of sensitive areas. By
-                    detecting and analyzing activity with precision irrespective of
-                    scale, we enhance border security and enable rapid response to
-                    potential threats. Stay ahead with reliable, round-the-clock
-                    insights for safeguarding critical boundaries.
+                    Proactive Border Surveillance - We use high-resolution
+                    satellite imagery to deliver real-time monitoring of
+                    sensitive areas. By detecting and analyzing activity with
+                    precision irrespective of scale, we enhance border security
+                    and enable rapid response to potential threats. Stay ahead
+                    with reliable, round-the-clock insights for safeguarding
+                    critical boundaries.
                   </span>
                 </h3>
               </label>
@@ -319,7 +338,7 @@ function DefenceIntelligence() {
       <div className="contact-us-section2">
         <div className="container">
           <div className="main-content-col">
-      <div className="row form-main-wrapper">
+            <div className="row form-main-wrapper">
               <div className="form-title">
                 <h3>
                   Get in <span>Touch</span>
@@ -368,17 +387,16 @@ function DefenceIntelligence() {
                 </div>
                 <div className="col-12 text-center">Capatcha Here</div>
                 <div className="col-12 text-center">
-                  <button type="submit" className="btn form-btn">
+                  <button type="button" className="btn form-btn">
                     Submit
                   </button>
                 </div>
               </form>
             </div>
-            </div>
-            </div>
-            </div>
+          </div>
+        </div>
+      </div>
     </>
-
   );
 }
 

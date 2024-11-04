@@ -137,8 +137,9 @@ function DisasterInsurance() {
                 <h1 className="display-5">Disaster &amp; Insurance</h1>
                 <p className="lead mb-0">
                   Our experienced professionals work to revamp disaster
-                  management and insurance processes through the strategic use of near real-time (NRT),
-                  all weather satellite data and insights.{" "}
+                  management and insurance processes through the strategic use
+                  of near real-time (NRT), all weather satellite data and
+                  insights.{" "}
                 </p>
               </div>
             </div>
@@ -156,12 +157,13 @@ function DisasterInsurance() {
                 <span>Predict</span> | <span>Observe</span> | <span>Act</span>{" "}
               </h4>
               <p>
-               With its cutting-edge risk evalution capabilities, SID empowers
-               stakeholders to make precise, data-driven decision that strengthen
-               disaster response and resilience towards financial risk. By empowering communities,
-               industries, and governments with advanced analytical tools,
-               SID, enhances preparedness and resilience against natural catastophes, 
-               ensuring a safer and a more secure future.{" "}
+                With its cutting-edge risk evalution capabilities, SID empowers
+                stakeholders to make precise, data-driven decision that
+                strengthen disaster response and resilience towards financial
+                risk. By empowering communities, industries, and governments
+                with advanced analytical tools, SID, enhances preparedness and
+                resilience against natural catastophes, ensuring a safer and a
+                more secure future.{" "}
               </p>
             </div>
             <div className="col-lg-6">
@@ -427,12 +429,12 @@ function DisasterInsurance() {
         <div className="key-baneficiaries">
           <div className="container">
             <div className="row">
-           <div className="col-lg-3 col-md-6 display-flex align-items-center">
-  <div className="text-col">
-    <img src="./assets/images/KeyBeneficiariesicon.svg" alt />
-    <h4>Key Baneficiaries</h4>
-  </div>
-</div>
+              <div className="col-lg-3 col-md-6 display-flex align-items-center">
+                <div className="text-col">
+                  <img src="./assets/images/KeyBeneficiariesicon.svg" alt />
+                  <h4>Key Baneficiaries</h4>
+                </div>
+              </div>
 
               <div className="col-lg-9 col-md-6">
                 <div className="key-baneficiaries-carousel">
@@ -491,7 +493,7 @@ function DisasterInsurance() {
       <div className="contact-us-section2">
         <div className="container">
           <div className="main-content-col">
-      <div className="row form-main-wrapper">
+            <div className="row form-main-wrapper">
               <div className="form-title">
                 <h3>
                   Get in <span>Touch</span>
@@ -540,15 +542,15 @@ function DisasterInsurance() {
                 </div>
                 <div className="col-12 text-center">Capatcha Here</div>
                 <div className="col-12 text-center">
-                  <button type="submit" className="btn form-btn">
+                  <button type="button" className="btn form-btn">
                     Submit
                   </button>
                 </div>
               </form>
             </div>
-            </div>
-            </div>
-            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

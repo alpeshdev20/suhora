@@ -425,7 +425,7 @@ function ImagingCapabilities() {
                 </div>
                 <div className="col-12 text-center">Capatcha Here</div>
                 <div className="col-12 text-center">
-                  <button type="submit" className="btn form-btn">
+                  <button type="button" className="btn form-btn">
                     Submit
                   </button>
                 </div>
