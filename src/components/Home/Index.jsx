@@ -511,7 +511,7 @@ function HomePage() {
                       }}
                     >
                       <div className="card-body">
-                        <h5 className="card-title">MIRKA</h5>
+                        <h5 className="card-title mikra-txt">MIRKA</h5>
                         <p className="card-text">
                           Empowering defence with synergy of human intellect and AI
                           for unparalleled situational awareness and strategic

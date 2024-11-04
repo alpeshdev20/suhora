@@ -173,7 +173,7 @@ function DefenceIntelligence() {
                 />
                 <div className="card-img-overlay">
                   <h5 className="card-title">Multi-sensor tasking</h5>
-                  <p className="card-text">Leverage multi-spectral imaging</p>
+                  <p className="card-text">Leverage multi-spectral <br /> imaging</p>
                 </div>
               </div>
             </div>
@@ -216,7 +216,7 @@ function DefenceIntelligence() {
                 />
                 <div className="card-img-overlay">
                   <h5 className="card-title">Proactive Change mapping</h5>
-                  <p className="card-text">Always 'on' change mapping</p>
+                  <p className="card-text">Always 'on' change <br /> mapping</p>
                 </div>
               </div>
             </div>

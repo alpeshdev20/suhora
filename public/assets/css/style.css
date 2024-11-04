@@ -474,6 +474,9 @@
     font-size: 40px;
     font-weight: 600;
   }
+  .our-product .product-card .card .card-body .mikra-txt {
+    font-family: "Mokoto", sans-serif !important;
+  }
   .our-product .product-card .card .card-body .card-text {
     color: #fff;
     font-size: 16px;
