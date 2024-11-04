@@ -249,7 +249,7 @@ function ImagingCapabilities() {
                 className="object-fit-cover"
               >
                 <source
-                  src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4"
+                  src="./assets/images/How_to_get_data.mp4"
                   type="video/mp4"
                 />
               </video>
