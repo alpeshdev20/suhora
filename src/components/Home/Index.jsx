@@ -672,18 +672,20 @@ function HomePage() {
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
                     <p>
+                    <span><img src="./assets/images/double-quote-up.svg" alt="double-quote-up"/></span>
                       Working with Suhora has been an exceptional experience. Their
                       deep understanding of our data needs, along with the
                       high-resolution SAR and optical data they provide, has proven
                       invaluable across multiple projects. Suhora's support has
                       consistently enhanced our work.
+                      <span><img src="./assets/images/double-quote-down.svg" alt="double-quote-down"/></span>
                     </p>
                   </div>
-                  <img
+                  {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
                     src="./assets/images/avtar.png"
                     style={{ width: 100, height: 100 }}
-                  />
+                  /> */}
                 </div>
                 <div className="user-details">
                   <span className="fa fa-star checked" />
@@ -699,17 +701,19 @@ function HomePage() {
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
                     <p>
+                    <span><img src="./assets/images/double-quote-up.svg" alt="double-quote-up"/></span>
                       Thanks to Suhora's satellite data across multiple dates, we
                       were able to effectively monitor crop growth and make timely
                       adjustments to our strategy. Their service greatly simplified
                       our decision-making process.
+                      <span><img src="./assets/images/double-quote-down.svg" alt="double-quote-down"/></span>
                     </p>
                   </div>
-                  <img
+                  {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
                     src="./assets/images/avtar.png"
                     style={{ width: 100, height: 100 }}
-                  />
+                  /> */}
                 </div>
                 <div className="user-details">
                   <span className="fa fa-star checked" />
@@ -725,17 +729,19 @@ function HomePage() {
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
                     <p>
+                    <span><img src="./assets/images/double-quote-up.svg" alt="double-quote-up"/></span>
                       Working with Suhora has been smooth. The satellite data
                       services provided by them helped us in crop monitoring and to
                       identify stubble burning and make timely decisions, and their
                       consultancy was always reliable when needed.
+                      <span><img src="./assets/images/double-quote-down.svg" alt="double-quote-down"/></span>
                     </p>
                   </div>
-                  <img
+                  {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
                     src="./assets/images/avtar.png"
                     style={{ width: 100, height: 100 }}
-                  />
+                  /> */}
                 </div>
                 <div className="user-details">
                   <span className="fa fa-star checked" />
@@ -751,17 +757,19 @@ function HomePage() {
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
                     <p>
+                    <span><img src="./assets/images/double-quote-up.svg" alt="double-quote-up"/></span>
                       Suhora delivered high-resolution, precise digital surface and
                       terrain models, along with detailed feature extraction. Their
                       data significantly enhanced our project outcomes and provided
                       valuable insights.
+                      <span><img src="./assets/images/double-quote-down.svg" alt="double-quote-down"/></span>
                     </p>
                   </div>
-                  <img
+                  {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
                     src="./assets/images/avtar.png"
                     style={{ width: 100, height: 100 }}
-                  />
+                  /> */}
                 </div>
                 <div className="user-details">
                   <span className="fa fa-star checked" />

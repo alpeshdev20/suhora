@@ -530,6 +530,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    transition: 2s;
   }
   
   .testimonial-section .testimonial-content {
@@ -541,9 +542,10 @@
     
   }
   .testimonial-section .testimonial-content img {
-    background-image: linear-gradient(180deg, #1a739a 0%, #165c7c 100%);
-    margin-bottom: -15px;
-    display: none;
+    background: transparent;
+    display: unset;
+    width: 30px;        
+    margin: 0 10px 0 10px;
   }
   .testimonial-section .user-details {
     background-color: #fff;
@@ -565,6 +567,7 @@
   .testimonial-section .slick-initialized .slick-slide {
     display: block;
     opacity: .3;
+    transition: 2s;
 }
 
   
