@@ -321,7 +321,7 @@ function HomePage() {
                         src="./assets/images/Ref_image5.png"
                       />
                     </div>
-                    <div className="testimonial-item text-center">
+                    {/* <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
                         src="./assets/images/Ref_image6.png"
@@ -332,7 +332,7 @@ function HomePage() {
                         className="img-fluid p-2 mx-auto"
                         src="./assets/images/Ref_image7.png"
                       />
-                    </div>
+                    </div> */}
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"

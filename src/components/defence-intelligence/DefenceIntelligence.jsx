@@ -311,11 +311,67 @@ function DefenceIntelligence() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="cta-sec book-demo">
-          <h3>Book a Demo</h3>
-        </div>
-      </section>
+      <div className="contact-us-section2">
+        <div className="container">
+          <div className="main-content-col">
+      <div className="row form-main-wrapper">
+              <div className="form-title">
+                <h3>
+                  Get in <span>Touch</span>
+                </h3>
+              </div>
+              <form className="row g-3">
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Your name"
+                    aria-label="Your name"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Your Email"
+                    aria-label="Your Email"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="number"
+                    className="form-control"
+                    placeholder="Contact Number"
+                    aria-label="Contact Number"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Subject"
+                    aria-label="Subject"
+                  />
+                </div>
+                <div className="col-12">
+                  <textarea
+                    className="form-control"
+                    rows={3}
+                    placeholder="Message"
+                    defaultValue={""}
+                  />
+                </div>
+                <div className="col-12 text-center">Capatcha Here</div>
+                <div className="col-12 text-center">
+                  <button type="submit" className="btn form-btn">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            </div>
+            </div>
+            </div>
     </>
 
   );

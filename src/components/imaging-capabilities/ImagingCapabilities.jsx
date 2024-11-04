@@ -21,7 +21,7 @@ function ImagingCapabilities() {
     <div className="d-flex h-100 align-items-center">
       <div className="w-100 text-white">
         <div className="col-lg-6">
-          <img src="./assets/images/SPADE Powered by SUHORA.svg" alt />
+          <img src="./assets/images/SPADE Powered by SUHORA.png" alt />
           <h1 className="display-6">Imaging Capabilities</h1>
           <h6>Unlock the power of data effortlessly</h6>
           <p className="mb-0">In today's data-driven world, your most valuable asset is

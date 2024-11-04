@@ -1864,6 +1864,80 @@
     border: 1px solid #00669d;
     color: #00669d;
   }
+  /* Book a demo form */
+
+  /*Form*/
+  .contact-us-section2 {
+    background-image: url(../images/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0 0px 80px;
+  }
+  
+  @media (min-width: 992px) {
+    .contact-us-section2 .main-content-col .mobile-section {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contact-us-section2 .main-content-col .email-section {
+      display: flex;
+      justify-content: right;
+    }
+  }
+  .contact-us-section2 .main-content-col {
+    z-index: 2;
+    position: relative;
+  }
+  .contact-us-section2 .main-content-col .title-col p {
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-weight: 300;
+  }
+  .contact-us-section2 .address {
+    width: 70%;
+  }
+  .contact-us-section2 .address,
+  .contact-us-section2 .contact-number,
+  .contact-us-section2 .email-id {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .contact-us-section2 .address img,
+  .contact-us-section2 .contact-number img {
+    width: 30px;
+  }
+  .contact-us-section2 .email-id img {
+    width: 45px;
+  }
+  .contact-us-section2 .address p,
+  .contact-us-section2 .contact-number p,
+  .contact-us-section2 .email-id p {
+    margin-bottom: 0;
+  }
+  
+  .contact-us-section2 .form-main-wrapper {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  .contact-us-section2 .form-main-wrapper .form-title h3 {
+    text-align: center;
+    font-weight: 500;
+    text-transform: none;
+  }
+  .contact-us-section2 .form-main-wrapper .form-title h3 span {
+    color: #00669d;
+  }
+  .contact-us-section2 .form-main-wrapper .form-btn,
+  .contact-us-section2 .form-main-wrapper .form-btn:hover {
+    border: 1px solid #00669d;
+    color: #00669d;
+  }
+  /* end book demo */
   
   @media (max-width: 1024px) {
     h2 {
