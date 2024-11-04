@@ -306,49 +306,43 @@ function HomePage() {
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Ref_image1.png"
+                        src="./assets/images/aboutsuhora_01.png"
                       />
                     </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Ref_image2.png"
+                        src="./assets/images/aboutsuhora_02.png"
                       />
                     </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Ref_image3.png"
+                        src="./assets/images/aboutsuhora_03.png"
                       />
                     </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Ref_image4.png"
+                        src="./assets/images/aboutsuhora_04.png"
                       />
                     </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Ref_image5.png"
-                      />
-                    </div>
-                    {/* <div className="testimonial-item text-center">
-                      <img
-                        className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Ref_image6.png"
+                        src="./assets/images/aboutsuhora_05.png"
                       />
                     </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Ref_image7.png"
+                        src="./assets/images/aboutsuhora_06.png"
                       />
-                    </div> */}
+                    </div>
                     <div className="testimonial-item text-center">
                       <img
                         className="img-fluid p-2 mx-auto"
-                        src="./assets/images/Ref_image8.png"
+                        src="./assets/images/aboutsuhora_07.png"
                       />
                     </div>
                   </div>
@@ -375,7 +369,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage: 'url("./assets/images/multi-sensor.png")',
+                backgroundImage: 'url("./assets/images/Multi-sensor.jpg")',
               }}
             >
               <div className="container">
@@ -399,7 +393,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage: 'url("./assets/images/Near-real-time.png")',
+                backgroundImage: 'url("./assets/images/Near-Real-time.jpg")',
               }}
             >
               <div className="container">
@@ -422,7 +416,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage: 'url("./assets/images/Higheraccuracy.png")',
+                backgroundImage: 'url("./assets/images/Higher-accuracy.jpg")',
               }}
             >
               <div className="container">
@@ -445,7 +439,7 @@ function HomePage() {
               className="slick-slide text-right"
               style={{
                 backgroundImage:
-                  'url("./assets/images/Insightful-analysis.png")',
+                  'url("./assets/images/Insightful-Analysis.jpg")',
               }}
             >
               <div className="container">
@@ -523,7 +517,7 @@ function HomePage() {
                     <div
                       className="card"
                       style={{
-                        backgroundImage: 'url("./assets/images/Mirka.png")',
+                        backgroundImage: 'url("./assets/images/mirka.png")',
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                       }}
@@ -547,7 +541,7 @@ function HomePage() {
                     <div
                       className="card"
                       style={{
-                        backgroundImage: 'url("./assets/images/SID@2x.png")',
+                        backgroundImage: 'url("./assets/images/sid.png")',
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                       }}
