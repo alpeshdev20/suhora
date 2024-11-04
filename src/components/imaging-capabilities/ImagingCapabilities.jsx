@@ -228,7 +228,7 @@ function ImagingCapabilities() {
       <div className="left-content-with-right-video">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-5 bg-with-text">
+            <div className="col-md-4 bg-with-text">
               <div className="title-col">
                 <h1>
                   How
@@ -241,7 +241,7 @@ function ImagingCapabilities() {
                 </h1>
               </div>
             </div>
-            <div className="col-md-7 video-column">
+            <div className="col-md-8 video-column">
               <video
                 playsInline="playsinline"
                 autoPlay="autoplay"
@@ -249,7 +249,7 @@ function ImagingCapabilities() {
                 loop="loop"
                 className="object-fit-cover"
               >
-                <source src="./assets/images/banner.mp4" type="video/mp4" />
+               <source src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

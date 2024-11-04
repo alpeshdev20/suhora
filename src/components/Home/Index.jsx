@@ -241,15 +241,13 @@ function HomePage() {
   return (
     <>
       {/* Carousel Start */}
-      <section className="sub-top-video-banner">
-        <div className="container-fluid p-0 mb-0">
-          <div className="content-col">
-            <video className="w-100" autoPlay="true" loop="true" muted="true">
-              <source src="./assets/images/Suora_landing_page_video.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </section>
+     <section className="sub-top-video-banner">
+  <div className="overlay" />
+  <video playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop">
+  <source src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4" type="video/mp4" />
+  </video>
+</section>
+
       {/* Carousel End */}
       {/* About Start */}
       <section id="about-us" className="about-us">

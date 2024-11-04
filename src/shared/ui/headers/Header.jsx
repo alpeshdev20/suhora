@@ -123,22 +123,22 @@ function Header() {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/about-us">
+              <Link className="nav-link active" onClick={closeOffcanvas} aria-current="page" to="/about-us">
                 About Us
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/career">
+              <Link className="nav-link" onClick={closeOffcanvas} to="/career">
                 Career
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/event-news">
+              <Link className="nav-link" onClick={closeOffcanvas} to="/event-news">
                 Events & News
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blogs">
+              <Link className="nav-link" onClick={closeOffcanvas} to="/blogs">
                 Blogs
               </Link>
             </li>
