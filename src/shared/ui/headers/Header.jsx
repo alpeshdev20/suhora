@@ -7,28 +7,37 @@ function Header() {
   useEffect(() => {
     const scrollEffect = () => {
       $(window).scroll(function () {
+        const scrollTop = $(this).scrollTop();
+        const logo = $(".logo img");
         if ($(window).width() < 992) {
-          if ($(this).scrollTop() > 45) {
+          if (scrollTop > 45) {
             $(".fixed-top").addClass("bg-dark shadow");
           } else {
             $(".fixed-top").removeClass("bg-dark shadow");
           }
         } else {
-          if ($(this).scrollTop() > 45) {
+          if (scrollTop > 45) {
             $(".fixed-top").addClass("bg-dark shadow").css("top", 0);
           } else {
             $(".fixed-top").removeClass("bg-dark shadow").css("top", 0);
           }
         }
-      });
 
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        // Change logo image based on scroll position
+        if (scrollTop > 45) {
+          logo.attr("src", "./assets/images/Suhoralogoblue.svg");
+        } else {
+          logo.attr("src", "./assets/images/SuhoraLogowhite.svg");
+        }
+
+        // Toggle visibility of the back-to-top button
+        if (scrollTop > 300) {
           $(".back-to-top").fadeIn("slow");
         } else {
           $(".back-to-top").fadeOut("slow");
         }
       });
+
       $(".back-to-top").click(function () {
         $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
         return false;
