@@ -298,7 +298,7 @@ function DisasterInsurance() {
                   }}
                 >
                   <div className="card-body">
-                    <h5 className="card-title">Golf</h5>
+                    <h5 className="card-title">GOLF</h5>
                   </div>
                 </div>
               </div>
@@ -312,7 +312,7 @@ function DisasterInsurance() {
                   }}
                 >
                   <div className="card-body">
-                    <h5 className="card-title">HailStorm</h5>
+                    <h5 className="card-title">Hailstorm</h5>
                   </div>
                 </div>
               </div>
@@ -341,7 +341,7 @@ function DisasterInsurance() {
                   }}
                 >
                   <div className="card-body">
-                    <h5 className="card-title">Land deformation</h5>
+                    <h5 className="card-title">Land Deformation</h5>
                   </div>
                 </div>
               </div>
@@ -356,7 +356,7 @@ function DisasterInsurance() {
             <div className="row">
               <div className="col-md-6 bg-with-text">
                 <div className="title-col">
-                  <h1>Stay ahead with timely insigts</h1>
+                  <h1>Stay ahead with timely insights</h1>
                 </div>
               </div>
               <div className="col-md-6 ">
