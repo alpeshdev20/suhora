@@ -58,7 +58,8 @@
   /*** Navbar ***/
   .fixed-top {
     transition: 0.5s;
-    background: transparent !important;
+    background: #000 !important;
+    opacity: 0.5;
   }
   .fixed-top.bg-dark
   {
