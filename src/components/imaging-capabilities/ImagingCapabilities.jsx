@@ -24,7 +24,7 @@ function ImagingCapabilities() {
           muted="muted"
           loop="loop"
         >
-          <source src="./assets/images/banner.mp4" type="video/mp4" />
+          <source src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4" type="video/mp4" />
         </video>
         {/* The header content */}
         <div className="container h-100">

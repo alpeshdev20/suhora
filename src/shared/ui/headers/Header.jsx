@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 function Header() {
   const $ = jQuery.noConflict();
+  const offcanvasRef = useRef(null);
 
   useEffect(() => {
     const scrollEffect = () => {
@@ -45,6 +46,15 @@ function Header() {
     };
     scrollEffect();
   }, [$]);
+
+  const closeOffcanvas = () => {
+    if (offcanvasRef.current) {
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
+      if (bsOffcanvas) {
+        bsOffcanvas.hide();
+      }
+    }
+  };
 
   return (
     <header>
@@ -96,6 +106,7 @@ function Header() {
       </nav>
 
       <div
+        ref={offcanvasRef}
         className="offcanvas offcanvas-end"
         tabIndex={-1}
         id="offcanvasExample"

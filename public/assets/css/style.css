@@ -1211,6 +1211,15 @@
     margin: 10px 0;
     width: 100%;
   }
+
+  section.sid-section.our-product h2
+  {
+        font-weight: 500;
+  }
+  section.sid-section.our-product h4
+  {
+        font-weight: 400;
+  }
   .bg-image-with-right-slider .content-column {
     margin-left: -40px;
     padding: 50px 0;
@@ -1640,10 +1649,6 @@
   }
   
   /* imaging capabilities Page*/
-  .sid-section .card-image-col .card {
-    border: 0;
-    background: transparent;
-  }
   .sid-section .card-image-col .card .card-body {
     position: absolute;
     height: 50px;
@@ -1652,7 +1657,7 @@
     overflow: hidden;
     padding: 13px 30px;
     color: #fff;
-    background-color: rgba(27, 27, 27, 0.5);
+    background-color: rgba(27, 27, 27, 0.6);
     transition: 0.4s ease-in-out;
     border: 0;
     border-radius: 0 0 20px 20px;
@@ -1666,14 +1671,14 @@
     overflow: hidden;
     padding: 13px 30px;
     color: #fff;
-    background-color: rgba(27, 27, 27, 0.5);
+    background-color: rgba(27, 27, 27, 0.6);
     transition: 0.4s ease-in-out;
   }
   
   .card-image-col .card:hover .card-body {
     height: 200px;
     bottom: 0;
-    background-color: #000;
+    background-color: rgba(27, 27, 27, 0.6);
   }
   
   .sid-section .card-image-col .card:hover .p {
@@ -1681,7 +1686,7 @@
     visibility: visible;
   }
   .sid-section .card-image-col img {
-    border-radius: 10px;
+    border-radius: 20px;
   }
   .left-content-with-right-video .video-column {
     padding: 0;
