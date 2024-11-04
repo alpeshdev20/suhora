@@ -275,7 +275,7 @@ function DefenceIntelligence() {
                 </h1>
                 <h3 className="card-title subsubtitle">
                   <span>
-                    main awareness through continuous large-scale monitoring using
+                    Maritime Domain Awareness (<span>MIRKA</span> MDA) - Mikra Provides advanced maritime domain awareness through continuous large-scale monitoring using
                     wide swath satellite data. Our vessel and ship detection
                     services offer real-time insights, ensuring enhanced safety,
                     security, and operational efficiency at sea along with

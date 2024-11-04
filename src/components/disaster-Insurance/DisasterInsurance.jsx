@@ -136,13 +136,9 @@ function DisasterInsurance() {
               <div className="col-lg-6">
                 <h1 className="display-5">Disaster &amp; Insurance</h1>
                 <p className="lead mb-0">
-                  Our team, a blend of seasoned experts and innovative thinkers,
-                  is dedicated to break down complex information into clear,
-                  actionable insights that drive decision-making across various
-                  sectors. Suhora Technologies stands at the intersection of
-                  innovation and utility, reshaping how industries leverage the
-                  untapped potential of satellite imagery and the information it
-                  stores within.{" "}
+                  Our experienced professionals work to revamp disaster
+                  management and insurance processes through the strategic use of near real-time (NRT),
+                  all weather satellite data and insights.{" "}
                 </p>
               </div>
             </div>
@@ -160,13 +156,12 @@ function DisasterInsurance() {
                 <span>Predict</span> | <span>Observe</span> | <span>Act</span>{" "}
               </h4>
               <p>
-                Our team, a blend of seasoned experts and innovative thinkers,
-                is dedicated to break down complex information into clear,
-                actionable insights that drive decision-making across various
-                sectors. Suhora Technologies stands at the intersection of
-                innovation and utility, reshaping how industries leverage the
-                untapped potential of satellite imagery and the information it
-                stores within.{" "}
+               With its cutting-edge risk evalution capabilities, SID empowers
+               stakeholders to make precise, data-driven decision that strengthen
+               disaster response and resilience towards financial risk. By empowering communities,
+               industries, and governments with advanced analytical tools,
+               SID, enhances preparedness and resilience against natural catastophes, 
+               ensuring a safer and a more secure future.{" "}
               </p>
             </div>
             <div className="col-lg-6">
@@ -371,27 +366,13 @@ function DisasterInsurance() {
                       <div className="card-body">
                         <h5 className="card-title">Risk Zone Identification</h5>
                         <p className="card-text">
-                          We utilize space-based radar interferometry for
-                          extensive monitoring and ground-based radar
-                          interferometry for targeted assessment of vulnerable
-                          areas, enabling us to track millimeter-level
-                          deformations.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="card text-white bg-secondary mb-3">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          Comprehensive Damage Assessment
-                        </h5>
-                        <p className="card-text">
                           Using high resolution satellite imagery, we detect
                           potential hazard zones to provide early warnings and
                           enable proactive preventive measures.
                         </p>
                       </div>
                     </div>
-                    <div className="card text-white bg-primary mb-3">
+                    <div className="card text-white bg-secondary mb-3">
                       <div className="card-body">
                         <h5 className="card-title">
                           Comprehensive Damage Assessment
@@ -404,7 +385,7 @@ function DisasterInsurance() {
                         </p>
                       </div>
                     </div>
-                    <div className="card text-white bg-secondary mb-3">
+                    <div className="card text-white bg-primary mb-3">
                       <div className="card-body">
                         <h5 className="card-title">Water Level Monitoring</h5>
                         <p className="card-text">
@@ -414,7 +395,7 @@ function DisasterInsurance() {
                         </p>
                       </div>
                     </div>
-                    <div className="card text-white bg-primary mb-3">
+                    <div className="card text-white bg-secondary mb-3">
                       <div className="card-body">
                         <h5 className="card-title">Surface Area Monitoring</h5>
                         <p className="card-text">
@@ -424,7 +405,7 @@ function DisasterInsurance() {
                         </p>
                       </div>
                     </div>
-                    <div className="card text-white bg-secondary mb-3">
+                    <div className="card text-white bg-primary mb-3">
                       <div className="card-body">
                         <h5 className="card-title">
                           High Resolution DEM for Flood Risk Assessment

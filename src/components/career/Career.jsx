@@ -26,7 +26,7 @@ export default function Career() {
           <div className="mx-auto mb-5">
             <h2 className="text-center display-6 mb-1">JOIN US</h2>
             <p className="text-center">
-              Building tomorrow's success, together - join our vibrant team now!
+              Let's create something amazing together.
             </p>
           </div>
           <div className="row join-info-sec-img justify-content-center mb-5">

@@ -167,9 +167,11 @@ function ImagingCapabilities() {
                 />
                 <div className="card-body">
                   <h5 className="card-title">Explore</h5>
+                  <h6>Bringing the past into perspective</h6>
                   <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  Dig into an extensive archive of optical, SAR, and thermal data from 
+                  leading providers like Planet, ICEYE, Saocom, Sat Vu, and more. 
+                  Accoss rehensive range of a compr ange of insights at your fingertips.
                   </p>
                   <a href="#" className="btn btn-transparent">
                     Explore
@@ -186,9 +188,11 @@ function ImagingCapabilities() {
                 />
                 <div className="card-body">
                   <h5 className="card-title">Task</h5>
+                  <h6>Fresh satellite imagery tailored for you</h6>
                   <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  Our 24/7 all-weather surveillance, utilizing both optical and SAR constellations, 
+                  ensures comprehensive coverage and actionable insights with the commitment of 
+                  being the most cost-effective solution in the market.
                   </p>
                   <a href="#" className="btn btn-transparent">
                     Explore
@@ -205,9 +209,11 @@ function ImagingCapabilities() {
                 />
                 <div className="card-body">
                   <h5 className="card-title">Analyse</h5>
+                  <h6>Make Informed decisions with precision</h6>
                   <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  SPADE offers more than just images it 
+                  delivers analysis-ready data without you worrying about the hassle of geometric and radiometric corrections. 
+                  An image you can blindly trust for all your geospatial solutions.
                   </p>
                   <a href="#" className="btn btn-transparent">
                     Explore
