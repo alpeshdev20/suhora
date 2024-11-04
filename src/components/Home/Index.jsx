@@ -246,6 +246,17 @@ function HomePage() {
   <video playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop">
   <source src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4" type="video/mp4" />
   </video>
+ <div className="container h-100">
+  <div className="d-flex h-100 align-items-center">
+    <div className="w-100 text-white">
+      <div className="col-lg-6">
+        <h1>Space Analytics Simplified</h1>
+        <p className="mb-0"> At SUHORA, we're driven by the passion to Make
+          data accessible and actionable for those who need.</p>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
       {/* Carousel End */}
