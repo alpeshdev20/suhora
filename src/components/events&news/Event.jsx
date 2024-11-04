@@ -48,7 +48,7 @@ function Event() {
                     India's Geospatial Economy and accomplish the Indian Space
                     Dream.
                   </p>
-                  <a href="#" className="btn btn-light">
+                  <a href="javascript:void(0);" className="btn btn-light">
                     Continue Reading
                   </a>
                 </div>
@@ -80,14 +80,14 @@ function Event() {
                     thermal sensing and analytics. SUHORA specializes in space
                     analytics, while SatVu leads in high-resolution thermal
                     satellite imaging. This collaboration aims to deliver
-                    advanced solutions for defense, disaster management, and
+                    advanced solutions for defence, disaster management, and
                     various governmental organizations by utilizing SatVu’s
                     thermal data and SUHORA's analytic capabilities. This
                     partnership is set to benefit users and industries in the
                     region through innovative thermal sensing technology and
                     comprehensive analytics.
                   </p>
-                  <a href="#" className="btn btn-light">
+                  <a href="javascript:void(0);" className="btn btn-light">
                     Continue Reading
                   </a>
                 </div>

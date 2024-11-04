@@ -16,24 +16,31 @@ function ImagingCapabilities() {
   return (
     <>
       {/* Carousel Start */}
-    <section className="sub-top-image-banner imaging-capabilities-banner">
-  <div className="container h-100">
-    <div className="d-flex h-100 align-items-center">
-      <div className="w-100 text-white">
-        <div className="col-lg-6">
-          <img src="./assets/images/SPADE Powered by SUHORA.png" alt />
-          <h1 className="display-6">Imaging Capabilities</h1>
-          <h6>Unlock the power of data effortlessly</h6>
-          <p className="mb-0">In today's data-driven world, your most valuable asset is
-            data, and we make accessing it effortless and seamless.
-            Suhora redefines how you task an image or delve into a
-            wide range of archive data.</p>
-          <button className="btn btn-blue">Get started with SPADE</button>
+      <section className="sub-top-image-banner imaging-capabilities-banner">
+        <div className="container h-100">
+          <div className="d-flex h-100 align-items-center">
+            <div className="w-100 text-white">
+              <div className="col-lg-6">
+                <img src="./assets/images/SPADE Powered by SUHORA.png" alt />
+                <h1 className="display-6">Imaging Capabilities</h1>
+                <h6 style={{ fontSize: "1.2rem" }}>
+                  Unlock the power of data effortlessly
+                </h6>
+                <p className="mb-0" style={{ fontSize: "1.2rem" }}>
+                  In today&apos;s data-driven world, your most valuable asset is
+                  data,
+                  <br />
+                  and we make accessing it effortless and seamless.
+                  <br />
+                  Suhora redefines how you task an image or delve into
+                  <br />a wide range of archive data.
+                </p>
+                {/* <button className="btn btn-blue">Get started with SPADE</button> */}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Carousel End */}
       {/*SID Section -*/}
@@ -62,12 +69,12 @@ function ImagingCapabilities() {
                     <div className="image-container">
                       <img
                         className="image-before slider-image"
-                        src="./assets/images/Comparison_dummy image 1.png"
+                        src="./assets/images/Spade_Slider1.jpg"
                         alt="color photo"
                       />
                       <img
                         className="image-after slider-image"
-                        src="./assets/images/Comparison_dummy image 2.png"
+                        src="./assets/images/Spade_Slider2.jpg"
                         alt="black and white"
                       />
                     </div>
@@ -150,7 +157,7 @@ function ImagingCapabilities() {
             <div className="col-lg-4">
               <div className="card">
                 <img
-                  src="./assets/images/Explore_img.png"
+                  src="./assets/images/explore-image.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -158,13 +165,14 @@ function ImagingCapabilities() {
                   <h5 className="card-title">Explore</h5>
                   <h6>Bringing the past into perspective</h6>
                   <p className="card-text">
-                  Dig into an extensive archive of optical, SAR, and thermal data from 
-                  leading providers like Planet, ICEYE, Saocom, Sat Vu, and more. 
-                  Accoss rehensive range of a compr ange of insights at your fingertips.
+                    Dig into an extensive archive of optical, SAR, and thermal
+                    data from leading providers like, ICEYE, SatVu, Satellogic
+                    and more. Access a comprehensive range of insights at your
+                    fingertips.
                   </p>
-                  <a href="#" className="btn btn-transparent">
+                  {/* <a href="javascript:void(0);" className="btn btn-transparent">
                     Explore
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -179,11 +187,12 @@ function ImagingCapabilities() {
                   <h5 className="card-title">Task</h5>
                   <h6>Fresh satellite imagery tailored for you</h6>
                   <p className="card-text">
-                  Our 24/7 all-weather surveillance, utilizing both optical and SAR constellations, 
-                  ensures comprehensive coverage and actionable insights with the commitment of 
-                  being the most cost-effective solution in the market.
+                    Our 24/7 all-weather surveillance, utilizing both optical
+                    and SAR constellations, ensures comprehensive coverage and
+                    actionable insights with the commitment of being the most
+                    cost-effective solution in the market.
                   </p>
-                  <a href="#" className="btn btn-transparent">
+                  <a href="javascript:void(0);" className="btn btn-transparent">
                     Explore
                   </a>
                 </div>
@@ -192,7 +201,7 @@ function ImagingCapabilities() {
             <div className="col-lg-4">
               <div className="card">
                 <img
-                  src="./assets/images/Analyse image.png"
+                  src="./assets/images/Analyse-image.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -200,11 +209,12 @@ function ImagingCapabilities() {
                   <h5 className="card-title">Analyse</h5>
                   <h6>Make Informed decisions with precision</h6>
                   <p className="card-text">
-                  SPADE offers more than just images it 
-                  delivers analysis-ready data without you worrying about the hassle of geometric and radiometric corrections. 
-                  An image you can blindly trust for all your geospatial solutions.
+                    SPADE offers more than just images it delivers
+                    analysis-ready data without you worrying about the hassle of
+                    geometric and radiometric corrections. An image you can
+                    blindly trust for all your geospatial solutions.
                   </p>
-                  <a href="#" className="btn btn-transparent">
+                  <a href="javascript:void(0);" className="btn btn-transparent">
                     Explore
                   </a>
                 </div>
@@ -238,7 +248,10 @@ function ImagingCapabilities() {
                 loop="loop"
                 className="object-fit-cover"
               >
-               <source src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4" type="video/mp4" />
+                <source
+                  src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
@@ -258,7 +271,7 @@ function ImagingCapabilities() {
           <div className="row solution-hub-card">
             <div className="col-lg-3 col-md-6">
               <div className="card">
-                <a href="image-library.html">
+                <a href="javascript:void(0);">
                   <img
                     src="./assets/images/Optical_thumbnail.png"
                     className="card-img-top"
@@ -272,7 +285,7 @@ function ImagingCapabilities() {
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="card">
-                <a href="image-library.html">
+                <a href="javascript:void(0);">
                   <img
                     src="./assets/images/SAR_thumbnail.png"
                     className="card-img-top"
@@ -286,7 +299,7 @@ function ImagingCapabilities() {
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="card">
-                <a href="image-library.html">
+                <a href="javascript:void(0);">
                   <img
                     src="./assets/images/Thermal_thumbnail.png"
                     className="card-img-top"
@@ -300,14 +313,14 @@ function ImagingCapabilities() {
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="card">
-                <a href="image-library.html">
+                <a href="javascript:void(0);">
                   <img
                     src="./assets/images/DSM-DTM_thumbnail.png"
                     className="card-img-top"
                     alt="..."
                   />
                   <div className="card-body">
-                    <h5 className="card-title">DSM/DTM</h5>
+                    <h5 className="card-title">Elevation Data</h5>
                   </div>
                 </a>
               </div>
@@ -335,7 +348,7 @@ function ImagingCapabilities() {
                     />
                     <div className="card-body">
                       <p>
-                        312, Tower-B, Noida One, Sector-62,Noida, Uttar Pradesh,
+                        312, Tower-B, Noida One, Sector-62, Noida, Uttar Pradesh,
                         India, 201309
                       </p>
                     </div>
@@ -369,7 +382,7 @@ function ImagingCapabilities() {
                     <div className="card-body">
                       <p>
                         EMAIL
-                        <br /> hello[at]suhora.com
+                        <br /> spade[at]suhora.com
                       </p>
                     </div>
                   </div>
@@ -423,7 +436,6 @@ function ImagingCapabilities() {
                     defaultValue={""}
                   />
                 </div>
-                <div className="col-12 text-center">Capatcha Here</div>
                 <div className="col-12 text-center">
                   <button type="button" className="btn form-btn">
                     Submit
@@ -434,11 +446,11 @@ function ImagingCapabilities() {
           </div>
         </div>
       </div>
-      <section>
+      {/* <section>
         <div className="cta-sec">
           <h3>Get started with SPADE</h3>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

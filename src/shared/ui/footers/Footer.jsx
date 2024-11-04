@@ -77,7 +77,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-    // <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></Link>
+    // <a href="javascript:void(0);" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></Link>
   );
 }
 

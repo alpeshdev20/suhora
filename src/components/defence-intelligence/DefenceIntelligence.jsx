@@ -67,17 +67,12 @@ function DefenceIntelligence() {
                     <div className="image-container">
                       <img
                         className="image-before slider-image"
-                        src="./assets/images/mikra1.png"
+                        src="./assets/images/Mirka_Picture2.jpg"
                         alt="color photo"
                       />
                       <img
                         className="image-after slider-image"
-                        src="./assets/images/mikra2.png"
-                        alt="black and white"
-                      />
-                      <img
-                        className="image-after slider-image"
-                        src="./assets/images/mikra3.png"
+                        src="./assets/images/Mirka_Picture1.jpg"
                         alt="black and white"
                       />
                     </div>
@@ -163,7 +158,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/Tip-Cue.png"
+                  src="./assets/images/01_Tip and Cue.png"
                   className="card-img"
                   alt="..."
                 />
@@ -178,7 +173,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/Multi-sensor-tasking.png"
+                  src="./assets/images/02_multisensor tasking.png"
                   className="card-img"
                   alt="..."
                 />
@@ -193,7 +188,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/near-real-time-delivery.png"
+                  src="./assets/images/03_near real time.png"
                   className="card-img"
                   alt="..."
                 />
@@ -208,7 +203,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/ML-based-target-detection.png"
+                  src="./assets/images/04_ML Based.png"
                   className="card-img"
                   alt="..."
                 />
@@ -223,7 +218,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/proactive-change-mapping.png"
+                  src="./assets/images/05_Proactive Change.png"
                   className="card-img"
                   alt="..."
                 />
@@ -238,7 +233,7 @@ function DefenceIntelligence() {
             <div className="col-lg-4 col-md-6">
               <div className="card bg-dark text-white">
                 <img
-                  src="./assets/images/cross-sensor-insights.png"
+                  src="./assets/images/06_cross-sensor.png"
                   className="card-img"
                   alt="..."
                 />
@@ -385,9 +380,8 @@ function DefenceIntelligence() {
                     defaultValue={""}
                   />
                 </div>
-                <div className="col-12 text-center">Capatcha Here</div>
                 <div className="col-12 text-center">
-                  <button type="button" className="btn form-btn">
+                  <button type="button" disabled={true} className="btn form-btn">
                     Submit
                   </button>
                 </div>

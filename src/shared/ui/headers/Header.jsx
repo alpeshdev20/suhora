@@ -129,7 +129,7 @@ function Header() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" onClick={closeOffcanvas} to="/career">
-                Career
+                Careers
               </Link>
             </li>
             <li className="nav-item">

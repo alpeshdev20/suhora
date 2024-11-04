@@ -440,11 +440,11 @@ export default function ImageLibrary() {
           </main>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="cta-sec">
           <h3>Get started with SPADE</h3>
         </div>
-      </section>
+      </section> */}
     </>
 
   );

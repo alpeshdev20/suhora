@@ -74,14 +74,14 @@ function DisasterInsurance() {
         ],
       });
 
-    $(".key-baneficiaries-carousel")
+    $(".key-beneficiaries-carousel")
       .not(".slick-initialized")
       .slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
         dots: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 1000,
         prevArrow: '<div class="slick-prev"></div>',
         nextArrow: '<div class="slick-next"></div>',
@@ -127,7 +127,7 @@ function DisasterInsurance() {
           muted="muted"
           loop="loop"
         >
-          <source src="./assets/images/sid-bg-video.mp4" type="video/mp4" />
+          <source src="./assets/images/Media1.mp4" type="video/mp4" />
         </video>
         {/* The header content */}
         <div className="container h-100">
@@ -300,7 +300,7 @@ function DisasterInsurance() {
                   }}
                 >
                   <div className="card-body">
-                    <h5 className="card-title">GOLF</h5>
+                    <h5 className="card-title">GLOF</h5>
                   </div>
                 </div>
               </div>
@@ -426,23 +426,22 @@ function DisasterInsurance() {
             </div>
           </div>
         </div>
-        <div className="key-baneficiaries">
+        <div className="key-beneficiaries">
           <div className="container">
             <div className="row">
               <div className="col-lg-3 col-md-6 display-flex align-items-center">
                 <div className="text-col">
                   <img src="./assets/images/KeyBeneficiariesicon.svg" alt />
-                  <h4>Key Baneficiaries</h4>
+                  <h4>Key Beneficiaries</h4>
                 </div>
               </div>
-
               <div className="col-lg-9 col-md-6">
-                <div className="key-baneficiaries-carousel">
+                <div className="key-beneficiaries-carousel">
                   <div className="col-sm-3">
                     <div className="card ">
                       <div className="card-body">
                         <h5 className="card-title">
-                          Disaster management institute
+                          Disaster Management Institute
                         </h5>
                       </div>
                     </div>
@@ -450,14 +449,14 @@ function DisasterInsurance() {
                   <div className="col-sm-3">
                     <div className="card ">
                       <div className="card-body">
-                        <h5 className="card-title">Agri Insurance companies</h5>
+                        <h5 className="card-title">Agri Insurance Companies</h5>
                       </div>
                     </div>
                   </div>
                   <div className="col-sm-3">
                     <div className="card ">
                       <div className="card-body">
-                        <h5 className="card-title">Space application center</h5>
+                        <h5 className="card-title">Space Application Center</h5>
                       </div>
                     </div>
                   </div>
@@ -465,7 +464,7 @@ function DisasterInsurance() {
                     <div className="card ">
                       <div className="card-body">
                         <h5 className="card-title">
-                          National Disaster management Agencies
+                          National Disaster Management Agencies
                         </h5>
                       </div>
                     </div>
@@ -474,7 +473,7 @@ function DisasterInsurance() {
                     <div className="card ">
                       <div className="card-body">
                         <h5 className="card-title">
-                          Satate Disaster management Agencies
+                          State Disaster Management Agencies
                         </h5>
                       </div>
                     </div>
@@ -489,16 +488,9 @@ function DisasterInsurance() {
         <div className="cta-sec book-demo">
           <h3>Book a Demo</h3>
         </div>
-      </section>
-      <div className="contact-us-section2">
         <div className="container">
           <div className="main-content-col">
-            <div className="row form-main-wrapper">
-              <div className="form-title">
-                <h3>
-                  Get in <span>Touch</span>
-                </h3>
-              </div>
+            <div className="row form-main-wrapper" style={{paddingTop: '4px'}}>
               <form className="row g-3">
                 <div className="col-md-6">
                   <input
@@ -540,17 +532,18 @@ function DisasterInsurance() {
                     defaultValue={""}
                   />
                 </div>
-                <div className="col-12 text-center">Capatcha Here</div>
                 <div className="col-12 text-center">
-                  <button type="button" className="btn form-btn">
+                  <button type="button" className="btn btn-primary form-btn">
                     Submit
                   </button>
+                  <br />
+                  <br />
                 </div>
               </form>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

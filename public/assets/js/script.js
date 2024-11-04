@@ -282,7 +282,7 @@
     ]
   });
 
-  $('.key-baneficiaries-carousel').slick({
+  $('.key-beneficiaries-carousel').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,

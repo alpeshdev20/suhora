@@ -17,6 +17,9 @@ export default function AboutUs() {
       $('.gallery-carousel').not(".slick-initialized").slick({
         slidesToShow: 3,
         arrows: true,
+        speed: 3000,
+        autoplay: true,
+        autoplaySpeed: 0,
         prevArrow: '<div class="slick-prev"></div>',
         nextArrow: '<div class="slick-next"></div>',
         responsive: [
@@ -47,10 +50,10 @@ export default function AboutUs() {
       <section className="sub-top-image-banner">
         <div className="container h-100">
           <div className="d-flex h-100 align-items-center">
-            <div className="w-100 text-white">
+            <div className="w-100 text-white" style={{position: 'absolute', bottom: '42%'}}>
               <div className="col-lg-6">
-                <p>
-                  Transforming industries with AI-driven spatial insights for
+                <p className="line-height-normal">
+                  <span style={{fontSize: '46px'}}>Transforming industries </span><br/> with <b>AI-driven spatial insights</b><br /> for
                   informed decision making
                 </p>
               </div>
@@ -86,7 +89,7 @@ export default function AboutUs() {
                   alt="..."
                 />
                 <div className="card-img-overlay">
-                  <h4 className="card-title">Our Vission</h4>
+                  <h4 className="card-title">Our Vision</h4>
                   <p className="card-text">
                     Shaping a future where Space and Technology work together to
                     protect and nurture human life.
@@ -110,7 +113,7 @@ export default function AboutUs() {
                   <div className="row g-0">
                     <div className="col-md-4">
                       <img
-                        src="./assets/images/KrishanuAcharya.png"
+                        src="./assets/images/Krishanu_card1-image.png"
                         className="img-fluid rounded-start"
                         alt="..."
                       />
@@ -149,18 +152,12 @@ export default function AboutUs() {
                     <div className="col-md-8">
                       <div className="card-body">
                         <p className="card-text">
-                          The world today is both challenging and exciting.
-                          Throughout history, humanity has thrived through
-                          innovation and perseverance. This continues today, even
-                          amidst economic fluctuations and conflicts. Despite these
-                          ups and downs, we are moving towards progress.
-                          <br />
-                          At Suhora, we believe innovation is the cornerstone of
-                          this progress. Technology-driven efficiency allows us to
-                          keep pushing boundaries, crossing new frontiers, and
-                          solving new problems. Together, we are shaping a future
-                          where challenges become opportunities, and progress is an
-                          unstoppable force.
+                          Space is vast and endless, and so should be the
+                          opportunities to explore it. With advancements in
+                          satellite capabilities and data processing, We at Suhora
+                          bring technology as a bridge not a barrier. Our goal is to
+                          bring space closer to everyone with more comprehensive
+                          insights to address complex challenges being faced today.
                         </p>
                       </div>
                     </div>
@@ -182,12 +179,18 @@ export default function AboutUs() {
                     <div className="col-md-8">
                       <div className="card-body">
                         <p className="card-text">
-                          Space is vast and endless, and so should be the
-                          opportunities to explore it. With advancements in
-                          satellite capabilities and data processing, We at Suhora
-                          bring technology as a bridge not a barrier. Our goal is to
-                          bring space closer to everyone with more comprehensive
-                          insights to address complex challenges being faced today.
+                        The world today is both challenging and exciting.
+                          Throughout history, humanity has thrived through
+                          innovation and perseverance. This continues today, even
+                          amidst economic fluctuations and conflicts. Despite these
+                          ups and downs, we are moving towards progress.
+                          <br />
+                          At Suhora, we believe innovation is the cornerstone of
+                          this progress. Technology-driven efficiency allows us to
+                          keep pushing boundaries, crossing new frontiers, and
+                          solving new problems. Together, we are shaping a future
+                          where challenges become opportunities, and progress is an
+                          unstoppable force.
                         </p>
                       </div>
                     </div>
@@ -238,7 +241,7 @@ export default function AboutUs() {
             <div className="col-lg-4 col-md-6 mb-3">
               <div className="card">
                 <img
-                  src="./assets/images/KrishanuAcharya.png"
+                  src="./assets/images/Krishanu-Acharya.jpg"
                   className="card-img-top"
                   alt="..."
                 />
@@ -248,7 +251,7 @@ export default function AboutUs() {
                     <p className="card-text">CEO and Co-Founder</p>
                   </div>
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -268,7 +271,7 @@ export default function AboutUs() {
                     <p className="card-text">CTO and Co-Founder</p>
                   </div>
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -288,7 +291,7 @@ export default function AboutUs() {
                     <p className="card-text">COO and Co-Founder</p>
                   </div>
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -308,7 +311,7 @@ export default function AboutUs() {
                     <p className="card-text">Director-Strategy</p>
                   </div>
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -328,7 +331,7 @@ export default function AboutUs() {
                     <p className="card-text">Advisor</p>
                   </div>
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -348,7 +351,7 @@ export default function AboutUs() {
                     <p className="card-text">Advisor</p>
                   </div>
                   <div className="social-icon">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <img src="./assets/images/LinkedIn.svg" alt="" />
                     </a>
                   </div>
@@ -356,6 +359,11 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
+
+          <div className="row gallery-section gallery-section-ourteam">
+
+          </div>
+          
           <div className="row gallery-section">
             <h3 className="text-center mb-4 title">Gallery</h3>
             <div className="gallery-carousel">
@@ -369,12 +377,6 @@ export default function AboutUs() {
                 <img
                   className="img-fluid p-2 mx-auto"
                   src="./assets/images/Team-image-2.jpg"
-                />
-              </div>
-              <div className="testimonial-item text-center">
-                <img
-                  className="img-fluid p-2 mx-auto"
-                  src="./assets/images/Team-image-3.JPG"
                 />
               </div>
               <div className="testimonial-item text-center">

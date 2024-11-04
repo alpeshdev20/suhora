@@ -478,7 +478,7 @@ function HomePage() {
               <div className="title-sec col-lg-10 m-auto text-center mx-auto mb-8">
                 <h2 className="mb-3">Our Products</h2>
                 <h4>
-                  Tailored Solutions for Enterprise Users in Defense and
+                  Tailored Solutions for Enterprise Users in Defence and
                   Disaster Management
                 </h4>
                 <p>
@@ -507,7 +507,7 @@ function HomePage() {
                           data enabling users to to explore, task and analyze
                           satellite data for a spectrum of applications.
                         </p>
-                        <a href="#" className="btn btn-primary">
+                        <a href="javascript:void(0);" className="btn btn-primary">
                           Explore
                         </a>
                       </div>
@@ -531,7 +531,7 @@ function HomePage() {
                           security landscape setting a new benchmark in defence
                           intelligence.
                         </p>
-                        <a href="#" className="btn btn-primary">
+                        <a href="javascript:void(0);" className="btn btn-primary">
                           Explore
                         </a>
                       </div>
@@ -554,7 +554,7 @@ function HomePage() {
                           analytics offering invaluable insights in disaster
                           management and insurance.
                         </p>
-                        <a href="#" className="btn btn-primary">
+                        <a href="javascript:void(0);" className="btn btn-primary">
                           Explore
                         </a>
                       </div>
@@ -928,6 +928,12 @@ function HomePage() {
                       proven immensely valuable. With the launch of SPADE,
                       Suhora is poised to reach new heights, making it even
                       easier to monitor temperature variations with precision.{" "}
+                      <span>
+                        <img
+                          src="./assets/images/double-quote-down.svg"
+                          alt="double-quote-down"
+                        />
+                      </span>
                     </p>
                   </div>
                   {/* <img

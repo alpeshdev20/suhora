@@ -29,7 +29,7 @@ export default function Blogs() {
                       <span>By Suhora</span> | <span>August 22,2024</span>{" "}
                     </p>
                   </div>
-                  <a href="#" className="btn btn-light">
+                  <a href="javascript:void(0);" className="btn btn-light">
                     Continue Reading
                   </a>
                 </div>
@@ -54,7 +54,7 @@ export default function Blogs() {
                       <span>By Suhora</span> | <span>June 4, 2024</span>{" "}
                     </p>
                   </div>
-                  <a href="#" className="btn btn-light">
+                  <a href="javascript:void(0);" className="btn btn-light">
                     Continue Reading
                   </a>
                 </div>
@@ -79,7 +79,7 @@ export default function Blogs() {
                       <span>By Suhora</span> | <span>April 3, 2024</span>{" "}
                     </p>
                   </div>
-                  <a href="#" className="btn btn-light">
+                  <a href="javascript:void(0);" className="btn btn-light">
                     Continue Reading
                   </a>
                 </div>

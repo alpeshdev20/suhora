@@ -58,7 +58,7 @@
   /*** Navbar ***/
   .fixed-top {
     transition: 0.5s;
-    background: transparent !important;
+    background: #000 !important;
   }
   .fixed-top.bg-dark
   {
@@ -393,9 +393,7 @@
   .why-suhora-section .mySlides h3 {
     font-size: 34px;
     font-weight: 500;
-    color: #000000;
-    background-color: #fff;
-    padding: 10px;
+    color: #fff;
     display: inline-block;
     text-transform: none;
   }
@@ -731,6 +729,14 @@
     border-radius: 50%;
     padding: 8px;
   }
+  .btn-square:hover {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+  }
   .btn-square i {
     color: #000;
     font-size: 20px;
@@ -738,7 +744,7 @@
   
   .footer-sec .copyright {
     padding: 25px 0;
-    font-size: 18px;
+    font-size: 16px;
     border-top: 1px solid rgba(256, 256, 256, 0.1);
     font-weight: 300;
     font-style: italic;
@@ -1206,9 +1212,9 @@
     background-color: #00ac9b !important;
   }
   .bg-image-with-right-slider .card .card-body {
-    padding: 30px;
+    padding: 42px;
   }
-  .key-baneficiaries .text-col {
+  .key-beneficiaries .text-col {
     background-color: #00669d;
     padding: 30px;
     border-radius: 15px;
@@ -1250,21 +1256,21 @@
     font-weight: 400;
   }
   
-  .key-baneficiaries {
+  .key-beneficiaries {
     padding: 80px 0;
   }
-  .key-baneficiaries .text-col {
+  .key-beneficiaries .text-col {
     background-color: #00669d;
     padding: 30px;
     border-radius: 15px;
     color: #fff;
     text-align: center;
   }
-  .key-baneficiaries .text-col img {
+  .key-beneficiaries .text-col img {
     width: 50px;
     padding-bottom: 15px;
   }
-  .key-baneficiaries-carousel .card {
+  .key-beneficiaries-carousel .card {
     min-height: 160px;
     display: flex;
     flex-direction: row-reverse;
@@ -1276,7 +1282,7 @@
     margin: 10px 10px;
   }
   
-  .key-baneficiaries .text-col {
+  .key-beneficiaries .text-col {
     background-color: #00669d;
     padding: 30px;
     border-radius: 15px;
@@ -1284,7 +1290,7 @@
     text-align: center;
     margin: 10px 0;
   }
-  .key-baneficiaries-carousel .slick-arrow,
+  .key-beneficiaries-carousel .slick-arrow,
   .bg-image-with-right-slider .slick-arrow {
     position: absolute;
     bottom: -50px;
@@ -1295,13 +1301,13 @@
     height: 30px;
     cursor: pointer;
   }
-  .key-baneficiaries-carousel .slick-arrow.slick-prev,
+  .key-beneficiaries-carousel .slick-arrow.slick-prev,
   .bg-image-with-right-slider .slick-arrow.slick-prev {
     right: 100px;
     background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0
       0 / 100% no-repeat;
   }
-  .key-baneficiaries-carousel .slick-arrow.slick-next,
+  .key-beneficiaries-carousel .slick-arrow.slick-next,
   .bg-image-with-right-slider .slick-arrow.slick-next {
     right: 20px;
     background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0
@@ -1368,7 +1374,7 @@
   
   .image-slider-with-animation .content {
     background: transparent;
-    background-image: url("../images/Maritime-Domain-Awareness\(MIRKA\ MDA\).jpg");
+    background-image: url("../images/01_MDA.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1396,7 +1402,7 @@
   
   .image-slider-with-animation .content:nth-of-type(2) {
     background: transparent;
-    background-image: url("../images/Terrain-Situational-Awareness(MIRKA TSA).png");
+    background-image: url("../images/02_TSA.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1404,7 +1410,7 @@
   
   .image-slider-with-animation .content:nth-of-type(3) {
     background: transparent;
-    background-image: url("../images/MapVyuh.png");
+    background-image: url("../images/03_MapVyuh.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1485,7 +1491,7 @@
   
   /*About us*/
   .sub-top-image-banner {
-    background-image: url("../images/About_Us_banner.png");
+    background-image: url("../images/about_suhora_tap_banner_without_text.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 700px;
@@ -1623,6 +1629,14 @@
   .about-suhora-section .founder-testimonial li.slick-active button {
     background-color: #00e5ff;
     border: 1px solid #00e5ff;
+  }
+
+  .gallery-section-ourteam {
+    background-image: url(../images/Team-image-3-about-us.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    height: 75vh;
   }
   .gallery-section {
     position: relative;
@@ -1783,6 +1797,10 @@
   .left-content-with-right-video .bg-with-text .title-col {
     padding: 50px 40px 50px 65px;
   }
+
+  .line-height-normal {
+    line-height: 1.2;
+  }
   
   .solution-hub-section {
     background-image: url(../images/BG.png);
@@ -1870,6 +1888,18 @@
     border: 1px solid #00669d;
     color: #00669d;
   }
+
+  .btn-primary {
+    background: #00669d;
+    border: 1px solid #00669d;
+    color: #ffff;
+  }
+
+  .btn-primary:hover {
+    background: #00669d;
+    border: 1px solid #00669d;
+  }
+
   /* Book a demo form */
 
   /*Form*/
@@ -2059,10 +2089,10 @@
     .bg-image-with-right-slider .content-column {
       margin-left: 0;
     }
-    .key-baneficiaries {
+    .key-beneficiaries {
       padding: 0 0 80px 0;
     }
-    .key-baneficiaries-carousel .card {
+    .key-beneficiaries-carousel .card {
       margin-top: 20px;
     }
     .sub-top-video-banner {

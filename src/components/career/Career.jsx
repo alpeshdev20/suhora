@@ -12,7 +12,7 @@ export default function Career() {
       <section className="career-banner">
         <div className="container">
           <div className="career-banner-title">
-            <h3>CAREER @ SUHORA</h3>
+            <h3>CAREERS @ SUHORA</h3>
             <p>
               Embrace each new opportunity as a stepping stone toward <br />
               your professional growth and fulfillment
