@@ -1710,6 +1710,18 @@
     padding: 80px 0 0;
     margin-bottom: -70px;
   }
+  .sub-top-image-banner.imaging-capabilities-banner
+  {
+    background-image: url(../images/Spade_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* min-height: 700px; */
+    height: 100vh;
+  }
+  .sub-top-image-banner.imaging-capabilities-banner p
+  {
+    font-size: 16px;
+  }
   .solution-hub-section .title-col {
     color: #fff;
     padding-bottom: 40px;

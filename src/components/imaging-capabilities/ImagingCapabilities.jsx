@@ -16,36 +16,25 @@ function ImagingCapabilities() {
   return (
     <>
       {/* Carousel Start */}
-      <section className="sub-top-video-banner">
-        <div className="overlay" />
-        <video
-          playsInline="playsinline"
-          autoPlay="autoplay"
-          muted="muted"
-          loop="loop"
-        >
-          <source src="./assets/images/Website_Planet & Satellite Video_v2_LowRes.mp4" type="video/mp4" />
-        </video>
-        {/* The header content */}
-        <div className="container h-100">
-          <div className="d-flex h-100 align-items-center">
-            <div className="w-100 text-white">
-              <div className="col-lg-6">
-                <img src="./assets/images/SPADE Powered by SUHORA.png" alt="" />
-                <h1 className="display-6">Imaging Capabilities</h1>
-                <h6>Unlock the power of data effortlessly</h6>
-                <p className="mb-0 w-415px">
-                  In today's data-driven world, your most valuable asset is
-                  data, and we make accessing it effortless and seamless. Suhora
-                  redefines how you task an image or delve into a wide range of
-                  archive data.
-                </p>
-                <button className="btn btn-blue">Get started with SPADE</button>
-              </div>
-            </div>
-          </div>
+    <section className="sub-top-image-banner imaging-capabilities-banner">
+  <div className="container h-100">
+    <div className="d-flex h-100 align-items-center">
+      <div className="w-100 text-white">
+        <div className="col-lg-6">
+          <img src="./assets/images/SPADE Powered by SUHORA.svg" alt />
+          <h1 className="display-6">Imaging Capabilities</h1>
+          <h6>Unlock the power of data effortlessly</h6>
+          <p className="mb-0">In today's data-driven world, your most valuable asset is
+            data, and we make accessing it effortless and seamless.
+            Suhora redefines how you task an image or delve into a
+            wide range of archive data.</p>
+          <button className="btn btn-blue">Get started with SPADE</button>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Carousel End */}
       {/*SID Section -*/}
       <section className="sid-section our-product">
