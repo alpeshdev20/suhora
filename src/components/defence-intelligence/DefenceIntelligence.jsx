@@ -13,35 +13,18 @@ function DefenceIntelligence() {
   return (
     <>
       {/* Carousel Start */}
-      <section className="sub-top-video-banner">
-        <div className="overlay" />
-        <video
-          playsInline="playsinline"
-          autoPlay="autoplay"
-          muted="muted"
-          loop="loop"
-        >
-          <source src="./assets/images/banner.mp4" type="video/mp4" />
-        </video>
-        {/* The header content */}
-        <div className="container h-100">
-          <div className="d-flex h-100 align-items-center">
-            <div className="w-100 text-white">
-              <div className="col-lg-6">
-                <h1 className="display-6">
-                  Excellence in Image &amp; Intelligence
-                </h1>
-                <p className="lead mb-0">
-                  We provide state-of-the-art imaging capabilities and intelligent
-                  algorithms for unparalleled surveillance enabling swift insights
-                  across maritime and terrestrial domains.
-                </p>
-                <button className="btn btn-blue">Get started with SPADE</button>
-              </div>
-            </div>
-          </div>
+     <section className="sub-top-image-banner defence-intelligence-banner">
+  <div className="container h-100">
+    <div className="d-flex h-100 align-items-center">
+      <div className="w-100 text-white">
+        <div className="col-lg-6">
+          <h1 className="display-3">Excellence in Image &amp; Intelligence</h1>
+          <p className="lead mb-0">We provide state-of-the-art imaging capabilities and intelligent algorithms for unparalleled surveillance enabling swift insights across maritime and terrestrial domains.</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Carousel End */}
       {/*SID Section -*/}
       <section className="sid-section mirka-section">

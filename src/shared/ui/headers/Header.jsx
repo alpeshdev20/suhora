@@ -8,7 +8,7 @@ function Header() {
     const scrollEffect = () => {
       $(window).scroll(function () {
         const scrollTop = $(this).scrollTop();
-        const logo = $(".logo img");
+        const logo = $(".logo-header img");
         if ($(window).width() < 992) {
           if (scrollTop > 45) {
             $(".fixed-top").addClass("bg-dark shadow");
@@ -54,7 +54,7 @@ function Header() {
       >
         <div className="container">
           <Link to="/" className="navbar-brand ms-lg-0">
-            <div className="logo">
+            <div className="logo-header">
               <img src="./assets/images/SuhoraLogowhite.svg" alt="" />
             </div>
           </Link>

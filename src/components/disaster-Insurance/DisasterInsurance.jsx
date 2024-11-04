@@ -427,12 +427,13 @@ function DisasterInsurance() {
         <div className="key-baneficiaries">
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 col-md-6">
-                <div className="text-col">
-                  <img src="./assets/images/star.webp" alt="" />
-                  <h4>Key Baneficiaries</h4>
-                </div>
-              </div>
+           <div className="col-lg-3 col-md-6 display-flex align-items-center">
+  <div className="text-col">
+    <img src="./assets/images/KeyBeneficiariesicon.svg" alt />
+    <h4>Key Baneficiaries</h4>
+  </div>
+</div>
+
               <div className="col-lg-9 col-md-6">
                 <div className="key-baneficiaries-carousel">
                   <div className="col-sm-3">

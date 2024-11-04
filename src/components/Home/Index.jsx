@@ -245,7 +245,7 @@ function HomePage() {
         <div className="container-fluid p-0 mb-0">
           <div className="content-col">
             <video className="w-100" autoPlay="true" loop="true" muted="true">
-              <source src="./assets/images/banner.mp4" type="video/mp4" />
+              <source src="./assets/images/Suora_landing_page_video.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
