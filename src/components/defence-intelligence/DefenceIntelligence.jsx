@@ -311,6 +311,11 @@ function DefenceIntelligence() {
           </div>
         </div>
       </section>
+      <section>
+        <div className="cta-sec book-demo">
+          <h3>Book a Demo</h3>
+        </div>
+      </section>
       <div className="contact-us-section2">
         <div className="container">
           <div className="main-content-col">
