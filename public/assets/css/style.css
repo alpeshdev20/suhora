@@ -456,7 +456,7 @@ p.card-text {
   .why-suhora-section .slider .slick-slide {
     border: 0;
     z-index: 1;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 170px);
     position: relative;
     background-color: #ddd;
     min-height: 550px;
