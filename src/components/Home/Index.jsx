@@ -833,10 +833,7 @@ function HomePage() {
                           alt="double-quote-up"
                         />
                       </span>
-                      It’s inspiring to see Suhora reach such remarkable
-                      heights. As a valued strategic partner, Suhora has
-                      consistently provided high-quality support and proven to
-                      be an integral part of our success.
+                      It’s inspiring to see Suhora reach such remarkable heights. As a valued strategic partner, Suhora has consistently provided high-quality support and proven to be an integral part of our success.
                       <span>
                         <img
                           src="./assets/images/double-quote-down.svg"
@@ -872,10 +869,7 @@ function HomePage() {
                           alt="double-quote-up"
                         />
                       </span>
-                      Suhora has been a valuable partner, contributing actively
-                      to our journey from ‘Bhoomandal se Brahmand tak ka Safar.’
-                      Their dedication and support have been instrumental in
-                      advancing our shared mission.{" "}
+                      Suhora has been a valuable partner, contributing actively to our journey from ‘Bhoomandal se Brahmand tak ka Safar.’ Their dedication and support have been instrumental in advancing our shared mission.{" "}
                       <span>
                         <img
                           src="./assets/images/double-quote-down.svg"

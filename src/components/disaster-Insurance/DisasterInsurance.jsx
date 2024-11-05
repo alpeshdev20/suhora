@@ -259,7 +259,7 @@ function DisasterInsurance() {
           </div>
           <div className="row product-card">
             <div className=" title">
-              <h4>Address key disaster with SID</h4>
+              <h4>Address key disasters with SID.</h4>
             </div>
             <div className=" sid-carousel ">
               <div className="card-col">

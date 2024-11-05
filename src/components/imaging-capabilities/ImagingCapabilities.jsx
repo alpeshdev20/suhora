@@ -171,9 +171,9 @@ function ImagingCapabilities() {
                     and more. Access a comprehensive range of insights at your
                     fingertips.
                   </p>
-                  {/* <a href="javascript:void(0);" className="btn btn-transparent">
+                   <a href="javascript:void(0);" className="btn btn-transparent">
                     Explore
-                  </a> */}
+                  </a> 
                 </div>
               </div>
             </div>
@@ -383,7 +383,7 @@ function ImagingCapabilities() {
                     <div className="card-body">
                       <p>
                         EMAIL
-                        <br /> spade[at]suhora.com
+                        <br /> <a href="mailto:Spade@suhora.com"></a>Spade@suhora.com
                       </p>
                     </div>
                   </div>

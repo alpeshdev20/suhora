@@ -54,7 +54,14 @@
     border-radius: 20px;
     padding: 4px 18px;
     color: #fff;
+    width: max-content;
   }
+  .card {
+    border: none;
+}
+p.card-text {
+  font-size: 14px;
+}
   /*** Navbar ***/
   .fixed-top {
     transition: 0.5s;
@@ -117,6 +124,9 @@
   }
 
   @media (max-width: 991.98px) {
+    .sid-section.mirka-section .image-col .image-container {
+      margin-right: -15px;
+  }
     .navbar .navbar-nav {
       border-top: 1px solid rgba(0, 0, 0, 0.07);
       background: var(--dark);
@@ -1109,6 +1119,9 @@
   .sub-top-video-banner .container .d-flex .text-white .col-lg-6{
     margin-bottom: 3rem;
   }
+  .sub-top-video-banner .container .d-flex .text-white .col-lg-6 h1 {
+  font-size: 40 !important;
+  }
   .sub-top-video-banner .w-415px {
     width: 415px;
   }
@@ -1143,6 +1156,9 @@
   .sid-section .sid-col {
     margin-bottom: 80px;
   }
+  .sid-section.mirka-section .image-col .image-container {
+    height: 100vh;
+}
   .sid-section .sid-text-col {
     background-color: #00669d;
     padding: 30px;
@@ -1387,7 +1403,7 @@
   }
   .sub-top-image-banner.defence-intelligence-banner p
   {
-    font-size: 16px;
+    font-size: 20px;
   }
   
   .mirka-section .card-image-col .card {
@@ -1746,9 +1762,13 @@
   }
   
   .card-image-col .card:hover .card-body {
-    height: 200px;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
     bottom: 0;
     background-color: rgba(27, 27, 27, 0.6);
+    flex-flow: column;
+    justify-content: center;
   }
   
   .sid-section .card-image-col .card:hover .p {

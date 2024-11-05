@@ -61,10 +61,10 @@ function DefenceIntelligence() {
               </p>
             </div>
             <div className="col-lg-6">
-              <div className="image-col">
-                <main>
-                  <div className="container">
-                    <div className="image-container">
+              <div className="image-col h-100">
+                <main className="h-100">
+                  <div className="container h-100">
+                    <div className="image-container h-100">
                       <img
                         className="image-before slider-image"
                         src="./assets/images/Mirka_Picture1.jpg"
