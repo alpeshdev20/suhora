@@ -431,6 +431,7 @@
     height: calc(100vh - 100px);
     position: relative;
     background-color: #ddd;
+    min-height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;  
