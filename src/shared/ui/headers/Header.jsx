@@ -3,13 +3,17 @@ import { useEffect, useRef } from "react";
 
 function Header() {
   const $ = jQuery.noConflict();
-  const offcanvasRef = useRef(null);
+  const offcanvasRef = useRef(null); // for the close offcanvas
+  const navbarCollapseRef = useRef(null); // for close the dropdonw
+
 
   useEffect(() => {
     const scrollEffect = () => {
       $(window).scroll(function () {
         const scrollTop = $(this).scrollTop();
         const logo = $(".logo-header img");
+        const menuIcon = $(".hamburger-icon img");
+
         if ($(window).width() < 992) {
           if (scrollTop > 45) {
             $(".fixed-top").addClass("bg-dark shadow");
@@ -29,6 +33,12 @@ function Header() {
           logo.attr("src", "./assets/images/Suhoralogoblue.svg");
         } else {
           logo.attr("src", "./assets/images/SuhoraLogowhite.svg");
+        }
+
+        if (scrollTop > 45) {
+          menuIcon.attr("src", "./assets/images/Muneiconblack.svg");
+        } else {
+          menuIcon.attr("src", "./assets/images/Muneicon.svg");
         }
 
         // Toggle visibility of the back-to-top button
@@ -54,6 +64,13 @@ function Header() {
         bsOffcanvas.hide();
       }
     }
+
+    if (navbarCollapseRef.current) {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapseRef.current);
+      if (bsCollapse) {
+        bsCollapse.hide();
+      }
+    }
   };
 
   return (
@@ -74,20 +91,32 @@ function Header() {
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
           >
-            <span>
+            <span className="hamburger-icon">
               <img src="./assets/images/Muneicon.svg" />
             </span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarCollapse">
+          <div ref={navbarCollapseRef} className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
-              <Link to="/defence-intelligence" className="nav-item nav-link active">
+              <Link to="/defence-intelligence" className="nav-item nav-link active" onClick={closeOffcanvas}>
                 Defence & Intelligence
               </Link>
-              <Link to="/disaster-insurance" className="nav-item nav-link">
+              <Link to="/disaster-insurance" className="nav-item nav-link" onClick={closeOffcanvas}>
                 Disaster & Insurance
               </Link>
-              <Link to="/imaging-capabilities" className="nav-item nav-link">
+              <Link to="/imaging-capabilities" className="nav-item nav-link" onClick={closeOffcanvas}>
                 Imaging Capabilities
+              </Link>
+              <Link to="/about-us" className="nav-item nav-link nav-mobile-item" onClick={closeOffcanvas}>
+                About Us
+              </Link>
+              <Link to="/career" className="nav-item nav-link nav-mobile-item" onClick={closeOffcanvas}>
+                 Careers
+              </Link>
+              <Link to="/blogs" className="nav-item nav-link nav-mobile-item" onClick={closeOffcanvas}>
+                 Blogs
+              </Link>
+              <Link to="/event-news" className="nav-item nav-link nav-mobile-item" onClick={closeOffcanvas}>
+               Events & News
               </Link>
               <a
                 className="nav-item nav-link d-none d-lg-block"
