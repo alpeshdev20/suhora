@@ -261,8 +261,8 @@ function HomePage() {
                 <h1>Space Analytics Simplified</h1>
                 <p className="mb-0">
                   {" "}
-                  At SUHORA, we're driven by the passion to Make data accessible
-                  and actionable for those who need.
+                  At SUHORA, we're driven by the passion to make the data accessible and actionable
+                  for those who need it the most.
                 </p>
               </div>
             </div>
@@ -281,21 +281,10 @@ function HomePage() {
           <div className="about-content-col">
             <div className="text-center mx-auto mb-5">
               <h2 className="mb-3">About suhora</h2>
-              <p>
-                At SUHORA, we're driven by the passion to make data accessible
-                and actionable for those who need it the most. Founded on the
-                principle that space analytics should empower, not overwhelm,
-                we've dedicated ourselves in demystifying satellite data for
-                practical solutions and everyday applications.{" "}
+              <p>Founded on the principle that space analytics should empower, not overwhelm, we've dedicated ourselves in demystifying satellite data for practical solutions and everyday applications.{" "}
               </p>
               <p>
-                Our team, a blend of seasoned experts and innovative thinkers,
-                is dedicated to break down complex information into clear,
-                actionable insights that drive decision-making across various
-                sectors. Suhora Technologies stands at the intersection of
-                innovation and utility, reshaping how industries leverage the
-                untapped potential of satellite imagery and the information it
-                stores within.
+              Our team, a blend of seasoned experts and innovative thinkers, is dedicated to break down complex information into clear, actionable insights that drive decision-making across various sectors. Suhora Technologies stands at the intersection of innovation and utility, reshaping how industries leverage the untapped potential of satellite imagery and the information it stores within.
               </p>
             </div>
             <div className="about-us-slider-slick">

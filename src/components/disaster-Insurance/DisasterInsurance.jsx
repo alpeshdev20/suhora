@@ -172,14 +172,14 @@ function DisasterInsurance() {
                   <div className="container">
                     <div className="image-container">
                       <img
-                        className="image-before slider-image"
-                        src="./assets/images/Comparison_dummy image 1.png"
-                        alt="color photo"
+                        className="diaster-image-before slider-image"
+                        src="./assets/images/Disaster_slider1.jpg"
+                        alt="Disaster_slider1"
                       />
                       <img
                         className="image-after slider-image"
-                        src="./assets/images/Comparison_dummy image 2.png"
-                        alt="black and white"
+                        src="./assets/images/Disaster_slider2.jpg"
+                        alt="Disaster_slider2"
                       />
                     </div>
                     {/* step="10" */}

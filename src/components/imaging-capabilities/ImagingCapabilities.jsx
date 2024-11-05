@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function ImagingCapabilities() {
   const $ = jQuery.noConflict();
@@ -271,7 +272,7 @@ function ImagingCapabilities() {
           <div className="row solution-hub-card">
             <div className="col-lg-3 col-md-6">
               <div className="card">
-                <a href="javascript:void(0);">
+                <Link to="/image-library">
                   <img
                     src="./assets/images/Optical_thumbnail.png"
                     className="card-img-top"
@@ -280,12 +281,12 @@ function ImagingCapabilities() {
                   <div className="card-body">
                     <h5 className="card-title">Optical</h5>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="card">
-                <a href="javascript:void(0);">
+                <Link to="/image-library">
                   <img
                     src="./assets/images/SAR_thumbnail.png"
                     className="card-img-top"
@@ -294,12 +295,12 @@ function ImagingCapabilities() {
                   <div className="card-body">
                     <h5 className="card-title">SAR</h5>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="card">
-                <a href="javascript:void(0);">
+                <Link to="/image-library">
                   <img
                     src="./assets/images/Thermal_thumbnail.png"
                     className="card-img-top"
@@ -308,12 +309,12 @@ function ImagingCapabilities() {
                   <div className="card-body">
                     <h5 className="card-title">Thermal</h5>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="card">
-                <a href="javascript:void(0);">
+                <Link to="/image-library">
                   <img
                     src="./assets/images/DSM-DTM_thumbnail.png"
                     className="card-img-top"
@@ -322,7 +323,7 @@ function ImagingCapabilities() {
                   <div className="card-body">
                     <h5 className="card-title">Elevation Data</h5>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

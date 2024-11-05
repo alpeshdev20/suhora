@@ -1151,7 +1151,13 @@
     position: absolute;
     inset: 0;
     width: var(--position);
-    filter: grayscale(100%);
+     filter: grayscale(100%); 
+  }
+  .sid-section .image-col .diaster-image-before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+    /* filter: grayscale(100%); */
   }
   
   .sid-section .image-col .slider {
