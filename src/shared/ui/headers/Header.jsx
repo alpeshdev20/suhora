@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
 function Header() {
   const $ = jQuery.noConflict();
   const offcanvasRef = useRef(null); // for the close offcanvas
-  const navbarCollapseRef = useRef(null); // for close the dropdonw
-
+  const navbarCollapseRef = useRef(null); // for close the dropdown
 
   useEffect(() => {
     const scrollEffect = () => {
@@ -97,27 +96,62 @@ function Header() {
           </button>
           <div ref={navbarCollapseRef} className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
-              <Link to="/defence-intelligence" className="nav-item nav-link active" onClick={closeOffcanvas}>
+              <NavLink 
+                to="/defence-intelligence" 
+                className="nav-item nav-link" 
+                onClick={closeOffcanvas} 
+                activeClassName="active"
+              >
                 Defence & Intelligence
-              </Link>
-              <Link to="/disaster-insurance" className="nav-item nav-link" onClick={closeOffcanvas}>
+              </NavLink>
+              <NavLink 
+                to="/disaster-insurance" 
+                className="nav-item nav-link" 
+                onClick={closeOffcanvas} 
+                activeClassName="active"
+              >
                 Disaster & Insurance
-              </Link>
-              <Link to="/imaging-capabilities" className="nav-item nav-link" onClick={closeOffcanvas}>
+              </NavLink>
+              <NavLink 
+                to="/imaging-capabilities" 
+                className="nav-item nav-link" 
+                onClick={closeOffcanvas} 
+                activeClassName="active"
+              >
                 Imaging Capabilities
-              </Link>
-              <Link to="/about-us" className="nav-item nav-link nav-mobile-item" onClick={closeOffcanvas}>
+              </NavLink>
+              <NavLink 
+                to="/about-us" 
+                className="nav-item nav-link nav-mobile-item" 
+                onClick={closeOffcanvas} 
+                activeClassName="active"
+              >
                 About Us
-              </Link>
-              <Link to="/career" className="nav-item nav-link nav-mobile-item" onClick={closeOffcanvas}>
+              </NavLink>
+              <NavLink 
+                to="/career" 
+                className="nav-item nav-link nav-mobile-item" 
+                onClick={closeOffcanvas} 
+                activeClassName="active"
+              >
                  Careers
-              </Link>
-              <Link to="/blogs" className="nav-item nav-link nav-mobile-item" onClick={closeOffcanvas}>
+              </NavLink>
+              <NavLink 
+                to="/blogs" 
+                className="nav-item nav-link nav-mobile-item" 
+                onClick={closeOffcanvas} 
+                activeClassName="active"
+              >
                  Blogs
-              </Link>
-              <Link to="/event-news" className="nav-item nav-link nav-mobile-item" onClick={closeOffcanvas}>
+              </NavLink>
+              <NavLink 
+                to="/event-news" 
+                className="nav-item nav-link nav-mobile-item" 
+                onClick={closeOffcanvas} 
+                activeClassName="active"
+              >
                Events & News
-              </Link>
+              </NavLink>
               <a
                 className="nav-item nav-link d-none d-lg-block"
                 data-bs-toggle="offcanvas"
@@ -152,35 +186,45 @@ function Header() {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item">
-              <Link className="nav-link active" onClick={closeOffcanvas} aria-current="page" to="/about-us">
+              <NavLink 
+                className="nav-link" 
+                onClick={closeOffcanvas} 
+                to="/about-us" 
+                activeClassName="active"
+              >
                 About Us
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" onClick={closeOffcanvas} to="/career">
+              <NavLink 
+                className="nav-link" 
+                onClick={closeOffcanvas} 
+                to="/career" 
+                activeClassName="active"
+              >
                 Careers
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" onClick={closeOffcanvas} to="/event-news">
+              <NavLink 
+                className="nav-link" 
+                onClick={closeOffcanvas} 
+                to="/event-news" 
+                activeClassName="active"
+              >
                 Events & News
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" onClick={closeOffcanvas} to="/blogs">
+              <NavLink 
+                className="nav-link" 
+                onClick={closeOffcanvas} 
+                to="/blogs" 
+                activeClassName="active"
+              >
                 Blogs
-              </Link>
+              </NavLink>
             </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link" to="#">
-                Our Team
-              </Link>
-            </li> */}
-            {/* <li className="nav-item">
-              <Link className="nav-link" to="#">
-                Contact Us
-              </Link>
-            </li> */}
           </ul>
         </div>
       </div>

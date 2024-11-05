@@ -255,7 +255,7 @@ function HomePage() {
           />
         </video>
         <div className="container h-100">
-          <div className="d-flex h-100 align-items-center">
+          <div className="d-flex h-100">
             <div className="w-100 text-white">
               <div className="col-lg-6">
                 <h1>Space Analytics Simplified</h1>

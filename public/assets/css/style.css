@@ -96,11 +96,14 @@
     font-weight: 500;
     outline: none;
   }
-  
-  .navbar .navbar-nav .nav-link:hover,
-  .navbar .navbar-nav .nav-link.active {
-    color: #fff;
-  }
+
+  .fixed-top.navbar .navbar-nav .nav-link:hover,
+.fixed-top.navbar .navbar-nav .nav-link.active {
+  color: #2dbce4 !important;
+}
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
+  color: #2dbce4 !important;
+}
   .nav-mobile-item {
     display: none !important;
   }
@@ -184,6 +187,21 @@
   }
   
   @media (max-width: 768px) {
+    .sub-top-video-banner .container .d-flex {
+      align-items: center !important;
+    }
+    .sub-top-video-banner .container .d-flex .text-white {
+      margin-bottom: 0 !important;
+    }
+    .sub-top-video-banner .container .d-flex .text-white .col-lg-6{
+      margin-bottom: 0 !important;
+    }
+    section.career-banner {
+      margin-top: 108px !important;
+    }
+    .contact-us-section2 .form-main-wrapper {
+      padding: 20px !important;
+    }
     #header-carousel .carousel-item {
       position: relative;
       min-height: 450px;
@@ -466,7 +484,7 @@
   .our-product .product-card .card {
     min-height: 300px;
     border-radius: 15px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     border: 0;
   }
   .our-product .product-card .card .card-body {
@@ -1082,7 +1100,15 @@
     position: relative;
     z-index: 2;
   }
-  
+  .sub-top-video-banner .container .d-flex {
+    align-items: flex-end;
+  }
+  .sub-top-video-banner .container .d-flex .text-white {
+    margin-bottom: 3rem;
+  }
+  .sub-top-video-banner .container .d-flex .text-white .col-lg-6{
+    margin-bottom: 3rem;
+  }
   .sub-top-video-banner .w-415px {
     width: 415px;
   }
@@ -2000,6 +2026,17 @@
   /* end book demo */
   
   @media (max-width: 1024px) {
+
+    .image-slider-with-animation .general-container{
+      flex-direction: column;
+      min-height: 40rem;
+  }
+  .image-slider-with-animation .radio:checked + .content,
+  .image-slider-with-animation .content {
+      flex: 2;
+  }
+
+
     h2 {
       font-size: 45px;
     }
@@ -2032,11 +2069,24 @@
   }
   
   @media (max-width: 767px) {
+    .image-slider-with-animation .radio:checked + .content{
+      flex:5;
+  }
+  .image-slider-with-animation .radio:checked + .content > .title-card{
+      bottom: initial;
+      top: 70px;
+  }
+  .image-slider-with-animation .title-card{
+      bottom:0;
+    }
     h2 {
       font-size: 38px;
     }
     h3 {
       font-size: 30px;
+    }
+    .fixed-top.bg-dark.navbar .navbar-nav .nav-link {
+      color: #fff !important;
     }
     .about-us {
       padding-top: 50px;

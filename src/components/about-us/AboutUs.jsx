@@ -50,8 +50,8 @@ export default function AboutUs() {
       <section className="sub-top-image-banner">
         <div className="container h-100">
           <div className="d-flex h-100 align-items-center">
-            <div className="w-100 text-white" style={{position: 'absolute', bottom: '42%'}}>
-              <div className="col-lg-6">
+            <div className=" text-white" style={{position: 'absolute', bottom: '42%'}}>
+              <div className="col-lg-12">
                 <p className="line-height-normal">
                   <span style={{fontSize: '46px'}}>Transforming industries </span><br/> with <b>AI-driven spatial insights</b><br /> for
                   informed decision making
