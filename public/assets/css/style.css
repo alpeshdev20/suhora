@@ -64,7 +64,7 @@
   .fixed-top.bg-dark
   {
     background-color: #ffffff !important;
-   
+    opacity: 1 !important;
   }
   .fixed-top.bg-dark.navbar .navbar-nav .nav-link
   {
