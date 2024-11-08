@@ -1634,6 +1634,7 @@ p.card-text {
     background-image: url("../images/about_suhora_tap_banner_without_text.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     min-height: 700px;
     height: 75vh;
   }

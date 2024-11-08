@@ -46,7 +46,7 @@ function DisasterInsurance() {
         slidesToScroll: 1,
         arrows: true,
         dots: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 1000,
         vertical: true,
         prevArrow: '<div class="slick-prev"></div>',

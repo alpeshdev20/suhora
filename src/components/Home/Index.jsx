@@ -258,7 +258,7 @@ function HomePage() {
         <div className="container h-100">
           <div className="d-flex h-100">
             <div className="w-100 text-white">
-              <div className="col-lg-7">
+              <div className="col-lg-8">
                 <h1 className="home-text typewriter">Space Analytics Simplified</h1>
                 <p className="mb-0 home-sub-text">
                   {" "}
