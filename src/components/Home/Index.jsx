@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const $ = jQuery.noConflict();
@@ -257,9 +258,9 @@ function HomePage() {
         <div className="container h-100">
           <div className="d-flex h-100">
             <div className="w-100 text-white">
-              <div className="col-lg-6">
-                <h1>Space Analytics Simplified</h1>
-                <p className="mb-0">
+              <div className="col-lg-8">
+                <h1 className="typewriter">Space Analytics Simplified</h1>
+                <p className="mb-0 home-sub-text">
                   {" "}
                   At SUHORA, we're driven by the passion to make the data accessible and actionable
                   for those who need it the most.
@@ -280,7 +281,7 @@ function HomePage() {
         <div className="container">
           <div className="about-content-col">
             <div className="text-center mx-auto mb-5">
-              <h2 className="mb-3">About suhora</h2>
+              <h2 className="mb-3 typewriter">About suhora</h2>
               <p>Founded on the principle that space analytics should empower, not overwhelm, we've dedicated ourselves in demystifying satellite data for practical solutions and everyday applications.{" "}
               </p>
               <p>
@@ -489,16 +490,17 @@ function HomePage() {
                       }}
                     >
                       <div className="card-body">
-                        <h5 className="card-title">SPADE</h5>
+                        {/* <h5 className="card-title">SPADE</h5> */}
+                         <img src="./assets/images/SPADE Powered by SUHORA.png" alt='spade image' />
                         <p className="card-text">
                           A unified SaaS platform offering seamless access to
                           250 + sensors encompassing optical thermal and SAR
                           data enabling users to to explore, task and analyze
                           satellite data for a spectrum of applications.
                         </p>
-                        <a href="javascript:void(0);" className="btn btn-primary">
+                        <Link to="/imaging-capabilities" className="btn btn-primary">
                           Explore
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -520,9 +522,9 @@ function HomePage() {
                           security landscape setting a new benchmark in defence
                           intelligence.
                         </p>
-                        <a href="javascript:void(0);" className="btn btn-primary">
+                        <Link to="/defence-intelligence" className="btn btn-primary">
                           Explore
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -543,9 +545,9 @@ function HomePage() {
                           analytics offering invaluable insights in disaster
                           management and insurance.
                         </p>
-                        <a href="javascript:void(0);" className="btn btn-primary">
+                        <Link to="/disaster-insurance" className="btn btn-primary">
                           Explore
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -668,7 +670,7 @@ function HomePage() {
         }}
       >
         <div className="container-xxl">
-          <div className="container">
+          <div className="container-fluid">
             <div className="testimonial-carousel">
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
@@ -757,10 +759,13 @@ function HomePage() {
                           alt="double-quote-up"
                         />
                       </span>
-                      Working with Suhora has been smooth. The satellite data
-                      services provided by them helped us in crop monitoring and
-                      to identify stubble burning and make timely decisions, and
-                      their consultancy was always reliable when needed.
+                       I would like to extend our sincere ratitude and appreciation to Suhora. 
+                       Their collaborative approach has made working with their team not only smooth 
+                       but also remarkably productive. Suhora’s satellite data services have truly transformed 
+                       our operations, providing precise and reliable insights for critical activities such as
+                       crop monitoring and detecting stubble burning. With their technology, we’ve been able 
+                       to make informed, timely decisions that drive both efficiency and sustainability—two pillars 
+                       essential to our success.
                       <span>
                         <img
                           src="./assets/images/double-quote-down.svg"
@@ -890,7 +895,7 @@ function HomePage() {
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
-                  <h5 className="mb-1">IsPA</h5>
+                  <h5 className="mb-1">ISpA</h5>
                   {/* <span class="fst-italic">Profession</span> */}
                 </div>
               </div>

@@ -80,7 +80,7 @@ export default function Career() {
               <p>
                 Work together in a supportive environment where your ideas matter.
                 Join forces with talented individuals to create innovative
-                solutions..
+                solutions.
               </p>
             </div>
             <div className="col-12 col-sm-3 text-center">

@@ -268,7 +268,7 @@ function DefenceIntelligence() {
                 <h1 className="title-card">
                   <span className="marg-bott">
                     Maritime Domain Awarness
-                    <br />(<span>MIRKA</span> MDA)
+                    <br />(<span>MIRKA MDA </span>)
                   </span>
                 </h1>
                 <h3 className="card-title subsubtitle">
@@ -288,7 +288,7 @@ function DefenceIntelligence() {
                 <div className="overlay" />
                 <h1 className="title-card">
                   <span className="marg-bott">
-                    Terrain Situational Awarness <br /> (<span>MIRKA</span> TSA)
+                    Terrain Situational Awarness <br /> (<span>MIRKA TSA</span>)
                   </span>
                 </h1>
                 <h3 className="card-title subsubtitle">

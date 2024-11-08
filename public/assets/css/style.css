@@ -196,6 +196,28 @@ p.card-text {
     border-radius: 3rem;
   }
   
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */  
+    font-size: 60px;
+    white-space: nowrap; /* Keeps the content on a single line */  
+    letter-spacing: 0px; /* Adjust as needed */
+    animation: 
+      typing 2s steps(140, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
   @media (max-width: 768px) {
     .sub-top-video-banner .container .d-flex {
       align-items: center !important;
@@ -428,7 +450,17 @@ p.card-text {
   }
   
   /* Why us */
-  
+  .why-suhora-section {
+    height: 100vh;
+  }
+  .key-beneficiaries-carousel .card h5 {
+    font-size: 14px;
+  }
+
+  .home-sub-text {
+    font-size: 20px;
+  }
+
   .why-suhora-section .mySlides h3 {
     font-size: 34px;
     font-weight: 500;
@@ -447,20 +479,21 @@ p.card-text {
   .why-suhora-section .mySlides {
     position: relative;
   }
+
   
   .why-us p {
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 500;
   }
   
   .why-suhora-section .slider .slick-slide {
     border: 0;
     z-index: 1;
-    height: calc(100vh - 170px);
+    height: 100vh;
     position: relative;
     background-color: #ddd;
-    min-height: 550px;
-    background-size: cover;
+    min-height:550px;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: 50% 50%;  
     display: flex;
@@ -1194,7 +1227,7 @@ p.card-text {
     position: absolute;
     inset: 0;
     width: var(--position);
-     filter: grayscale(100%); 
+    filter: grayscale(100%); 
   }
   .sid-section .image-col .diaster-image-before {
     position: absolute;
@@ -1408,7 +1441,34 @@ p.card-text {
   
   .mirka-section .card-image-col .card {
     margin-bottom: 20px;
+    overflow: hidden;
   }
+  .mirka-section .card-image-col .card:hover img{
+    transform: scale(1.2);
+    transition: 1s;
+  }
+  .mirka-section .card-image-col .card img{
+    transition: 1s;
+  }
+
+  .aboutus-page .line-height-normal {
+    background-color: #00000077;
+    padding: 20px;
+  }
+
+  .offcanvas {
+    background: url(../images/Your-comprehensive_bg.png);
+    color: #fff;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .offcanvas .btn-close{  
+    color: #fff !important;
+    filter: invert(1);
+  }
+
   .mirka-section .card-image-col .card-img-overlay {
     display: flex;
     flex-direction: column;
@@ -1802,7 +1862,7 @@ p.card-text {
   }
   .sub-top-image-banner.imaging-capabilities-banner
   {
-    background-image: url(../images/Spade_banner.jpg);
+    background-image: url(../images/Spade_Header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     /* min-height: 700px; */
@@ -2130,7 +2190,7 @@ p.card-text {
       height: 500px;
     }
     .why-us p {
-      font-size: 20px;
+      font-size: 18px;
     }
     .our-product .product-col {
       padding: 50px 20px;

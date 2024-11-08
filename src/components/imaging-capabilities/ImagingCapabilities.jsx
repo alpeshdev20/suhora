@@ -23,7 +23,7 @@ function ImagingCapabilities() {
             <div className="w-100 text-white">
               <div className="col-lg-6">
                 <img src="./assets/images/SPADE Powered by SUHORA.png" alt />
-                <h1 className="display-6">Imaging Capabilities</h1>
+                <h1>Imaging Capabilities</h1>
                 <h6 style={{ fontSize: "1.2rem" }}>
                   Unlock the power of data effortlessly
                 </h6>
@@ -69,7 +69,7 @@ function ImagingCapabilities() {
                   <div className="container">
                     <div className="image-container">
                       <img
-                        className="image-before slider-image"
+                        className="diaster-image-before slider-image"
                         src="./assets/images/Spade_Slider1.jpg"
                         alt="color photo"
                       />

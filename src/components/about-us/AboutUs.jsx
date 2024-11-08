@@ -6,11 +6,15 @@ export default function AboutUs() {
   useEffect(() => {
     const initializeCarousel = () => {
       $('.one-time').not(".slick-initialized").slick({
-        dots: true,
+        dots: false,
         arrows:false,
         infinite: true,
-        speed: 300,
+        autoplay: true,
+        speed: 6000,
         slidesToShow: 1,
+        pauseOnFocus: false, 
+        pauseOnHover: false,
+        // autoplaySpeed: 0,
         slidesToScroll: 1,
       });
   
@@ -47,7 +51,7 @@ export default function AboutUs() {
   return (
     <>
       {/* Carousel Start */}
-      <section className="sub-top-image-banner">
+      <section className="sub-top-image-banner aboutus-page">
         <div className="container h-100">
           <div className="d-flex h-100 align-items-center">
             <div className=" text-white" style={{position: 'absolute', bottom: '42%'}}>
@@ -140,7 +144,7 @@ export default function AboutUs() {
                   <div className="row g-0">
                     <div className="col-md-4">
                       <img
-                        src="./assets/images/RupeshKumar.png"
+                        src="./assets/images/Rupesh_founders.png"
                         className="img-fluid rounded-start"
                         alt="..."
                       />
@@ -167,7 +171,7 @@ export default function AboutUs() {
                   <div className="row g-0">
                     <div className="col-md-4">
                       <img
-                        src="./assets/images/AmitKumar.png"
+                        src="./assets/images/Amit_founders.png"
                         className="img-fluid rounded-start"
                         alt="..."
                       />
@@ -261,7 +265,7 @@ export default function AboutUs() {
             <div className="col-lg-4 col-md-6 mb-3">
               <div className="card">
                 <img
-                  src="./assets/images/RupeshKumar.png"
+                  src="./assets/images/Rupesh_founders.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -281,7 +285,7 @@ export default function AboutUs() {
             <div className="col-lg-4 col-md-6 mb-3">
               <div className="card">
                 <img
-                  src="./assets/images/AmitKumar.png"
+                  src="./assets/images/Amit_founders.png"
                   className="card-img-top"
                   alt="..."
                 />
@@ -425,6 +429,78 @@ export default function AboutUs() {
                 <img
                   className="img-fluid p-2 mx-auto"
                   src="./assets/images/Team-image-11.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-13.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-14.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-15.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-16.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-17.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-18.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-19.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-20.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-21.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-22.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-23.jpg"
+                />
+              </div>
+              <div className="testimonial-item text-center">
+                <img
+                  className="img-fluid p-2 mx-auto"
+                  src="./assets/images/Team-image-24.jpg"
                 />
               </div>
             </div>
