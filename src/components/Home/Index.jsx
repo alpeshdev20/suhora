@@ -258,8 +258,8 @@ function HomePage() {
         <div className="container h-100">
           <div className="d-flex h-100">
             <div className="w-100 text-white">
-              <div className="col-lg-8">
-                <h1 className="typewriter">Space Analytics Simplified</h1>
+              <div className="col-lg-7">
+                <h1 className="home-text typewriter">Space Analytics Simplified</h1>
                 <p className="mb-0 home-sub-text">
                   {" "}
                   At SUHORA, we're driven by the passion to make the data accessible and actionable
@@ -281,7 +281,9 @@ function HomePage() {
         <div className="container">
           <div className="about-content-col">
             <div className="text-center mx-auto mb-5">
-              <h2 className="mb-3 typewriter">About suhora</h2>
+              <div className="d-inline-block">
+                <h2 className="mb-3 typewriter">About suhora</h2>
+              </div>
               <p>Founded on the principle that space analytics should empower, not overwhelm, we've dedicated ourselves in demystifying satellite data for practical solutions and everyday applications.{" "}
               </p>
               <p>
@@ -344,7 +346,9 @@ function HomePage() {
         </div>
         <div className="container-fluid pb-4">
           <div className="why-us text-center mx-auto">
-            <h2>why suhora?</h2>
+            <div className="d-inline-block">
+               <h2 className="typewriter">why suhora?</h2>
+            </div>
             <p className="">
               Elevating Satellite data with cutting edge, scalable solutions.{" "}
             </p>
@@ -466,7 +470,9 @@ function HomePage() {
           <div className="row">
             <div className="product-col">
               <div className="title-sec col-lg-10 m-auto text-center mx-auto mb-8">
-                <h2 className="mb-3">Our Products</h2>
+                <div className="d-inline-block">
+                   <h2 className="mb-3 typewriter">Our Products</h2>
+                </div>
                 <h4>
                   Tailored Solutions for Enterprise Users in Defence and
                   Disaster Management
@@ -620,25 +626,25 @@ function HomePage() {
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer-5.png"
+                    src="./assets/images/Customer1.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer-6.png"
+                    src="./assets/images/Customer2.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer-7.png"
+                    src="./assets/images/Customer3.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer-8.png"
+                    src="./assets/images/Customer4.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
@@ -647,12 +653,12 @@ function HomePage() {
                     src="./assets/images/Customer-9.png"
                   />
                 </div>
-                <div className="testimonial-item text-center">
+                {/* <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
                     src="./assets/images/Customer-10.png"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             {/* Testimonial End */}
@@ -825,41 +831,6 @@ function HomePage() {
                   <span className="fa fa-star checked" />
                   <span className="fa fa-star checked" />
                   <h5 className="mb-1">NHPC</h5>
-                  {/* <span class="fst-italic">Profession</span> */}
-                </div>
-              </div>
-              <div className="testimonial-item text-center">
-                <div className="testimonial-content">
-                  <div className="testimonial-text text-center p-4">
-                    <p>
-                      <span>
-                        <img
-                          src="./assets/images/double-quote-up.svg"
-                          alt="double-quote-up"
-                        />
-                      </span>
-                      It’s inspiring to see Suhora reach such remarkable heights. As a valued strategic partner, Suhora has consistently provided high-quality support and proven to be an integral part of our success.
-                      <span>
-                        <img
-                          src="./assets/images/double-quote-down.svg"
-                          alt="double-quote-down"
-                        />
-                      </span>
-                    </p>
-                  </div>
-                  {/* <img
-                    className="img-fluid rounded-circle p-2 mx-auto"
-                    src="./assets/images/avtar.png"
-                    style={{ width: 100, height: 100 }}
-                  /> */}
-                </div>
-                <div className="user-details">
-                  <span className="fa fa-star checked" />
-                  <span className="fa fa-star checked" />
-                  <span className="fa fa-star checked" />
-                  <span className="fa fa-star checked" />
-                  <span className="fa fa-star checked" />
-                  <h5 className="mb-1">ICEYE</h5>
                   {/* <span class="fst-italic">Profession</span> */}
                 </div>
               </div>
