@@ -626,31 +626,31 @@ function HomePage() {
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer1.png"
+                    src="./assets/images/haryanagovt-customer1.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer2.png"
+                    src="./assets/images/ministryofdefence-customer2.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer3.png"
+                    src="./assets/images/nhpc-customer3.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer4.png"
+                    src="./assets/images/nrsc-customer4.png"
                   />
                 </div>
                 <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
-                    src="./assets/images/Customer-9.png"
+                    src="./assets/images/usdma-customer5.png"
                   />
                 </div>
                 {/* <div className="testimonial-item text-center">
