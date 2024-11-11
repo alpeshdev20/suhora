@@ -274,7 +274,7 @@ function ImagingCapabilities() {
               <div className="card">
                 <Link to="/image-library">
                   <img
-                    src="./assets/images/Optical_thumbnail.png"
+                    src="./assets/images/optical_1-meter.jgp"
                     className="card-img-top"
                     alt="..."
                   />
@@ -302,7 +302,7 @@ function ImagingCapabilities() {
               <div className="card">
                 <Link to="/image-library">
                   <img
-                    src="./assets/images/Thermal_thumbnail.png"
+                    src="./assets/images/Djibouti_Port.png"
                     className="card-img-top"
                     alt="..."
                   />

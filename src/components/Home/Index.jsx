@@ -363,7 +363,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage: 'url("./assets/images/Multi-sensor.jpg")',
+                backgroundImage: 'url("./assets/images/Multi sensor.jpg")',
               }}
             >
               <div className="container">
@@ -387,7 +387,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage: 'url("./assets/images/Near-Real-time.jpg")',
+                backgroundImage: 'url("./assets/images/Near Real time.jpg")',
               }}
             >
               <div className="container">
@@ -410,7 +410,7 @@ function HomePage() {
             <div
               className="slick-slide text-right"
               style={{
-                backgroundImage: 'url("./assets/images/Higher-accuracy.jpg")',
+                backgroundImage: 'url("./assets/images/Higher accuracy.jpg")',
               }}
             >
               <div className="container">
@@ -433,7 +433,7 @@ function HomePage() {
               className="slick-slide text-right"
               style={{
                 backgroundImage:
-                  'url("./assets/images/Insightful-Analysis.jpg")',
+                  'url("./assets/images/Insightful Analysis.jpg")',
               }}
             >
               <div className="container">

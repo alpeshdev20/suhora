@@ -204,7 +204,7 @@ p.card-text {
     white-space: nowrap; /* Keeps the content on a single line */  
     letter-spacing: 0px; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end) infinite,
+      typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
   
@@ -1350,7 +1350,7 @@ p.card-text {
     padding: 50px 0;
   }
   .bg-with-text {
-    background-image: url("../images/Stay-ahead-with-timely-insights.png");
+    background-image: url("../images/Stay-Ahead-with-Timely-Insights.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -1600,16 +1600,16 @@ p.card-text {
     padding-right: 3rem;
   }
   
-  .image-slider-with-animation .radio:checked + .content {
+  .image-slider-with-animation .radio:hover + .content {
     flex: 2;
   }
   
-  .image-slider-with-animation .radio:checked + .content > .card-title {
+  .image-slider-with-animation .radio:hover + .content > .card-title {
     opacity: 1;
     transform: translateX(0);
   }
   
-  .image-slider-with-animation .radio:checked + .content > .title-card {
+  .image-slider-with-animation .radio:hover + .content > .title-card {
     opacity: 1;
     transform: translateX(0);
   }
@@ -1773,14 +1773,17 @@ p.card-text {
   }
 
   .gallery-section-ourteam {
-    background-image: url(../images/Team-image-3-about-us.JPG);
+    /* background-image: url(../images/Team-image-3-about-us.JPG);
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     width: 100%;
     overflow: hidden;
     max-width: 1120px;
     min-height: 700px;
     height: 75vh;
+  }
+  .gallery-section-ourteam img {
+    object-fit: contain;
   }
   .gallery-section {
     position: relative;
@@ -1904,6 +1907,15 @@ p.card-text {
   .solution-hub-section .card {
     border: 0;
     background: transparent;
+  }
+
+  .solution-hub-section .card img {
+    transition: 1s;
+  }
+
+  .solution-hub-section .card img:hover {
+    transform: scale(1.1);
+    transition: 1s;
   }
   .solution-hub-section .card .card-body {
     position: absolute;
@@ -2129,7 +2141,7 @@ p.card-text {
       flex-direction: column;
       min-height: 40rem;
   }
-  .image-slider-with-animation .radio:checked + .content,
+  .image-slider-with-animation .radio:hover + .content,
   .image-slider-with-animation .content {
       flex: 2;
   }
@@ -2167,10 +2179,10 @@ p.card-text {
   }
   
   @media (max-width: 767px) {
-    .image-slider-with-animation .radio:checked + .content{
+    .image-slider-with-animation .radio:hover + .content{
       flex:5;
   }
-  .image-slider-with-animation .radio:checked + .content > .title-card{
+  .image-slider-with-animation .radio:hover + .content > .title-card{
       bottom: initial;
       top: 70px;
   }

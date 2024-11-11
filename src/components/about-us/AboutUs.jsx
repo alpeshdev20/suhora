@@ -7,17 +7,17 @@ export default function AboutUs() {
     const initializeCarousel = () => {
       $('.one-time').not(".slick-initialized").slick({
         dots: false,
-        arrows:false,
+        arrows: false,
         infinite: true,
         autoplay: true,
         speed: 6000,
         slidesToShow: 1,
-        pauseOnFocus: false, 
+        pauseOnFocus: false,
         pauseOnHover: false,
         // autoplaySpeed: 0,
         slidesToScroll: 1,
       });
-  
+
       $('.gallery-carousel').not(".slick-initialized").slick({
         slidesToShow: 3,
         arrows: true,
@@ -54,10 +54,10 @@ export default function AboutUs() {
       <section className="sub-top-image-banner aboutus-page">
         <div className="container h-100">
           <div className="d-flex h-100 align-items-center">
-            <div className=" text-white" style={{position: 'absolute', bottom: '42%'}}>
+            <div className=" text-white" style={{ position: 'absolute', bottom: '42%' }}>
               <div className="col-lg-12">
                 <p className="line-height-normal">
-                  <span style={{fontSize: '46px'}}>Transforming industries </span><br/> with <b>AI-driven spatial insights</b><br /> for
+                  <span style={{ fontSize: '46px' }}>Transforming industries </span><br /> with <b>AI-driven spatial insights</b><br /> for
                   informed decision making
                 </p>
               </div>
@@ -183,7 +183,7 @@ export default function AboutUs() {
                     <div className="col-md-8">
                       <div className="card-body">
                         <p className="card-text">
-                        The world today is both challenging and exciting.
+                          The world today is both challenging and exciting.
                           Throughout history, humanity has thrived through
                           innovation and perseverance. This continues today, even
                           amidst economic fluctuations and conflicts. Despite these
@@ -365,9 +365,12 @@ export default function AboutUs() {
           </div>
 
           <div className="row gallery-section gallery-section-ourteam">
-
+            <img
+              className="img-fluid p-2 mx-auto"
+              src="./assets/images/Team-image-3-about-us.JPG"
+            />
           </div>
-          
+
           <div className="row gallery-section">
             <h3 className="text-center mb-4 title">Gallery</h3>
             <div className="gallery-carousel">

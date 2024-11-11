@@ -330,33 +330,33 @@ export default function ImageLibrary() {
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/Ruwais-oil-refinery_3.5-meter.png"
+                    href="./assets/images/Jamnagar_oil_refinery.png"
                     data-fancybox="gallery"
-                    data-caption="Ruwais oil refinery 3.5 meter"
+                    data-caption="Jamnagar Oil Refinery 3.5 meter"
                   >
                     <img
-                      src="./assets/images/Ruwais-oil-refinery_3.5-meter.png"
-                      alt="Ruwais oil refinery"
+                      src="./assets/images/Jamnagar_oil_refinery.png"
+                      alt="Jamnagar_oil_refinery"
                     />
                   </a>
                 </div>
                 <div className="card-detial">
-                  <p>Ruwais oil refinery</p>
+                  <p>Jamnagar Oil Refinery</p>
                   <span>3.5 meter</span>
                 </div>
               </div>
               <div className="card">
                 <div className="card-image">
                   <a
-                    href="./assets/images/VizagPort_3.5.png"
+                    href="./assets/images/Djibouti_Port.png"
                     data-fancybox="gallery"
-                    data-caption="Vizag Port 3.5 meter"
+                    data-caption="Djibouti_Port"
                   >
-                    <img src="./assets/images/VizagPort_3.5.png" alt="Vizag Port" />
+                    <img src="./assets/images/Djibouti_Port.png" alt="Djibouti_Port" />
                   </a>
                 </div>
                 <div className="card-detial">
-                  <p>Vizag Port</p>
+                  <p>Djibouti Port</p>
                   <span>3.5 meter</span>
                 </div>
               </div>
