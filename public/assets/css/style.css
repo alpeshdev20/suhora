@@ -649,8 +649,9 @@ p.card-text {
   }
   .testimonial-section .slick-initialized .slick-slide {
     display: block;
-    opacity: .3;
+    opacity: 1;
     transition: 2s;
+    filter: blur(3px);
 }
 
   
@@ -700,10 +701,11 @@ p.card-text {
   .testimonial-section
     .testimonial-carousel
     .slick-slide.slick-current.slick-active {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+      filter: unset;
   }
   .testimonial-section .testimonial-carousel .slick-slide {
     -webkit-transform: scale(0.9);
