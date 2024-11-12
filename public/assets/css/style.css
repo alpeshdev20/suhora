@@ -460,7 +460,8 @@ p.card-text {
   
   /* Why us */
   .why-suhora-section {
-    height: 100vh;
+    position: relative; /* Allows child elements to position relative to this container */
+    min-height: 100vh;
   }
   .key-beneficiaries-carousel .card h5 {
     font-size: 14px;
@@ -487,8 +488,23 @@ p.card-text {
   }
   .why-suhora-section .mySlides {
     position: relative;
+    position: relative;
+    top: 0;
+    display: flex;
+    transform: translate(0, -100%);
+    flex-direction: column;
   }
 
+  .why-us {
+    position: sticky;
+    top: 150px;
+    z-index: 1030;
+    background-color: white;
+} 
+.why-us .why-us-title {
+  padding-top: 15px;
+  margin-top: 20px;
+}
   
   .why-us p {
     font-size: 18px;

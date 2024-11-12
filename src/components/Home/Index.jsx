@@ -1,8 +1,45 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 function HomePage() {
   const $ = jQuery.noConflict();
+  const [activeSection, setActiveSection] = useState(null);
+  const [animatedSections, setAnimatedSections] = useState({}); // Track if animation is triggered for each section
+  const sectionRefs = {
+    spaceanalytics: useRef(null),
+    aboutSuhora: useRef(null),
+    whySuhora: useRef(null),
+    ourProduct: useRef(null),
+  };
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    };
+  
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.id;
+  
+          if (!animatedSections[sectionId]) { // Check if section was already animated
+            setActiveSection(sectionId);
+            setAnimatedSections((prev) => ({ ...prev, [sectionId]: true })); // Mark section as animated
+          }
+        }
+      });
+    };
+  
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+  
+    Object.values(sectionRefs).forEach((ref) => {
+      if (ref.current) observer.observe(ref.current);
+    });
+  
+    return () => observer.disconnect();
+  }, [sectionRefs, animatedSections]);
 
   // Animation
   function doAnimations(elements) {
@@ -255,12 +292,12 @@ function HomePage() {
             type="video/mp4"
           />
         </video>
-        <div className="container h-100">
+        <div className="container h-100" ref={sectionRefs.spaceanalytics} id="spaceAnalytics">
           <div className="d-flex h-100">
             <div className="w-100 text-white">
               <div className="col-lg-8">
-                <h1 className="home-text typewriter">Space Analytics Simplified</h1>
-                <p className="mb-0 home-sub-text">
+              <h1 className={`home-text ${animatedSections.spaceAnalytics ? 'typewriter' : ''}`}>Space Analytics Simplified</h1>
+              <p className="mb-0 home-sub-text">
                   {" "}
                   At SUHORA, we're driven by the passion to make the data accessible and actionable
                   for those who need it the most.
@@ -278,11 +315,11 @@ function HomePage() {
           <span />
           <span />
         </section>
-        <div className="container">
+        <div className="container" ref={sectionRefs.aboutSuhora} id="aboutSuhora">
           <div className="about-content-col">
             <div className="text-center mx-auto mb-5">
               <div className="d-inline-block">
-                <h2 className="mb-3 typewriter">About suhora</h2>
+               <h2 className={`mb-3 ${animatedSections.aboutSuhora ? 'typewriter' : ''}`}>About Suhora</h2>
               </div>
               <p>Founded on the principle that space analytics should empower, not overwhelm, we've dedicated ourselves in demystifying satellite data for practical solutions and everyday applications.{" "}
               </p>
@@ -344,20 +381,30 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="container-fluid pb-4">
+        {/* <div className="container-fluid pb-4" ref={sectionRefs.whySuhora} id="whySuhora">
           <div className="why-us text-center mx-auto">
             <div className="d-inline-block">
-               <h2 className="typewriter">why suhora?</h2>
+               <h2 className={`${activeSection === 'whySuhora' ? 'typewriter' : ''}`}>why suhora?</h2>
             </div>
             <p className="">
               Elevating Satellite data with cutting edge, scalable solutions.{" "}
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
       {/* About Start End*/}
       {/* why Suhora Start */}
       <section className="why-suhora-section">
+      <div className="container-fluid pb-4" ref={sectionRefs.whySuhora} id="whySuhora">
+          <div className="why-us text-center mx-auto">
+            <div className="d-inline-block">
+            <h2 className={`why-us-title ${animatedSections.whySuhora ? 'typewriter' : ''}`}>Why Suhora?</h2>
+            </div>
+            <p className="">
+              Elevating Satellite data with cutting edge, scalable solutions.{" "}
+            </p>
+          </div>
+        </div> 
         <div className="container-fluid p-0">
           <div className="slider">
             <div
@@ -466,12 +513,12 @@ function HomePage() {
           backgroundSize: "cover",
         }}
       >
-        <div className="container">
+        <div className="container" ref={sectionRefs.ourProduct} id="ourProduct">
           <div className="row">
             <div className="product-col">
               <div className="title-sec col-lg-10 m-auto text-center mx-auto mb-8">
                 <div className="d-inline-block">
-                   <h2 className="mb-3 typewriter">Our Products</h2>
+                   <h2 className={`mb-3 ${animatedSections.ourProduct ? 'typewriter' : ''}`}>Our Products</h2>
                 </div>
                 <h4>
                   Tailored Solutions for Enterprise Users in Defence and
