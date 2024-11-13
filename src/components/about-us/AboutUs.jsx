@@ -6,14 +6,14 @@ export default function AboutUs() {
   useEffect(() => {
     const initializeCarousel = () => {
       $('.one-time').not(".slick-initialized").slick({
-        dots: false,
+        dots: true,
         arrows: false,
         infinite: true,
         autoplay: true,
         speed: 6000,
         slidesToShow: 1,
         pauseOnFocus: false,
-        pauseOnHover: false,
+        pauseOnHover: true,
         // autoplaySpeed: 0,
         slidesToScroll: 1,
       });

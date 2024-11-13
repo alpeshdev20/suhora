@@ -130,7 +130,7 @@ function HomePage() {
         .not(".slick-initialized")
         .slick({
           autoplay: true,
-          autoplaySpeed: 1000,
+          autoplaySpeed: 3000,
           centerMode: true,
           centerPadding: "0px",
           slidesToShow: 3,
@@ -545,7 +545,7 @@ function HomePage() {
                       <div className="card-body">
                         {/* <h5 className="card-title">SPADE</h5> */}
                          <img src="./assets/images/SPADE Powered by SUHORA.png" alt='spade image' />
-                        <p className="card-text">
+                        <p className="card-text product-card-text">
                           A unified SaaS platform offering seamless access to
                           250 + sensors encompassing optical thermal and SAR
                           data enabling users to to explore, task and analyze
@@ -728,25 +728,25 @@ function HomePage() {
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
-                    <p>
-                      <span>
+                      <span className="quotes-up">
                         <img
                           src="./assets/images/double-quote-up.svg"
                           alt="double-quote-up"
                         />
                       </span>
+                    <p>
                       Working with Suhora has been an exceptional experience.
                       Their deep understanding of our data needs, along with the
                       high-resolution SAR and optical data they provide, has
                       proven invaluable across multiple projects. Suhora's
                       support has consistently enhanced our work.
-                      <span>
+                    </p>
+                      <span className="quotes-down">
                         <img
                           src="./assets/images/double-quote-down.svg"
                           alt="double-quote-down"
                         />
                       </span>
-                    </p>
                   </div>
                   {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
@@ -767,24 +767,24 @@ function HomePage() {
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
-                    <p>
-                      <span>
+                      <span className="quotes-up">
                         <img
                           src="./assets/images/double-quote-up.svg"
                           alt="double-quote-up"
                         />
                       </span>
+                    <p>
                       Thanks to Suhora's satellite data across multiple dates,
                       we were able to effectively monitor crop growth and make
                       timely adjustments to our strategy. Their service greatly
                       simplified our decision-making process.
-                      <span>
+                    </p>
+                      <span className="quotes-down">
                         <img
                           src="./assets/images/double-quote-down.svg"
                           alt="double-quote-down"
                         />
                       </span>
-                    </p>
                   </div>
                   {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
@@ -805,13 +805,13 @@ function HomePage() {
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
-                    <p>
-                      <span>
+                      <span className="quotes-up">
                         <img
                           src="./assets/images/double-quote-up.svg"
                           alt="double-quote-up"
                         />
                       </span>
+                    <p>
                        I would like to extend our sincere ratitude and appreciation to Suhora. 
                        Their collaborative approach has made working with their team not only smooth 
                        but also remarkably productive. Suhora’s satellite data services have truly transformed 
@@ -819,13 +819,13 @@ function HomePage() {
                        crop monitoring and detecting stubble burning. With their technology, we’ve been able 
                        to make informed, timely decisions that drive both efficiency and sustainability—two pillars 
                        essential to our success.
-                      <span>
+                    </p>
+                      <span className="quotes-down">
                         <img
                           src="./assets/images/double-quote-down.svg"
                           alt="double-quote-down"
                         />
                       </span>
-                    </p>
                   </div>
                   {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
@@ -846,24 +846,24 @@ function HomePage() {
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
-                    <p>
-                      <span>
+                      <span className="quotes-up">
                         <img
                           src="./assets/images/double-quote-up.svg"
                           alt="double-quote-up"
                         />
                       </span>
+                    <p>
                       Suhora delivered high-resolution, precise digital surface
                       and terrain models, along with detailed feature
                       extraction. Their data significantly enhanced our project
                       outcomes and provided valuable insights.
-                      <span>
+                    </p>
+                      <span className="quotes-down">
                         <img
                           src="./assets/images/double-quote-down.svg"
                           alt="double-quote-down"
                         />
                       </span>
-                    </p>
                   </div>
                   {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
@@ -885,21 +885,21 @@ function HomePage() {
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
-                    <p>
-                      <span>
+                      <span className="quotes-up">
                         <img
                           src="./assets/images/double-quote-up.svg"
                           alt="double-quote-up"
                         />
                       </span>
+                    <p>
                       Suhora has been a valuable partner, contributing actively to our journey from ‘Bhoomandal se Brahmand tak ka Safar.’ Their dedication and support have been instrumental in advancing our shared mission.{" "}
-                      <span>
+                    </p>
+                      <span className="quotes-down">
                         <img
                           src="./assets/images/double-quote-down.svg"
                           alt="double-quote-down"
                         />
                       </span>
-                    </p>
                   </div>
                   {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"
@@ -921,26 +921,26 @@ function HomePage() {
               <div className="testimonial-item text-center">
                 <div className="testimonial-content">
                   <div className="testimonial-text text-center p-4">
-                    <p>
-                      <span>
+                      <span className="quotes-up">
                         <img
                           src="./assets/images/double-quote-up.svg"
                           alt="double-quote-up"
                         />
                       </span>
+                    <p>
                       As a provider of thermal satellite imagery—a specialized
                       capability not widely recognized—Suhora has been a
                       reliable partner. Their expertise in thermal analytics has
                       proven immensely valuable. With the launch of SPADE,
                       Suhora is poised to reach new heights, making it even
                       easier to monitor temperature variations with precision.{" "}
-                      <span>
+                    </p>
+                      <span className="quotes-down">
                         <img
                           src="./assets/images/double-quote-down.svg"
                           alt="double-quote-down"
                         />
                       </span>
-                    </p>
                   </div>
                   {/* <img
                     className="img-fluid rounded-circle p-2 mx-auto"

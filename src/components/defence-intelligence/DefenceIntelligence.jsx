@@ -64,7 +64,7 @@ function DefenceIntelligence() {
               <div className="image-col h-100">
                 <main className="h-100">
                   <div className="container h-100">
-                    <div className="image-container h-100">
+                    <div className="image-container">
                       <img
                         className="image-before slider-image"
                         src="./assets/images/Mirka_slider_1.jpg"
@@ -72,7 +72,7 @@ function DefenceIntelligence() {
                       />
                       <img
                         className="image-after slider-image"
-                        src="./assets/images/Mirka_slider_2.jpg"
+                        src="./assets/images/mikra-slider-2-new.jpg"
                         alt="color photo"
                       />
                     </div>
