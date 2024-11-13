@@ -437,25 +437,25 @@ export default function AboutUs() {
               <div className="testimonial-item text-center">
                 <img
                   className="img-fluid p-2 mx-auto"
-                  src="./assets/images/Team-image-13.jpg"
+                  src="./assets/images/Team-image-13.jpeg"
                 />
               </div>
               <div className="testimonial-item text-center">
                 <img
                   className="img-fluid p-2 mx-auto"
-                  src="./assets/images/Team-image-14.jpg"
+                  src="./assets/images/Team-image-14.jpeg"
                 />
               </div>
               <div className="testimonial-item text-center">
                 <img
                   className="img-fluid p-2 mx-auto"
-                  src="./assets/images/Team-image-15.jpg"
+                  src="./assets/images/Team-image-15.JPG"
                 />
               </div>
               <div className="testimonial-item text-center">
                 <img
                   className="img-fluid p-2 mx-auto"
-                  src="./assets/images/Team-image-16.jpg"
+                  src="./assets/images/Team-image-16.JPG"
                 />
               </div>
               <div className="testimonial-item text-center">
@@ -467,13 +467,13 @@ export default function AboutUs() {
               <div className="testimonial-item text-center">
                 <img
                   className="img-fluid p-2 mx-auto"
-                  src="./assets/images/Team-image-18.jpg"
+                  src="./assets/images/Team-image-18.JPG"
                 />
               </div>
               <div className="testimonial-item text-center">
                 <img
                   className="img-fluid p-2 mx-auto"
-                  src="./assets/images/Team-image-19.jpg"
+                  src="./assets/images/Team-image-19.jpeg"
                 />
               </div>
               <div className="testimonial-item text-center">
@@ -497,15 +497,15 @@ export default function AboutUs() {
               <div className="testimonial-item text-center">
                 <img
                   className="img-fluid p-2 mx-auto"
-                  src="./assets/images/Team-image-23.jpg"
+                  src="./assets/images/Team-image-23.jpeg"
                 />
               </div>
-              <div className="testimonial-item text-center">
+              {/* <div className="testimonial-item text-center">
                 <img
                   className="img-fluid p-2 mx-auto"
                   src="./assets/images/Team-image-24.jpg"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
