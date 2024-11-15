@@ -67,7 +67,7 @@ function ImagingCapabilities() {
               <div className="image-col">
                 <main>
                   <div className="container">
-                    <div className="image-container">
+                    <div className="image-container product-slider">
                       <img
                         className="diaster-image-before slider-image"
                         src="./assets/images/Spade_Slider1.jpg"

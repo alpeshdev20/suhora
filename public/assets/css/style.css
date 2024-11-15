@@ -126,6 +126,10 @@ p.card-text {
   @media (max-width: 991.98px) {
     .sid-section.mirka-section .image-col .image-container {
       margin-right: -15px;
+      width: 696px !important;
+  }
+  .container .product-slider {
+    width: 696px !important;
   }
     .navbar .navbar-nav {
       border-top: 1px solid rgba(0, 0, 0, 0.07);
@@ -221,6 +225,9 @@ p.card-text {
   }
 
   @media (max-width: 768px) {
+    .sid-section .sid-text-col {
+      max-height: 515px !important;
+    }
     .home-text {
       font-size: 30px !important;
     }
@@ -467,7 +474,7 @@ p.card-text {
     position: sticky;
     top: 0;
     z-index: 1050;
-    background: linear-gradient(to right, rgb(17 101 135), rgb(5 89 125), rgb(5 83 117));
+    background: linear-gradient(to right, rgb(7 114 149), rgb(13 105 145), rgb(28 97 133));
   }
   .key-beneficiaries-carousel .card h5 {
     font-size: 14px;
@@ -1171,6 +1178,17 @@ p.card-text {
     }
   }
   /*disaster-lnsurance page*/
+  .container .mirka-product-slider {
+    /* height: 420px; */
+    width: 646px;
+  }
+  .container .product-slider {
+    width: 646px;
+  }
+  .container .mirka-product-slider .slider-image{
+    height: 420px !important;
+    /* width: 646px; */
+  }
   
   .sub-top-video-banner {
     position: relative;

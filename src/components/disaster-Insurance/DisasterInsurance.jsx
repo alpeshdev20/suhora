@@ -1,7 +1,50 @@
-import { useEffect } from "react";
+import { useEffect , useState} from "react";
 
 function DisasterInsurance() {
   const $ = jQuery.noConflict();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contactNumber: "",
+    subject: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validate = () => {
+    const errors = {};
+    if (!formData.name.trim()) errors.name = "Name is required";
+    if (!formData.email.trim() || !/^\S+@\S+\.\S+$/.test(formData.email))
+      errors.email = "Valid email is required";
+    if (!formData.contactNumber.trim() || formData.contactNumber.length < 10)
+      errors.contactNumber = "Valid contact number is required";
+    if (!formData.subject.trim()) errors.subject = "Subject is required";
+    if (!formData.message.trim()) errors.message = "Message cannot be empty";
+    return errors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationErrors = validate();
+    setErrors(validationErrors);
+
+    if (Object.keys(validationErrors).length === 0) {
+      alert("Form submitted successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        contactNumber: "",
+        subject: "",
+        message: "",
+      });
+    }
+  };
 
   useEffect(() => {
     const initializeCarousel = () => {
@@ -170,7 +213,7 @@ function DisasterInsurance() {
               <div className="image-col">
                 <main>
                   <div className="container">
-                    <div className="image-container">
+                    <div className="image-container product-slider">
                       <img
                         className="diaster-image-before slider-image"
                         src="./assets/images/Disaster_slider1.jpg"
@@ -488,61 +531,82 @@ function DisasterInsurance() {
         <div className="cta-sec book-demo">
           <h3>Book a Demo</h3>
         </div>
-        <div className="container">
-          <div className="main-content-col">
-            <div className="row form-main-wrapper" style={{paddingTop: '4px'}}>
-              <form className="row g-3">
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Your name"
-                    aria-label="Your name"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Your Email"
-                    aria-label="Your Email"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="number"
-                    className="form-control"
-                    placeholder="Contact Number"
-                    aria-label="Contact Number"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Subject"
-                    aria-label="Subject"
-                  />
-                </div>
-                <div className="col-12">
-                  <textarea
-                    className="form-control"
-                    rows={3}
-                    placeholder="Message"
-                    defaultValue={""}
-                  />
-                </div>
-                <div className="col-12 text-center">
-                  <button type="button" className="btn btn-primary form-btn">
-                    Submit
-                  </button>
-                  <br />
-                  <br />
-                </div>
-              </form>
+          <div className="container">
+      <div className="main-content-col">
+        <div className="row form-main-wrapper" style={{ paddingTop: "4px" }}>
+          <form className="row g-3" onSubmit={handleSubmit}>
+            <div className="col-md-6">
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Your name"
+                aria-label="Your name"
+              />
+              {errors.name && <small className="text-danger">{errors.name}</small>}
             </div>
-          </div>
+            <div className="col-md-6">
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Your Email"
+                aria-label="Your Email"
+              />
+              {errors.email && <small className="text-danger">{errors.email}</small>}
+            </div>
+            <div className="col-md-6">
+              <input
+                type="number"
+                name="contactNumber"
+                value={formData.contactNumber}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Contact Number"
+                aria-label="Contact Number"
+              />
+              {errors.contactNumber && (
+                <small className="text-danger">{errors.contactNumber}</small>
+              )}
+            </div>
+            <div className="col-md-6">
+              <input
+                type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Subject"
+                aria-label="Subject"
+              />
+              {errors.subject && <small className="text-danger">{errors.subject}</small>}
+            </div>
+            <div className="col-12">
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className="form-control"
+                rows={3}
+                placeholder="Message"
+              />
+              {errors.message && <small className="text-danger">{errors.message}</small>}
+            </div>
+            <div className="col-12 text-center">
+              <button type="submit" className="btn btn-primary form-btn">
+                Submit
+              </button>
+              <br />
+              <br />
+            </div>
+          </form>
         </div>
+      </div>
+    </div>
       </section>
     </>
   );
