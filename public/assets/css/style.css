@@ -467,7 +467,7 @@ p.card-text {
     position: sticky;
     top: 0;
     z-index: 1050;
-    background: linear-gradient(to right, rgb(14 94 126), rgb(12 74 98));
+    background: linear-gradient(to right, rgb(17 101 135), rgb(5 89 125), rgb(5 83 117));
   }
   .key-beneficiaries-carousel .card h5 {
     font-size: 14px;
