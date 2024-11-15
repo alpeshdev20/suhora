@@ -464,7 +464,7 @@ p.card-text {
     min-height: 100vh;
   }
   #whySuhora {
-    background-color: #00669d;
+    background: linear-gradient(to right, rgb(0, 98, 137), rgb(0, 98, 137));
   }
   .key-beneficiaries-carousel .card h5 {
     font-size: 14px;
