@@ -19,11 +19,10 @@ export default function AboutUs() {
       });
 
       $('.gallery-carousel').not(".slick-initialized").slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
         slidesToShow: 3,
         arrows: true,
-        speed: 3000,
-        autoplay: true,
-        autoplaySpeed: 0,
         prevArrow: '<div class="slick-prev"></div>',
         nextArrow: '<div class="slick-next"></div>',
         responsive: [
@@ -52,6 +51,7 @@ export default function AboutUs() {
     <>
       {/* Carousel Start */}
       <section className="sub-top-image-banner aboutus-page">
+        <div className="onion-layer">
         <div className="container h-100">
           <div className="d-flex h-100 align-items-center">
             <div className=" text-white" style={{ position: 'absolute', bottom: '42%' }}>
@@ -63,6 +63,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
       {/* Carousel End */}

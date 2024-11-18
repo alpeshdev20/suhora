@@ -408,9 +408,10 @@ function HomePage() {
         <div className="container-fluid p-0">
           <div className="slider">
             <div
-              className="slick-slide text-right"
+              className="slick-slide text-right bg-why-suhora-img"
               style={{
                 backgroundImage: 'url("./assets/images/Multi sensor.jpg")',
+                backgroundSize : 'cover',
               }}
             >
               <div className="container">
@@ -432,9 +433,10 @@ function HomePage() {
             </div>
             {/* slick-slide */}
             <div
-              className="slick-slide text-right"
+              className="slick-slide text-right bg-why-suhora-img"
               style={{
                 backgroundImage: 'url("./assets/images/Near Real time.jpg")',
+                backgroundSize : 'cover',
               }}
             >
               <div className="container">
@@ -455,9 +457,10 @@ function HomePage() {
             </div>
             {/* slick-slide */}
             <div
-              className="slick-slide text-right"
+              className="slick-slide text-right bg-why-suhora-img"
               style={{
                 backgroundImage: 'url("./assets/images/Higher accuracy.jpg")',
+                backgroundSize : 'cover',
               }}
             >
               <div className="container">
@@ -477,10 +480,11 @@ function HomePage() {
             </div>
             {/* slick-slide */}
             <div
-              className="slick-slide text-right"
+              className="slick-slide text-right bg-why-suhora-img"
               style={{
                 backgroundImage:
                   'url("./assets/images/Insightful Analysis.jpg")',
+                  backgroundSize : 'cover',
               }}
             >
               <div className="container">
@@ -812,13 +816,13 @@ function HomePage() {
                         />
                       </span>
                     <p>
-                       I would like to extend our sincere ratitude and appreciation to Suhora. 
-                       Their collaborative approach has made working with their team not only smooth 
-                       but also remarkably productive. Suhora’s satellite data services have truly transformed 
-                       our operations, providing precise and reliable insights for critical activities such as
-                       crop monitoring and detecting stubble burning. With their technology, we’ve been able 
-                       to make informed, timely decisions that drive both efficiency and sustainability—two pillars 
-                       essential to our success.
+                    I would like to extend our sincere gratitude and appreciation to Suhora.
+Their collaborative approach has made working with their team not only smooth
+but also remarkably productive. Suhora’s satellite data services have truly transformed
+our operations, providing precise and reliable insights for critical activities such as
+crop monitoring and detecting stubble burning. With their technology, we’ve been able
+to make informed, timely decisions that drive both efficiency and sustainability—two pillars
+essential to our success.
                     </p>
                       <span className="quotes-down">
                         <img

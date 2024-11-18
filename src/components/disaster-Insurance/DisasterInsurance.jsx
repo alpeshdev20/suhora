@@ -177,7 +177,7 @@ function DisasterInsurance() {
           <div className="d-flex h-100 align-items-center">
             <div className="w-100 text-white">
               <div className="col-lg-6">
-                <h1 className="display-5">Address key <br /> disasters  with SID.</h1>
+                <h1 className="display-5">Address key <br /> disasters  with SID  <br />with Disaster & Insurance</h1>
                 <p className="lead mb-0">
                   Our experienced professionals work to revamp disaster
                   management and insurance processes through the strategic use

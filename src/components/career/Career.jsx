@@ -14,8 +14,7 @@ export default function Career() {
           <div className="career-banner-title">
             <h3>CAREERS @ SUHORA</h3>
             <p>
-              Embrace each new opportunity as a stepping stone toward <br />
-              your professional growth and fulfillment
+            Embrace each new opportunity as a stepping stone towards <br /> your professional growth and fulfilment
             </p>
           </div>
         </div>
@@ -144,7 +143,7 @@ export default function Career() {
           </form>
           <div className="mx-auto mb-5 mt-5 benifit-sec">
             <h2 className="text-center display-6 mb-1">
-              NON MONETARY BENEFIT THAT OUR STAFF GETS
+             NON-MONETARY BENEFITS THAT OUR STAFF GETS.
             </h2>
             <div className="row mt-5 card-row">
               <div className="col-12 col-sm-4 d-flex align-items-start card">

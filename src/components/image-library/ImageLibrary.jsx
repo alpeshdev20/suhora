@@ -55,7 +55,7 @@ export default function ImageLibrary() {
               <h4>Optical - Catalog</h4>
             </div>
             <div className="grid-container">
-              <div className="card">
+              {/* <div className="card">
                 <div className="card-image">
                   <a
                     href="./assets/images/Mumbai-1meter.png"
@@ -72,7 +72,7 @@ export default function ImageLibrary() {
                   <p>Mumbai</p>
                   <span>1 meter</span>
                 </div>
-              </div>
+              </div> */}
               <div className="card">
                 <div className="card-image">
                   <a

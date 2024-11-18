@@ -468,7 +468,7 @@ p.card-text {
   /* Why us */
   .why-suhora-section {
     position: relative; /* Allows child elements to position relative to this container */
-    min-height: 100vh;
+    min-height: 78vh;
   }
   #whySuhora {
     position: sticky;
@@ -478,6 +478,10 @@ p.card-text {
   }
   .key-beneficiaries-carousel .card h5 {
     font-size: 14px;
+  }
+  .bg-why-suhora-img {
+    width: 100% !important;
+    background-size: cover;
   }
 
   .home-sub-text {
@@ -1189,6 +1193,9 @@ p.card-text {
     height: 420px !important;
     /* width: 646px; */
   }
+  .container .mirka-product-slider .first-mirka{
+   margin-left: -2px;
+  }
   
   .sub-top-video-banner {
     position: relative;
@@ -1525,7 +1532,7 @@ p.card-text {
   }
 
   .aboutus-page .line-height-normal {
-    background-color: #00000077;
+    /* background-color: #00000077; */
     padding: 20px;
   }
 
@@ -1694,8 +1701,19 @@ p.card-text {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
     min-height: 700px;
     height: 75vh;
+  }
+  .sub-top-image-banner .onion-layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75vh;
+    min-height: 700px;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    z-index: 100;
   }
   .sub-top-image-banner p {
     font-size: 35px;
