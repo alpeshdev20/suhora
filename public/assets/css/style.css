@@ -634,6 +634,13 @@ p.card-text {
     object-fit: scale-down;
     align-items: center;
   }
+  .drdo-customer {
+    width: 342px !important;
+    margin-top: 61px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 177px !important; 
+    object-fit: contain !important;
+  }
   
   .our-partner-slider .slick-initialized .slick-slide {
     display: flex;
@@ -912,6 +919,9 @@ p.card-text {
     height: 100%;
     width: 100%;
     z-index: 0;
+  }
+  .event-news-section {
+    background-image: url("../images/join-us-bg.png");
   }
   .blog-section .title,
   .event-news-section .title {

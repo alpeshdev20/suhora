@@ -704,12 +704,49 @@ function HomePage() {
                     src="./assets/images/usdma-customer5.png"
                   />
                 </div>
-                {/* <div className="testimonial-item text-center">
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto drdo-customer"
+                    src="./assets/images/drdo-cutomer-11.jpeg"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer-5.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer-6.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer-7.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer-8.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
+                  <img
+                    className="img-fluid p-2 mx-auto"
+                    src="./assets/images/Customer-9.png"
+                  />
+                </div>
+                <div className="testimonial-item text-center">
                   <img
                     className="img-fluid p-2 mx-auto"
                     src="./assets/images/Customer-10.png"
                   />
-                </div> */}
+                </div>
+                
               </div>
             </div>
             {/* Testimonial End */}

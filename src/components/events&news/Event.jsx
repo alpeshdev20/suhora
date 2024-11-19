@@ -22,7 +22,7 @@ function Event() {
                   className="card-img-top"
                   alt="..."
                 />
-                <div className="card-body">
+                <div className="card-body p-3 ">
                   <h3 className="card-title">
                     SUHORA has signed MoU with Thiagarajar College of
                     Engineering, Madurai
@@ -61,7 +61,7 @@ function Event() {
                   className="card-img-top"
                   alt="..."
                 />
-                <div className="card-body">
+                <div className="card-body p-3">
                   <h3 className="card-title">
                     SUHORA and SatVu form a multi-year strategic alliance to
                     provide Spaceborne High Resolution Thermal Sensing and
