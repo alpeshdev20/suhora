@@ -135,7 +135,7 @@ export default function AboutUs() {
                           analytics. <br />
                           We believe that, together, we can tackle humanity’s most
                           critical challenges and creating a safer, more resilient
-                          world
+                          world.
                         </p>
                       </div>
                     </div>

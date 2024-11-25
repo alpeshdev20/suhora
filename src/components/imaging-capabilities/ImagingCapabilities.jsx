@@ -22,7 +22,7 @@ function ImagingCapabilities() {
           <div className="d-flex h-100 align-items-center">
             <div className="w-100 text-white">
               <div className="col-lg-6">
-                <img src="./assets/images/SPADE Powered by SUHORA.png" alt />
+                <img width={"183px"} src="./assets/images/spade_logo-new.png" alt />
                 <h1>Imaging Capabilities</h1>
                 <h6 style={{ fontSize: "1.2rem" }}>
                   Unlock the power of data effortlessly
@@ -49,7 +49,7 @@ function ImagingCapabilities() {
         <div className="container">
           <div className="row sid-col g-0 equal">
             <div className="col-lg-6 sid-text-col">
-              <h2 className="mb-3">SPADE</h2>
+              <img width={"183px"} src="./assets/images/spade_logo-new.png" alt className="mb-2" />
               <h4>
                 <span>Explore</span> | <span>Task</span> | <span>Analyse</span>{" "}
               </h4>
@@ -60,7 +60,7 @@ function ImagingCapabilities() {
                 satelite tasking, data access, and analysis, harnessing the
                 capabilities of 15+ satelite constellation equipped with 250+
                 sensors. With guaranteed collection, fastest tasking, and secure
-                downlink capabilities, your data is handled precis{" "}
+                downlink capabilities, your data is handled with utmost precision and confidentiality.{" "}
               </p>
             </div>
             <div className="col-lg-6">

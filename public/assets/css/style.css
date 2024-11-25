@@ -900,7 +900,7 @@ p.card-text {
   
   /*BLOG Page**/
   .blog-section {
-    background-image: url("../images/imaging-bg.png");
+    background-image: url("../images/join-us-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -912,6 +912,7 @@ p.card-text {
     position: relative;
   }
   .blog-section:after {
+    background-image: url("../images/join-us-bg.png");
     content: "";
     background-color: #ffffffbf;
     position: absolute;
@@ -923,6 +924,7 @@ p.card-text {
   .event-news-section {
     background-image: url("../images/join-us-bg.png");
   }
+ 
   .blog-section .title,
   .event-news-section .title {
     padding-bottom: 20px;
